@@ -1,0 +1,212 @@
+@prefix : <http://w3id.org/brot#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix brot: <https://w3id.org/brot#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://w3id.org/brot> .
+
+<http://w3id.org/brot> rdf:type owl:Ontology ;
+                        owl:versionIRI <http://w3id.org/brot/0.1> ;
+                        dcterms:creator [ rdf:type foaf:Person ;
+                                          foaf:name "Al-Hakam Hamdan"
+                                        ] ,
+                                        [ rdf:type foaf:Person ;
+                                          foaf:name "Taras Kozak"
+                                        ] ;
+                        dcterms:description "Ontology that defines the topology of zones and components of bridge constructions"@en ;
+                        dcterms:title "Bridge Topology Ontology"@en ;
+                        vann:preferredNamespacePrefix "brot" ;
+                        vann:preferredNamespaceUri "https://w3id.org/brot#" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+
+###  http://w3id.org/brot#hasCoating
+brot:hasCoating rdf:type owl:ObjectProperty ;
+                rdfs:domain brot:BridgeElement ;
+                rdfs:range brot:Coating .
+
+
+###  http://w3id.org/brot#hasJoint
+brot:hasJoint rdf:type owl:ObjectProperty ;
+              rdfs:domain brot:BridgeElement ;
+              rdfs:range brot:BridgeJoint .
+
+
+###  http://w3id.org/brot#locatedAbove
+brot:locatedAbove rdf:type owl:ObjectProperty ;
+                  owl:inverseOf brot:locatedBelow ;
+                  rdf:type owl:TransitiveProperty ;
+                  rdfs:comment "Diese Relation stellt dar, dass ein Element sich über einem anderen befindet. Die Elemente sind nicht gezwungen einen physicalischen bzw. logischen Kontakt zu haben. Die Relation zeigt bloß das räumliche Verhalten."@de ,
+                               "This relationship points that in a modell an element located above an another element. The elements are not obliged to have a physical or logical connection. The relationship shows only space atittude."@en ,
+                               "locate above"@en ;
+                  rdfs:label "befindet sich über"@de .
+
+
+###  http://w3id.org/brot#locatedBelow
+brot:locatedBelow rdf:type owl:ObjectProperty ,
+                           owl:TransitiveProperty ;
+                  rdfs:comment "Diese Relation stellt dar, dass ein Element sich unter einem anderen befindet. Die Elemente sind nicht gezwungen einen physicalischen bzw. logischen Kontakt zu haben. Die Relation zeigt bloß das räumliche Verhalten."@de ,
+                               "This relationship points that in a modell an element located below an another element. The elements are not obliged to have a physical or logical connection. The relationship shows only space atittude."@en ;
+                  rdfs:label "befindet sich unter"@de ,
+                             "located below"@en .
+
+
+###  https://w3id.org/brot#adjacentElement
+<https://w3id.org/brot#adjacentElement> rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                        rdf:type owl:SymmetricProperty ;
+                                        rdfs:range brot:BridgeElement ;
+                                        rdfs:comment "Das ist eine Relation zwischen Elementen und Zonen, die durch eine Beruerungsflaeche einen physikalischen Kontakt miteinander haben."@de ,
+                                                     "This is a relationship between elements and zones which have physical contact to each other."@en ;
+                                        rdfs:label "adjacent Element"@en ,
+                                                   "benachbartes Element"@de .
+
+
+###  https://w3id.org/brot#adjacentZone
+brot:adjacentZone                    rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                     rdf:type owl:SymmetricProperty ;
+                                     rdfs:range brot:BridgeSpatialZone .
+
+
+###  https://w3id.org/brot#aggregates
+brot:aggregates                    rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdf:type owl:TransitiveProperty ;
+                                   rdfs:domain brot:BridgeElement ;
+                                   rdfs:range brot:BridgeElement .
+
+
+###  https://w3id.org/brot#containsElement
+brot:containsElement                    rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                        rdfs:domain brot:BridgeSpatialZone ;
+                                        rdfs:range brot:BridgeElement ;
+                                        owl:propertyChainAxiom ( brot:containsElement
+                                                                 brot:aggregates
+                                                               ) ,
+                                                               ( brot:containsZone
+                                                                 brot:containsElement
+                                                               ) .
+
+
+###  https://w3id.org/brot#containsZone
+brot:containsZone                    rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                     rdf:type owl:TransitiveProperty ;
+                                     rdfs:domain brot:BridgeSpatialZone ;
+                                     rdfs:range brot:BridgeSpatialZone .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/brot#Bridge
+brot:Bridge rdf:type owl:Class ;
+            rdfs:subClassOf brot:BridgeSpatialZone ;
+            rdfs:label "Bridge"@en ,
+                       "Bruecke"@de .
+
+
+###  http://w3id.org/brot#BridgeElement
+brot:BridgeElement rdf:type owl:Class ;
+                   rdfs:label "Brueckenelement"@de .
+
+
+###  http://w3id.org/brot#BridgeFinishingElement
+brot:BridgeFinishingElement rdf:type owl:Class ;
+                            rdfs:subClassOf brot:BridgeElement ;
+                            rdfs:label "Ausbauelement einer Bruecke"@de ,
+                                       "Bridge finishing element of a bridge"@en .
+
+
+###  http://w3id.org/brot#BridgeJoint
+brot:BridgeJoint rdf:type owl:Class ;
+                 rdfs:label "Dehnungsfuge (Bewegungsfuge)"@de ,
+                            "Expansion joint (movement joint)"@en .
+
+
+###  http://w3id.org/brot#BridgeReinforcingElement
+brot:BridgeReinforcingElement rdf:type owl:Class ;
+                              rdfs:subClassOf brot:BridgeElement ;
+                              rdfs:label "Bewehrungselement einer Bruecke"@de ,
+                                         "Reinforcing element of a bridge"@en .
+
+
+###  http://w3id.org/brot#BridgeSpatialZone
+brot:BridgeSpatialZone rdf:type owl:Class ;
+                       rdfs:label "Raeumliche Zone in einem Brueckenbauwerk"@de ,
+                                  "Spatial zone in a bridge construction"@en .
+
+
+###  http://w3id.org/brot#BridgeSubstructure
+brot:BridgeSubstructure rdf:type owl:Class ;
+                        rdfs:subClassOf brot:BridgeSpatialZone .
+
+
+###  http://w3id.org/brot#BridgeSubstructureElement
+brot:BridgeSubstructureElement rdf:type owl:Class ;
+                               rdfs:subClassOf brot:BridgeElement ;
+                               rdfs:label "Substructure element of a bridge"@en ,
+                                          "Unterbauelement einer Bruecke"@de .
+
+
+###  http://w3id.org/brot#BridgeSuperstructure
+brot:BridgeSuperstructure rdf:type owl:Class ;
+                          rdfs:subClassOf brot:BridgeSpatialZone .
+
+
+###  http://w3id.org/brot#BridgeSuperstructureElement
+brot:BridgeSuperstructureElement rdf:type owl:Class ;
+                                 rdfs:subClassOf brot:BridgeElement ;
+                                 rdfs:label "Bridge superstructure element"@en ,
+                                            "Ueberbauelement"@de .
+
+
+###  http://w3id.org/brot#BridgeTower
+brot:BridgeTower rdf:type owl:Class ;
+                 rdfs:subClassOf brot:BridgeSpatialZone .
+
+
+###  http://w3id.org/brot#BridgeTowerSegment
+brot:BridgeTowerSegment rdf:type owl:Class ;
+                        rdfs:subClassOf brot:BridgeSpatialZone ;
+                        rdfs:label "Bridge tower segment"@en ,
+                                   "Pylonsegment"@de .
+
+
+###  http://w3id.org/brot#Coating
+brot:Coating rdf:type owl:Class ;
+             rdfs:label "Abdichtung"@de ,
+                        "Coating"@en .
+
+
+###  http://w3id.org/brot#Site
+brot:Site rdf:type owl:Class ;
+          rdfs:subClassOf brot:BridgeSpatialZone ;
+          rdfs:label "Gelaende"@de ,
+                     "Site"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class .
+
+
+[ rdf:type foaf:Person ;
+  foaf:name "Al-Hakam Hamdan"
+] .
+
+[ rdf:type foaf:Person ;
+   foaf:name "Taras Kozak"
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

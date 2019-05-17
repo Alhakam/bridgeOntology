@@ -1,0 +1,41 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ct="http://www.iso-icdd.org/draft/Container.rdf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <ct:ContainerDescription rdf:about="http://ifc-brot.de#index.rdf">
+    <ct:containsLinkset>
+      <ct:Linkset rdf:about="http://ifc-brot.de#495b3ad8-fa95-46e3-80b2-8e35b154bcb9">
+        <ct:filename>IfcToBrot</ct:filename>
+      </ct:Linkset>
+    </ct:containsLinkset>
+    <ct:containsDocument>
+      <ct:InternalDocument rdf:about="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7">
+        <ct:belongsToContainer rdf:resource="http://ifc-brot.de#index.rdf"/>
+        <ct:filetype>.ttl</ct:filetype>
+        <ct:filename>bridge-Abox.ttl</ct:filename>
+        <ct:name>Damage Model</ct:name>
+        <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Container.rdf#Document"/>
+      </ct:InternalDocument>
+    </ct:containsDocument>
+    <ct:containsDocument>
+      <ct:InternalDocument rdf:about="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0">
+        <ct:belongsToContainer rdf:resource="http://ifc-brot.de#index.rdf"/>
+        <ct:filetype>.ifcDoc</ct:filetype>
+        <ct:filename>AnonymBridge.ifc</ct:filename>
+        <ct:name>IFC</ct:name>
+        <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Container.rdf#Document"/>
+      </ct:InternalDocument>
+    </ct:containsDocument>
+    <ct:publisher>
+      <ct:Person rdf:about="http://ifc-brot.de#eaac9fc9-d70f-4459-931d-50c40e7c8c62">
+        <ct:name>unknown</ct:name>
+        <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Container.rdf#Party"/>
+      </ct:Person>
+    </ct:publisher>
+    <ct:conformanceIndicator>part1</ct:conformanceIndicator>
+    <owl:imports rdf:resource="http://www.iso-icdd.org/draft/Container.rdf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </ct:ContainerDescription>
+</rdf:RDF>

@@ -1,0 +1,285 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bmat: <http://w3id.org/bmat#> .
+@prefix brot: <http://w3id.org/brot#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://w3id.org/bmat> rdf:type owl:Ontology ;
+                        owl:versionIRI <http://w3id.org/bmat/0.1> ;
+                        dcterms:creator [ rdf:type foaf:Person ;
+                                           foaf:name "Al-Hakam Hamdan"
+                                         ] ,
+                                         [ foaf:name "Taras Kozak" ;
+                                           rdf:type foaf:Person
+                                         ] ;
+                         dcterms:description "Ontology for defining building materials"@en ;
+                         dcterms:license "https://creativecommons.org/licenses/by/1.0" ;
+                         dcterms:title "Building Material"@en ;
+                         vann:preferredNamespacePrefix "bmat" ;
+                         vann:preferredNamespaceUri "https://w3id.org/bmat#" .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/bmat#hasBuildingMaterial
+bmat:hasBuildingMaterial rdf:type owl:ObjectProperty ;
+                         rdfs:range bmat:BuildingMaterial ;
+                         rdfs:label "Element besitzt ein Material"@de ,
+                                    "Element has a material"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/bmat#cementContent
+bmat:cementContent rdf:type owl:DatatypeProperty ;
+                   rdfs:domain bmat:Concrete ;
+                   rdfs:comment """DATENTYP DES EINGABEWERTES:
+
+xsd:double [Wasser/Zement]
+
+Einheit in [kg/m³]"""@de ,
+                                """TYPE INPUT VALUE: 
+
+xsd:double [watter/cement]
+
+Unit: [kg/m³]"""@en ;
+                   rdfs:label "Cement content"@en ,
+                              "Zementgehalt"@de .
+
+
+###  http://w3id.org/bmat#cementDesignation
+bmat:cementDesignation rdf:type owl:DatatypeProperty ;
+                       rdfs:domain bmat:Concrete ;
+                       rdfs:comment """DATENTYP DES EINGABEWERTES:
+
+xsd:string"""@de ,
+                                    """TYPE INPUT VALUE: 
+
+xsd:string"""@en ;
+                       rdfs:label "Cement designation"@en ,
+                                  "Zementbezeichnung"@de .
+
+
+###  http://w3id.org/bmat#cementMainConstituents
+bmat:cementMainConstituents rdf:type owl:DatatypeProperty ;
+                            rdfs:domain bmat:Concrete ;
+                            rdfs:comment """(Klassifizierung erfolgt gemaess DIN EN 197-1.)
+
+WERTEVERZEICHNIS:
+
+K - Portlandzementklinker
+S - Huettensand (granulierte Hochofenschlacke)
+P - Natuerliches Puzzolan
+Q - Natuerliches getempertes Puzzolan
+V - Kieselsaeurereiche Flugasche
+W - Kalkreiche Flugasche
+T - Gebrannter Schiefer
+LL - Kalkstein (darf einen Massenanteil von 0,20 % nicht ueberschreiten)
+L - Kalkstein (darf einen Massenanteil von 0,50 % nicht ueberschreiten)
+D - Silicastaub"""@de ,
+                                         """ENUMERATION VALUES:
+
+(Classification according to DIN EN 197-1)
+
+K - Portland cement clinker
+S - Granulated blastfurnace slag
+P - Natural pozzolana
+Q - Natural calcined pozzolana
+V - Siliceous fly ash
+W - Calcareous fly ash
+T - Burnt shale
+LL- Limestone (shall not exceed 0,20 % by mass)
+L- Limestone (shall not exceed 0,50 % by mass)
+D - Silica fume"""@en ;
+                            rdfs:label "Hauptbestandteile vom Zement"@de ,
+                                       "Main constituents of the cement"@en .
+
+
+###  http://w3id.org/bmat#cementType
+bmat:cementType rdf:type owl:DatatypeProperty ;
+                rdfs:domain bmat:Concrete ;
+                rdfs:comment """(Classification is according to DIN EN 197-1.)
+
+ENUMERATION VALUES:
+
+CEM_I - Portland cement
+CEM_II - Portland-composite cement
+CEM_III - Blastfurnace cement
+CEM_IV - Pozzolanic cement
+CEM_V - Composite cement"""@en ,
+                             """(Klassifizierung erfolgt gemaess DIN EN 197-1.)
+
+WERTEVERZEICHNIS:
+
+CEM_I - Portlandzemente
+CEM_II - Portlandkompositzemente
+CEM_III - Hochofenzemente
+CEM_IV - Puzzolanzemente
+CEM_V - Kompositzemente"""@de ;
+                rdfs:label "Cement type"@en ,
+                           "Zementart"@de .
+
+
+###  http://w3id.org/bmat#coatDesignation
+bmat:coatDesignation rdf:type owl:DatatypeProperty ;
+                     rdfs:domain bmat:Concrete ;
+                     rdfs:comment """DATENTYP DES EINGABEWERTES:
+
+xsd:string"""@de ,
+                                  """TYPE INPUT VALUE: 
+
+xsd:string"""@en ;
+                     rdfs:label "Beschichtungsbezeichnung"@de ,
+                                "Coat designation"@en .
+
+
+###  http://w3id.org/bmat#concreteAdmixture
+bmat:concreteAdmixture rdf:type owl:DatatypeProperty ;
+                       rdfs:domain bmat:Concrete ;
+                       rdfs:label "Betonzusatzstoffe"@de ,
+                                  "Concrete admixture"@en .
+
+
+###  http://w3id.org/bmat#concreteAggregate
+bmat:concreteAggregate rdf:type owl:DatatypeProperty ;
+                       rdfs:label "Zuschlagstoff"@de .
+
+
+###  http://w3id.org/bmat#concreteStrengthClass
+bmat:concreteStrengthClass rdf:type owl:DatatypeProperty ;
+                           rdfs:domain bmat:Concrete ;
+                           rdfs:label "Class of compression strength of the concrete"@en ,
+                                      "Druckfestigkeitsklasse des Betons"@de .
+
+
+###  http://w3id.org/bmat#expositionClassConcrete
+bmat:expositionClassConcrete rdf:type owl:DatatypeProperty ;
+                             rdfs:domain bmat:Concrete ;
+                             rdfs:label "Exposition class of concrete"@en ,
+                                        "Expositionsklasse fuer Beton"@de .
+
+
+###  http://w3id.org/bmat#expositionClassReinforcement
+bmat:expositionClassReinforcement rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain bmat:ReinforcedConcrete ;
+                                  rdfs:label "Exposition class of reinforcement corrosion"@en ,
+                                             "Expositionsklasse fuer Bewehrungskorrosion"@de .
+
+
+###  http://w3id.org/bmat#grainSize
+bmat:grainSize rdf:type owl:DatatypeProperty ;
+               rdfs:domain bmat:Concrete ;
+               rdfs:comment """ENUMERATION VALUES:
+
+(Classification according to DIN EN 12620)
+
+COARSE
+FINE
+NAT_COMP_AGGR - (natural composite agregate 0/8)
+GRAIN_MIXTURE"""@en ,
+                            """WERTEVERZEICHNIS:
+
+(Definition nach DIN EN 12620)
+
+GROB 
+FEIN
+ZSMMNGSTZT_GESTEINSKOE - (natuerlich zusammengesetzte Gesteinskoernung 0/8)
+KORNGEMISCH"""@de ;
+               rdfs:label "Grain size distribution of the beton aggregate"@en ,
+                          "Korngroesseverteilung von Gesteinskoernungen fuer Beton"@de .
+
+
+###  http://w3id.org/bmat#materialAge
+bmat:materialAge rdf:type owl:DatatypeProperty ;
+                 rdfs:domain bmat:BuildingMaterial ;
+                 rdfs:comment "Gibt das Jahr an, in dem das Material verbaut wurde."@de ;
+                 rdfs:label "Materialalter"@de .
+
+
+###  http://w3id.org/bmat#materialStandard
+bmat:materialStandard rdf:type owl:DatatypeProperty ;
+                      rdfs:domain bmat:BuildingMaterial ;
+                      rdfs:comment "Gibt die Norm an, die zum Zeitpunkt des Materialeinbaus befolgt wurde."@de ;
+                      rdfs:label "MaterialNorm"@de .
+
+
+###  http://w3id.org/bmat#moistureClassConcrete
+bmat:moistureClassConcrete rdf:type owl:DatatypeProperty ;
+                           rdfs:domain bmat:Concrete ;
+                           rdfs:label "Feuchtigkeitsklasse fuer Betonkorrosion"@de ,
+                                      "Moisture class of beton corrosion"@en .
+
+
+###  http://w3id.org/bmat#reinforcementBreakingStrength
+bmat:reinforcementBreakingStrength rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain bmat:ReinforcedConcrete ;
+                                   rdfs:comment """DATENTYP DES EINGABEWERTES:
+
+xsd:double [N/mm2]"""@de ,
+                                                """TYPE INPUT VALUE:
+
+xsd:double [N/mm2]"""@en ;
+                                   rdfs:label "Breaking strength of reinforcing steel"@en ,
+                                              "Bruchgrenze des Bewehrungsstahls"@de .
+
+
+###  http://w3id.org/bmat#reinforcementGrade
+bmat:reinforcementGrade rdf:type owl:DatatypeProperty ;
+                        rdfs:domain bmat:ReinforcedConcrete ;
+                        rdfs:label "Bewehrungsklasse"@de ,
+                                   "Reinforcement grade"@en .
+
+
+###  http://w3id.org/bmat#reinforcementYieldStrength
+bmat:reinforcementYieldStrength rdf:type owl:DatatypeProperty ;
+                                rdfs:domain bmat:ReinforcedConcrete ;
+                                rdfs:comment """DATENTYP DES EINGABEWERTES:
+
+xsd:double [N/mm2]"""@de ,
+                                             """TYPE INPUT VALUE:
+
+xsd:double [N/mm2]"""@en ;
+                                rdfs:label "Streckgrenze des Bewehrungsstahls"@de ,
+                                           "Yield strength of reinforcing steel"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/bmat#Aluminium
+bmat:Aluminium rdf:type owl:Class ;
+               rdfs:subClassOf bmat:BuildingMaterial .
+
+
+###  http://w3id.org/bmat#BuildingMaterial
+bmat:BuildingMaterial rdf:type owl:Class .
+
+
+###  http://w3id.org/bmat#Concrete
+bmat:Concrete rdf:type owl:Class ;
+              rdfs:subClassOf bmat:BuildingMaterial .
+
+
+###  http://w3id.org/bmat#NaturalStone
+bmat:NaturalStone rdf:type owl:Class ;
+                  rdfs:subClassOf bmat:BuildingMaterial .
+
+
+###  http://w3id.org/bmat#ReinforcedConcrete
+bmat:ReinforcedConcrete rdf:type owl:Class ;
+                        rdfs:subClassOf bmat:Concrete .
+
+
+###  http://w3id.org/bmat#ReinforecementSteel
+bmat:ReinforecementSteel rdf:type owl:Class ;
+                         rdfs:subClassOf bmat:BuildingMaterial .

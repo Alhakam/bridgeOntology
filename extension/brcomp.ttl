@@ -1,0 +1,530 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix brot: <http://w3id.org/brot#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix brcomp: <http://w3id.org/brcomp#> .
+@prefix dcterms: <http://purl.org/dc/terms> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://w3id.org/brcomp> rdf:type owl:Ontology ;
+                          owl:versionIRI <http://w3id.org/brcomp/0.1> ;
+                          dcterms:creator [ rdf:type foaf:Person ;
+                                           foaf:name "Al-Hakam Hamdan"
+                                         ] ,
+                                         [ foaf:name "Taras Kozak" ;
+                                           rdf:type foaf:Person
+                                         ] ;
+                         dcterms:description "Ontology for bridge components (taxonomy)"@en ;
+                         dcterms:license "https://creativecommons.org/licenses/by/1.0" ;
+                         dcterms:title "Bridge Components"@en ;
+                         vann:preferredNamespacePrefix "brcomp" ;
+                         vann:preferredNamespaceUri "https://w3id.org/brcomp#" .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/brcomp#coatingArea
+brcomp:coatingArea rdf:type owl:DatatypeProperty ;
+                   rdfs:domain brot:Coating ;
+                   rdfs:comment """Gibt die Fläche des abgedichteten Bereichs an.
+
+Einheit in [m²]"""@de ;
+                   rdfs:label "Abdichtungsfläche"@de .
+
+
+###  http://w3id.org/brcomp#coatingThickness
+brcomp:coatingThickness rdf:type owl:DatatypeProperty ;
+                        rdfs:domain brot:Coating ;
+                        rdfs:comment """Dicke (Dichtungsschicht + Schutzschicht)
+
+Einheit in [cm]"""@de ;
+                        rdfs:label "Abdichtungsdicke"@de .
+
+
+###  http://w3id.org/brcomp#concreteCover
+brcomp:concreteCover rdf:type owl:DatatypeProperty ;
+                     rdfs:label "Betondeckung"@de .
+
+
+###  http://w3id.org/brcomp#criticalTempSummer
+brcomp:criticalTempSummer rdf:type owl:DatatypeProperty ;
+                          rdfs:domain brcomp:BearingElement ;
+                          rdfs:comment """Gibt die Kritische Temperatur für Lagerbauteile im Sommer an.
+
+Einheit in [Celsius]"""@de ;
+                          rdfs:label "Citical Temperature Summer"@en ,
+                                     "Kritische Temperatur Sommer"@de .
+
+
+###  http://w3id.org/brcomp#criticalTempWinter
+brcomp:criticalTempWinter rdf:type owl:DatatypeProperty ;
+                          rdfs:domain brcomp:BearingElement ;
+                          rdfs:comment """Gibt die Kritische Temperatur für Lagerbauteile im Winter an.
+
+Einheit in [Celsius]"""@de ;
+                          rdfs:label "Citical Temperature Winter"@en ,
+                                     "Kritische Temperatur Winter"@de .
+
+
+###  http://w3id.org/brcomp#diameter
+brcomp:diameter rdf:type owl:DatatypeProperty ;
+                rdfs:domain brot:BridgeElement ;
+                rdfs:comment """Durchmesser für runde Bauobjekte wie z.B. Pfähle, Pfeiler, etc.
+
+Einheit in [m]."""@de ;
+                rdfs:label "Durchmesser"@de .
+
+
+###  http://w3id.org/brcomp#height
+brcomp:height rdf:type owl:DatatypeProperty ;
+              rdfs:comment """Gibt die Höhe eines Brückenbauteils an.
+
+Einheit in [m]."""@de ;
+              rdfs:label "Höhe"@de .
+
+
+###  http://w3id.org/brcomp#installationYear
+brcomp:installationYear rdf:type owl:DatatypeProperty ;
+                        rdfs:domain brot:BridgeElement ;
+                        rdfs:label "Einbaujahr"@de .
+
+
+###  http://w3id.org/brcomp#length
+brcomp:length rdf:type owl:DatatypeProperty ;
+              rdfs:domain brot:BridgeElement ;
+              rdfs:comment """Gibt die Länge eines Brückenbauteils an.
+
+Einheit in [m]"""@de ;
+              rdfs:label "Länge"@de .
+
+
+###  http://w3id.org/brcomp#type
+brcomp:type rdf:type owl:DatatypeProperty ;
+            rdfs:domain brot:BridgeElement ;
+            rdfs:comment "Gibt die Bezeichnung des Bauteiltyps an"@de ;
+            rdfs:label "Typenbezeichnung"@de .
+
+
+###  http://w3id.org/brcomp#width
+brcomp:width rdf:type owl:DatatypeProperty ;
+             rdfs:domain brot:BridgeElement ;
+             rdfs:comment """Gibt die Breite eines Brückenbauteils an.
+
+Einheit in [m]."""@de ;
+             rdfs:label "Breite"@de .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/brcomp#AbutmentElement
+brcomp:AbutmentElement rdf:type owl:Class ;
+                       rdfs:subClassOf brot:BridgeSubstructureElement .
+
+
+###  http://w3id.org/brcomp#Asphalt
+brcomp:Asphalt rdf:type owl:Class ;
+               rdfs:subClassOf brot:Coating ;
+               rdfs:label "Asphalt"@de .
+
+
+###  http://w3id.org/brcomp#BearingElement
+brcomp:BearingElement rdf:type owl:Class ;
+                      rdfs:subClassOf brot:BridgeSubstructureElement .
+
+
+###  http://w3id.org/brcomp#BridgeAbutment
+brcomp:BridgeAbutment rdf:type owl:Class ;
+                      rdfs:subClassOf brot:BridgeSubstructureElement ;
+                      rdfs:comment "Diese Klasse kann auch fuer den gesamten Widerlager benutzt werden, der mit dem Vereinfachungsziel zu einem einzigen Element vereinigt wurde und nicht auf Unterelemente geteilt wurde."@de ,
+                                   "The class can be also used for a whole abutment, which because of the complexity (or by simplification aim) have been merged to a single element and haven't been separated to subelements."@en ;
+                      rdfs:label "Abutment element"@en ,
+                                 "Widerlagerelement"@de .
+
+
+###  http://w3id.org/brcomp#BridgeAbutmentBenching
+brcomp:BridgeAbutmentBenching rdf:type owl:Class ;
+                              rdfs:subClassOf brcomp:AbutmentElement ;
+                              rdfs:label "Auflagerbank eines Widerlagers"@de ,
+                                         "Benching of an abutment"@en .
+
+
+###  http://w3id.org/brcomp#BridgeAbutmentChamberWall
+brcomp:BridgeAbutmentChamberWall rdf:type owl:Class ;
+                                 rdfs:subClassOf brcomp:AbutmentElement ;
+                                 rdfs:label "Chamber wall of an abutment"@en ,
+                                            "Kammerwand eines Widerlagers"@de .
+
+
+###  http://w3id.org/brcomp#BridgeAbutmentFooting
+brcomp:BridgeAbutmentFooting rdf:type owl:Class ;
+                             rdfs:subClassOf brcomp:AbutmentElement ;
+                             rdfs:label "Footing of an abutment"@en ,
+                                        "Fundamentplatte eines Widerlagers"@de .
+
+
+###  http://w3id.org/brcomp#BridgeAbutmentWingWall
+brcomp:BridgeAbutmentWingWall rdf:type owl:Class ;
+                              rdfs:subClassOf brcomp:AbutmentElement ;
+                              rdfs:label "Fluegelwand eines Widerlagers"@de ,
+                                         "Wing wall of an abutment"@en .
+
+
+###  http://w3id.org/brcomp#BridgeArchElement
+brcomp:BridgeArchElement rdf:type owl:Class ;
+                         rdfs:subClassOf brot:BridgeSubstructureElement ,
+                                         brot:BridgeSuperstructureElement ;
+                         rdfs:label "Element einer Bogenkonstruktion"@de ,
+                                    "Element of the arch construction"@en .
+
+
+###  http://w3id.org/brcomp#BridgeBearing
+brcomp:BridgeBearing rdf:type owl:Class ;
+                     rdfs:subClassOf brot:BridgeSubstructureElement ;
+                     rdfs:label "Bearings"@en ,
+                                "Lager"@de .
+
+
+###  http://w3id.org/brcomp#BridgeBearingSeat
+brcomp:BridgeBearingSeat rdf:type owl:Class ;
+                         rdfs:subClassOf brot:BridgeSubstructureElement ;
+                         rdfs:label "Bearing seat"@en ,
+                                    "Lagersockel"@de .
+
+
+###  http://w3id.org/brcomp#BridgeBirdsProtection
+brcomp:BridgeBirdsProtection rdf:type owl:Class ;
+                             rdfs:subClassOf brot:BridgeFinishingElement ;
+                             rdfs:label "Birds protection"@en ,
+                                        "Vogelschutz"@de .
+
+
+###  http://w3id.org/brcomp#BridgeCable
+brcomp:BridgeCable rdf:type owl:Class ;
+                   rdfs:subClassOf brcomp:BridgeTensionElement ;
+                   rdfs:label "Cable"@de ,
+                              "Seil"@de .
+
+
+###  http://w3id.org/brcomp#BridgeCableAnchoringDevice
+brcomp:BridgeCableAnchoringDevice rdf:type owl:Class ;
+                                  rdfs:subClassOf brot:BridgeSuperstructureElement ;
+                                  rdfs:label "Cable anchoring device"@en ,
+                                             "Seilverankerung"@de .
+
+
+###  http://w3id.org/brcomp#BridgeCap
+brcomp:BridgeCap rdf:type owl:Class ;
+                 rdfs:subClassOf brot:BridgeFinishingElement ;
+                 rdfs:label "Cap"@en ,
+                            "Kappe"@de .
+
+
+###  http://w3id.org/brcomp#BridgeColumn
+brcomp:BridgeColumn rdf:type owl:Class ;
+                    rdfs:subClassOf brot:BridgeSubstructureElement ;
+                    rdfs:label "Column"@en ,
+                               "Stuetze"@de .
+
+
+###  http://w3id.org/brcomp#BridgeConcreteStayTensionElement
+brcomp:BridgeConcreteStayTensionElement rdf:type owl:Class ;
+                                        rdfs:subClassOf brcomp:BridgeTensionElement ;
+                                        rdfs:label "Tension element as a concrete stay"@en ,
+                                                   "Zugglieder aus Stahlbeton"@de .
+
+
+###  http://w3id.org/brcomp#BridgeConstructionJoint
+brcomp:BridgeConstructionJoint rdf:type owl:Class ;
+                               rdfs:subClassOf brot:BridgeJoint ;
+                               rdfs:label "Arbeitsfuge"@de ,
+                                          "Construction joint"@en .
+
+
+###  http://w3id.org/brcomp#BridgeCouplingJoint
+brcomp:BridgeCouplingJoint rdf:type owl:Class ;
+                           rdfs:subClassOf brot:BridgeJoint ;
+                           rdfs:label "Coupling joint"@en ,
+                                      "Koppelfuge"@de .
+
+
+###  http://w3id.org/brcomp#BridgeDrainage
+brcomp:BridgeDrainage rdf:type owl:Class ;
+                      rdfs:subClassOf brot:BridgeFinishingElement ;
+                      rdfs:label "Drainage"@en ,
+                                 "Entwaesserung"@de .
+
+
+###  http://w3id.org/brcomp#BridgeElastomericBearings
+brcomp:BridgeElastomericBearings rdf:type owl:Class ;
+                                 rdfs:subClassOf brcomp:FixedBearingElement ;
+                                 rdfs:label "Elastomeric bearings"@en ,
+                                            "Verformungslager"@de .
+
+
+###  http://w3id.org/brcomp#BridgeExpansionJoint
+brcomp:BridgeExpansionJoint rdf:type owl:Class ;
+                            rdfs:subClassOf brot:BridgeJoint ;
+                            rdfs:label "Dehnungs-/Bewegungsfuge"@de ,
+                                       "Expansion/movement joint"@en .
+
+
+###  http://w3id.org/brcomp#BridgeFooting
+brcomp:BridgeFooting rdf:type owl:Class ;
+                     rdfs:subClassOf brcomp:FoundationElement ;
+                     rdfs:label "Footing"@en ,
+                                "Gruendung"@de .
+
+
+###  http://w3id.org/brcomp#BridgeFoundation
+brcomp:BridgeFoundation rdf:type owl:Class ;
+                        rdfs:subClassOf brot:BridgeSubstructureElement ;
+                        rdfs:label "Foundation element of a bridge"@en ,
+                                   "Gruendungselement einer Bruecke"@de .
+
+
+###  http://w3id.org/brcomp#BridgeGirder
+brcomp:BridgeGirder rdf:type owl:Class ;
+                    rdfs:subClassOf brot:BridgeSuperstructureElement ;
+                    rdfs:label "Bridge girder"@en .
+
+
+###  http://w3id.org/brcomp#BridgeGirderBracing
+brcomp:BridgeGirderBracing rdf:type owl:Class ;
+                           rdfs:subClassOf brcomp:BridgeGirderElement ;
+                           rdfs:label "Aussteifung (stabfoermiges Element)"@de ,
+                                      "Bracing (bar-shaped element)"@en .
+
+
+###  http://w3id.org/brcomp#BridgeGirderCrossGirder
+brcomp:BridgeGirderCrossGirder rdf:type owl:Class ;
+                               rdfs:subClassOf brcomp:BridgeGirderElement ;
+                               rdfs:label "Cross girder (cross girder of the bridge beam cross-section)"@en ,
+                                          "Querbalken (Querbalken des Brueckendeckquerschnitts)"@de .
+
+
+###  http://w3id.org/brcomp#BridgeGirderDeck
+brcomp:BridgeGirderDeck rdf:type owl:Class ;
+                        rdfs:subClassOf brcomp:BridgeGirderElement ;
+                        rdfs:label "Deck (upper plate of the bridge beam cross-section)"@en ,
+                                   "Obere Platte des Brueckendeckquerschnitts"@de .
+
+
+###  http://w3id.org/brcomp#BridgeGirderDiaphragm
+brcomp:BridgeGirderDiaphragm rdf:type owl:Class ;
+                             rdfs:subClassOf brcomp:BridgeGirderElement ;
+                             rdfs:label "Stiffening diaphgragm (plate-shaped element)"@en ,
+                                        "Versteifungsdiaphragma (plattenfoermiges Element)"@de .
+
+
+###  http://w3id.org/brcomp#BridgeGirderDownPlate
+brcomp:BridgeGirderDownPlate rdf:type owl:Class ;
+                             rdfs:subClassOf brcomp:BridgeGirderElement ;
+                             rdfs:label "Down plate of the bridge beam cross-section"@en ,
+                                        "Untere Platte des Brueckendeckquerschnitts"@de .
+
+
+###  http://w3id.org/brcomp#BridgeGirderElement
+brcomp:BridgeGirderElement rdf:type owl:Class ;
+                           rdfs:subClassOf brot:BridgeSuperstructureElement ;
+                           rdfs:label "Bridge girder"@en ,
+                                      "Brueckendeck (gesamtes Querschnitt des Fahrbahntragwerks)"@de .
+
+
+###  http://w3id.org/brcomp#BridgeGirderMainGirder
+brcomp:BridgeGirderMainGirder rdf:type owl:Class ;
+                              rdfs:subClassOf brcomp:BridgeGirderElement ;
+                              rdfs:comment "Main girder (girder in longitudinal direction of the bridge beam cross-section)" ;
+                              rdfs:label "Laengsbalken (Balken in der Laengsrichtung des Brueckendecksquerschnitts)"@de .
+
+
+###  http://w3id.org/brcomp#BridgeGirderSegment
+brcomp:BridgeGirderSegment rdf:type owl:Class ;
+                           rdfs:subClassOf brcomp:BridgeGirder ,
+                                           brcomp:BridgeGirderElement ;
+                           rdfs:comment "\"Bridge girder segment\" is a segment of a bridge deck, which can represent either a prefabrecated component or a section of the construction stage."@en ,
+                                        "\"Brueckendeckssegment\" ist ein Segment von einem Brueckendeck, das ein Fertigteilkomponent bzw. ein Segment eines Betonierabschnitts abbildet." ;
+                           rdfs:label "Bridge girder segment"@en ,
+                                      "Brueckendecksegment"@de .
+
+
+###  http://w3id.org/brcomp#BridgeGroundAnchoringDevice
+brcomp:BridgeGroundAnchoringDevice rdf:type owl:Class ;
+                                   rdfs:subClassOf brot:BridgeSubstructureElement ;
+                                   rdfs:label "Erdverankerung"@de ,
+                                              "Ground anchoring device"@en .
+
+
+###  http://w3id.org/brcomp#BridgeIllumination
+brcomp:BridgeIllumination rdf:type owl:Class ;
+                          rdfs:subClassOf brot:BridgeFinishingElement ;
+                          rdfs:label "Beleuchtung"@de ,
+                                     "Illumination"@en .
+
+
+###  http://w3id.org/brcomp#BridgeNoiseBarrier
+brcomp:BridgeNoiseBarrier rdf:type owl:Class ;
+                          rdfs:subClassOf brot:BridgeFinishingElement ;
+                          rdfs:label "Laermschutz"@de ,
+                                     "Noise barrier"@en .
+
+
+###  http://w3id.org/brcomp#BridgePavement
+brcomp:BridgePavement rdf:type owl:Class ;
+                      rdfs:subClassOf brot:BridgeFinishingElement ;
+                      rdfs:label "Gehweg"@de ,
+                                 "Pavement"@en .
+
+
+###  http://w3id.org/brcomp#BridgePier
+brcomp:BridgePier rdf:type owl:Class ;
+                  rdfs:subClassOf brot:BridgeSubstructureElement ;
+                  rdfs:label "Pfeiler"@de ,
+                             "Pier"@en .
+
+
+###  http://w3id.org/brcomp#BridgePile
+brcomp:BridgePile rdf:type owl:Class ;
+                  rdfs:subClassOf brcomp:FoundationElement ;
+                  rdfs:label "Pfahl"@de ,
+                             "Pile"@en .
+
+
+###  http://w3id.org/brcomp#BridgePotBearings
+brcomp:BridgePotBearings rdf:type owl:Class ;
+                         rdfs:subClassOf brcomp:FixedBearingElement ;
+                         rdfs:label "Pot bearings"@en ,
+                                    "Topflager"@de .
+
+
+###  http://w3id.org/brcomp#BridgeRailing
+brcomp:BridgeRailing rdf:type owl:Class ;
+                     rdfs:subClassOf brot:BridgeFinishingElement ;
+                     rdfs:label "Gelaender"@de ,
+                                "Railing"@en .
+
+
+###  http://w3id.org/brcomp#BridgeReinforcingBar
+brcomp:BridgeReinforcingBar rdf:type owl:Class ;
+                            rdfs:subClassOf brot:BridgeReinforcingElement ;
+                            rdfs:label "Bewehrungsstab"@de ,
+                                       "Reinforcing bar"@en .
+
+
+###  http://w3id.org/brcomp#BridgeReinforcingMesh
+brcomp:BridgeReinforcingMesh rdf:type owl:Class ;
+                             rdfs:subClassOf brot:BridgeReinforcingElement ;
+                             rdfs:label "Bewehrungsmatte"@de ,
+                                        "Reinforcing mesh"@en .
+
+
+###  http://w3id.org/brcomp#BridgeSlidingBearing
+brcomp:BridgeSlidingBearing rdf:type owl:Class ;
+                            rdfs:subClassOf brcomp:MovableBearingElement ;
+                            rdfs:label "Gleitlager"@de ,
+                                       "Sliding bearings"@en .
+
+
+###  http://w3id.org/brcomp#BridgeSphericalBearings
+brcomp:BridgeSphericalBearings rdf:type owl:Class ;
+                               rdfs:subClassOf brcomp:FixedBearingElement ;
+                               rdfs:label "Kalottenlager"@de ,
+                                          "Spherical bearings"@en .
+
+
+###  http://w3id.org/brcomp#BridgeTendon
+brcomp:BridgeTendon rdf:type owl:Class ;
+                    rdfs:subClassOf brot:BridgeReinforcingElement ;
+                    rdfs:label "Spannglied"@de ,
+                               "Tendon"@en .
+
+
+###  http://w3id.org/brcomp#BridgeTendonAnchoringDevice
+brcomp:BridgeTendonAnchoringDevice rdf:type owl:Class ;
+                                   rdfs:subClassOf brot:BridgeReinforcingElement ;
+                                   rdfs:label "Spanngliedverankerung"@de ,
+                                              "Tendon anchoring device"@en .
+
+
+###  http://w3id.org/brcomp#BridgeTensionElement
+brcomp:BridgeTensionElement rdf:type owl:Class ;
+                            rdfs:subClassOf brot:BridgeSuperstructureElement ;
+                            rdfs:label "Tension element of superstructure"@de ,
+                                       "Zugglieder des Ueberbaus"@de .
+
+
+###  http://w3id.org/brcomp#BridgeTowerElement
+brcomp:BridgeTowerElement rdf:type owl:Class ;
+                          rdfs:subClassOf brot:BridgeSubstructureElement ,
+                                          brot:BridgeSuperstructureElement ;
+                          rdfs:label "Pylon"@de ,
+                                     "Tower/pylon"@en .
+
+
+###  http://w3id.org/brcomp#BridgeTrafficBarrier
+brcomp:BridgeTrafficBarrier rdf:type owl:Class ;
+                            rdfs:subClassOf brot:BridgeFinishingElement ;
+                            rdfs:label "Leiteinrichtung"@de ,
+                                       "Traffic barrier"@en .
+
+
+###  http://w3id.org/brcomp#DrilledPile
+brcomp:DrilledPile rdf:type owl:Class ;
+                   rdfs:subClassOf brcomp:BridgePile ;
+                   rdfs:label "Bohrpfahl"@de .
+
+
+###  http://w3id.org/brcomp#FixedBearingElement
+brcomp:FixedBearingElement rdf:type owl:Class ;
+                           rdfs:subClassOf brcomp:BearingElement .
+
+
+###  http://w3id.org/brcomp#FoundationElement
+brcomp:FoundationElement rdf:type owl:Class ;
+                         rdfs:subClassOf brot:BridgeSubstructureElement .
+
+
+###  http://w3id.org/brcomp#MasticAsphalt
+brcomp:MasticAsphalt rdf:type owl:Class ;
+                     rdfs:subClassOf brcomp:Asphalt ;
+                     rdfs:label "Gussasphalt"@de .
+
+
+###  http://w3id.org/brcomp#MovableBearingElement
+brcomp:MovableBearingElement rdf:type owl:Class ;
+                             rdfs:subClassOf brcomp:BearingElement .
+
+
+###  http://w3id.org/brcomp#PinBearing
+brcomp:PinBearing rdf:type owl:Class ;
+                  rdfs:subClassOf brcomp:FixedBearingElement ;
+                  rdfs:label "Punktkipplager"@de .
+
+
+###  http://w3id.org/brcomp#PrefabricatedComponent
+brcomp:PrefabricatedComponent rdf:type owl:Class ;
+                              rdfs:subClassOf brot:BridgeElement ;
+                              rdfs:label "Fertigteil"@de .
+
+
+###  http://w3id.org/brcomp#RockerBearing
+brcomp:RockerBearing rdf:type owl:Class ;
+                     rdfs:subClassOf brcomp:FixedBearingElement ;
+                     rdfs:label "Linienkipplager"@de .
+
+
+###  http://w3id.org/brcomp#RollerBearing
+brcomp:RollerBearing rdf:type owl:Class ;
+                     rdfs:subClassOf brcomp:MovableBearingElement ;
+                     rdfs:label "Rollenlager"@de .
+
+
+###  http://w3id.org/brcomp#SafetyKerb
+brcomp:SafetyKerb rdf:type owl:Class ;
+                  rdfs:subClassOf brot:BridgeFinishingElement ;
+                  rdfs:label "Schrammbord"@de .

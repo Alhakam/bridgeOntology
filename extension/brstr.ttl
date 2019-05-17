@@ -1,0 +1,237 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix brot: <http://w3id.org/brot#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix brstr: <http://w3id.org/brstr#> .
+@prefix dcterms: <http://purl.org/dc/terms> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://w3id.org/brstr> rdf:type owl:Ontology ;
+                         owl:versionIRI <http://w3id.org/brstr/0.1> ;
+                         dcterms:creator [ rdf:type foaf:Person ;
+                                           foaf:name "Al-Hakam Hamdan"
+                                         ] ;
+                         dcterms:description "Ontology for describing the bridge structure from a structural analysis perspective"@en ;
+                         dcterms:license "https://creativecommons.org/licenses/by/1.0" ;
+                         dcterms:title "Bridge Structure"@en ;
+                         vann:preferredNamespacePrefix "brstr" ;
+                         vann:preferredNamespaceUri "https://w3id.org/brstr#" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+
+###  http://w3id.org/brstr#bears
+brstr:bears rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf brot:locatedBelow ,
+                               brstr:getsLoadsFrom ,
+                               brot:adjacentElement ;
+            owl:inverseOf brstr:restsOn ;
+            rdfs:domain brot:BridgeElement ;
+            rdfs:range brot:BridgeElement ;
+            rdfs:comment "Bei dieser Relation ist angegeben, dass ein Element ein anderes Element traegt, und als Folge die Last bekommt."@de ,
+                         "This relationship points that an element bears an another element, and, as a result, gets some load."@en ;
+            rdfs:label "bears"@en ,
+                       "traegt"@de .
+
+
+###  http://w3id.org/brstr#getsLoadsFrom
+brstr:getsLoadsFrom rdf:type owl:ObjectProperty ,
+                             owl:TransitiveProperty ;
+                    rdfs:domain brot:BridgeElement ;
+                    rdfs:range brot:BridgeElement .
+
+
+###  http://w3id.org/brstr#hasStructuralAssessment
+brstr:hasStructuralAssessment rdf:type owl:ObjectProperty ;
+                              rdfs:range brstr:StructuralAssessment .
+
+
+###  http://w3id.org/brstr#loads
+brstr:loads rdf:type owl:ObjectProperty ,
+                     owl:TransitiveProperty ;
+            rdfs:domain brot:BridgeElement ;
+            rdfs:range brot:BridgeElement .
+
+
+###  http://w3id.org/brstr#restsOn
+brstr:restsOn rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf brot:locatedAbove ,
+                                 brstr:loads ,
+                                 brot:adjacentElement  ;
+              rdfs:domain brot:BridgeElement ;
+              rdfs:range brot:BridgeElement ;
+              rdfs:comment "Bei dieser Relation ist angegegeben, dass ein Element A sich auf ein anderes Element B stuetzt und das Element A leitet die Lasten zu dem unteren Element B weiter"@de ,
+                           "By this relationship is pointed that an element A rest on an other element B and transmit some load to the lower element B."@en ;
+              rdfs:label "liegt auf"@de ,
+                         "rest on"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/brstr#alignmentWidth
+brstr:alignmentWidth rdf:type owl:DatatypeProperty ;
+                     rdfs:comment "Entfernung zum Alignment-Referenzpunkt"@de .
+
+
+###  http://w3id.org/brstr#assessmentYear
+brstr:assessmentYear rdf:type owl:DatatypeProperty ;
+                     rdfs:domain brstr:StructuralAssessment ;
+                     rdfs:label "Einstufung (Jahr)"@de .
+
+
+###  http://w3id.org/brstr#degreeOfFreedom
+brstr:degreeOfFreedom rdf:type owl:DatatypeProperty ;
+                      rdfs:domain brstr:BridgeLoadBearingElement ;
+                      rdfs:label "Freiheitsgrad"@de .
+
+
+###  http://w3id.org/brstr#effectiveSupportCapacity
+brstr:effectiveSupportCapacity rdf:type owl:DatatypeProperty ;
+                               rdfs:domain brstr:BridgeLoadBearingElement ;
+                               rdfs:comment """Folgende Werte sind möglich:
+
+- Dezimalwert in [m]
+
+- \"reduced\" für reduzierte Stützweite (kennzeichnet zu variierenden Wert)"""@de ;
+                               rdfs:label "Effektive Stützweite"@de .
+
+
+###  http://w3id.org/brstr#movement
+brstr:movement rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf brstr:degreeOfFreedom .
+
+
+###  http://w3id.org/brstr#rotation
+brstr:rotation rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf brstr:degreeOfFreedom .
+
+
+###  http://w3id.org/brstr#singleTrackLaneWidth
+brstr:singleTrackLaneWidth rdf:type owl:DatatypeProperty ;
+                           rdfs:domain brstr:StructuralAssessmentSTANAG2021 ;
+                           rdfs:label "Einbahnverkehr"@de .
+
+
+###  http://w3id.org/brstr#spanWidth
+brstr:spanWidth rdf:type owl:DatatypeProperty ;
+                rdfs:domain brstr:BridgeSpan ;
+                rdfs:label "Stützweite"@de .
+
+
+###  http://w3id.org/brstr#structuralCapabilityLevel
+brstr:structuralCapabilityLevel rdf:type owl:DatatypeProperty ;
+                                rdfs:domain brstr:StructuralAssessment ;
+                                rdfs:label "Tragfähigkeit (nach entsprechender Norm)"@de .
+
+
+###  http://w3id.org/brstr#supportHeight
+brstr:supportHeight rdf:type owl:DatatypeProperty ;
+                    rdfs:domain brstr:BridgeLoadBearingElement ;
+                    rdfs:comment "Gibt die Höhe der Stütze bzw. des stützenden Elements im Vergleich zum Nullpunkt an."@de ;
+                    rdfs:label "Stützungshöhe"@de .
+
+
+###  http://w3id.org/brstr#twoTrackLaneWidth
+brstr:twoTrackLaneWidth rdf:type owl:DatatypeProperty ;
+                        rdfs:domain brstr:StructuralAssessmentSTANAG2021 ;
+                        rdfs:label "Zweibahnverkehr"@de .
+
+
+###  http://w3id.org/brstr#xDegreeOfFreedom
+brstr:xDegreeOfFreedom rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf brstr:degreeOfFreedom .
+
+
+###  http://w3id.org/brstr#xMovement
+brstr:xMovement rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf brstr:movement ,
+                                   brstr:xDegreeOfFreedom ;
+                rdfs:label "Freiheitsgrad (x-Bewegungsrichtung)"@de .
+
+
+###  http://w3id.org/brstr#xRotation
+brstr:xRotation rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf brstr:rotation ,
+                                   brstr:xDegreeOfFreedom ;
+                rdfs:label "Freiheitsgrad (x-Rotationsrichtung)"@de .
+
+
+###  http://w3id.org/brstr#yDegreeOfFreedom
+brstr:yDegreeOfFreedom rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf brstr:degreeOfFreedom .
+
+
+###  http://w3id.org/brstr#yMovement
+brstr:yMovement rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf brstr:movement ,
+                                   brstr:yDegreeOfFreedom ;
+                rdfs:label "Freiheitsgrad (y-Bewegungsrichtung)"@de .
+
+
+###  http://w3id.org/brstr#yRotation
+brstr:yRotation rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf brstr:rotation ,
+                                   brstr:yDegreeOfFreedom ;
+                rdfs:label "Freiheitsgrad (y-Rotationsrichtung)"@de .
+
+
+###  http://w3id.org/brstr#zDegreeOfFreedom
+brstr:zDegreeOfFreedom rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf brstr:degreeOfFreedom .
+
+
+###  http://w3id.org/brstr#zMovement
+brstr:zMovement rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf brstr:movement ,
+                                   brstr:zDegreeOfFreedom ;
+                rdfs:label "Freiheitsgrad (z-Bewegungsrichtung)"@de .
+
+
+###  http://w3id.org/brstr#zRotation
+brstr:zRotation rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf brstr:rotation ,
+                                   brstr:zDegreeOfFreedom ;
+                rdfs:label "Freiheitsgrad (z-Rotationsrichtung)"@de .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+
+###  http://w3id.org/brstr#AlignmentOrigin
+brstr:AlignmentOrigin rdf:type owl:Class ;
+                      rdfs:comment """Defines the origin of the alignment curve.
+
+Recommended instance: brot:BridgeAbutment"""@en .
+
+
+###  http://w3id.org/brstr#BridgeLoadBearingElement
+brstr:BridgeLoadBearingElement rdf:type owl:Class ;
+                               rdfs:subClassOf brot:BridgeElement .
+
+
+###  http://w3id.org/brstr#BridgeSpan
+brstr:BridgeSpan rdf:type owl:Class ;
+                 rdfs:subClassOf brot:BridgeSpatialZone .
+
+
+###  http://w3id.org/brstr#StructuralAssessment
+brstr:StructuralAssessment rdf:type owl:Class .
+
+
+###  http://w3id.org/brstr#StructuralAssessmentDIN1072
+brstr:StructuralAssessmentDIN1072 rdf:type owl:Class ;
+                                  rdfs:subClassOf brstr:StructuralAssessment .
+
+
+###  http://w3id.org/brstr#StructuralAssessmentSTANAG2021
+brstr:StructuralAssessmentSTANAG2021 rdf:type owl:Class ;
+                                     rdfs:subClassOf brstr:StructuralAssessment .

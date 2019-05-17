@@ -1,0 +1,1835 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ls="http://www.iso-icdd.org/draft/Linkset.rdf#"
+    xmlns:ct="http://www.iso-icdd.org/draft/Container.rdf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://ifcToBrot.de/IfcToBrot">
+    <owl:imports rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf"/>
+  </owl:Ontology>
+  <ls:Link rdf:about="http://ifcToBrot.de#64ce760c-5412-4212-b48b-b231a1d0f457">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#bbd3ab0a-596c-4656-9cc7-e3d08487af04">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#f3467032-96d8-4591-9afa-7b6d2068d69a">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#2zVkYLPLv4$O9iRIozSQ9i</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#eaf7d575-8cee-4b8c-a79e-24e216f1e82f">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#b35a2873-53c7-4b19-94c6-41857ec7dde8">
+            <ls:identifier>2zVkYLPLv4$O9iRIozSQ9i</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#37b945b0-aa94-40b0-841b-11cd825ccef5">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#03f3a9b5-fe9d-4a96-b00f-872a8138b898">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#951beddd-a7f0-417f-93f1-b387a6bc001f">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#2CsyCp5_r8qg7bQc3fdLK3</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#01da97b4-b8db-45e5-9ed1-2717823b8897">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#cd9a5799-7f75-45e1-af9c-e2a310cecaee">
+            <ls:identifier>2CsyCp5_r8qg7bQc3fdLK3</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#0ac3b7ab-f5e1-4f18-b115-b3223c5a310d">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#822da57d-a9cb-4281-a0ef-1c0ec9de0470">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#edf43f50-054c-478a-bb91-79b07397e4d3">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0_oQ_1cqr4oxsuU3LFDetK</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#f49f4a0c-b4d9-41d8-8a6b-3b3637c6531f">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#675d6d80-0bb4-4f5b-b950-59d27661f852">
+            <ls:identifier>0_oQ_1cqr4oxsuU3LFDetK</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#64e797b6-8e76-4e1c-8902-3a2069db24b0">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#8a933ace-6616-4f07-a3fc-19652b63e6c3">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#0fa2c493-774b-4616-9e88-4d4deff3c8a5">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0GGyOhV4P81v$QMMai2$r$</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#3d7da350-32f9-4d7c-bea4-8779e1cc458b">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#00d535da-a300-4dd7-8626-a5996282fb21">
+            <ls:identifier>0GGyOhV4P81v$QMMai2$r$</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#f94fb913-3a10-4b22-a413-7b155b1ef76c">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#ce84ec06-8e15-4037-9e7b-506f5c009f42">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#0061f8e4-443f-4052-9bb0-f370310f44e3">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1zjNfRDL12Hx0Ld_VEbyoM</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#78e49e51-7055-4c02-a3e7-0ea22ddf5a03">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#2885c5ee-def1-4404-80be-297ec39348af">
+            <ls:identifier>1zjNfRDL12Hx0Ld_VEbyoM</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#7e7ab393-c0c4-4b28-a647-6b4b9a61f8ff">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#b07e4eb0-cb0a-444d-902b-c9415c0b373c">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#5129e2f8-0baa-42cb-96c1-b9af3cf0add2">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0aMicdC558jf9BhHzofPqm</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#07615946-2eef-4486-94ce-452300f24148">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#95e19295-35d3-4bae-89d3-1bae41625950">
+            <ls:identifier>0aMicdC558jf9BhHzofPqm</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#4b0123c2-70b1-4b8b-93f3-a2b6a5849de4">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#61868b27-a2e6-46df-abcb-f46e34168a24">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#855447eb-f4de-4262-9d57-e1f75bfbf306">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#33bCjVpar2ZP4HeX51HWAX</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#8fb62154-8e16-4b62-864e-6f99e0f2dd34">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#83db49b4-c15c-4331-9773-3be8932497c5">
+            <ls:identifier>33bCjVpar2ZP4HeX51HWAX</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#b73a9963-7c6d-48ce-9e62-ec55b728dba1">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#5b1e36ea-8c4e-4b5b-b36f-9c38b144c683">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#1c8bfd01-4277-4d1a-b74c-c81654bd83d7">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#2jozzPD4LCeAKMlm_i2mcV</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#a70673a0-b8d5-4fd1-aa42-563a3cac6a21">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#026c6580-eac2-4cee-a7c4-9614d5ed84aa">
+            <ls:identifier>2jozzPD4LCeAKMlm_i2mcV</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#e3a85693-65a9-4451-9a90-41d9b1da6043">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#f697fbcd-0df3-4f5f-b529-3ec5b566a94f">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#c512b68c-4130-4f9b-9c66-2fc4ca3f6d93">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1rnVLTzRv9hAVVHOdMthiQ</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#6f7cec30-e16e-430b-a565-85a09eada127">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#03e604f3-9b13-42bd-b541-720a7f1ae265">
+            <ls:identifier>1rnVLTzRv9hAVVHOdMthiQ</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#732ac7df-89ec-4165-9477-940b2fed2307">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#72588b78-77cb-4a61-a490-a1adc9bb6fac">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#39525129-437a-469b-80d0-f0446c91ed72">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#2c$4jTO6r6uBJf7OdPzxwM</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#b27a8653-6b6f-4d72-8da9-ee913ea1dce3">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#78b1d5f6-a7bc-4415-9725-9876ab7f8dc6">
+            <ls:identifier>2c$4jTO6r6uBJf7OdPzxwM</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#89f21ff8-3411-42e4-81cf-14b9f7617a99">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#641b6771-3ed6-4c82-9ec4-a7ec914745ad">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#440a9740-53d0-4a3b-98fe-ae8ec84dd216">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#04DMsgNOvFye2K3CQlZpOH</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#4db248af-6d23-4d8a-a4e5-a6ead5ebb99b">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#13823f4c-6682-4536-997c-0db1aeeffd29">
+            <ls:identifier>04DMsgNOvFye2K3CQlZpOH</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#16dfd316-4702-46e3-92e5-ad4981c3f9d2">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#17c7417f-a6bb-4b03-a3b9-863c1c44ec40">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#01edc91f-111a-4082-a428-c53bb14b4b2a">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#2aHXCxFxX9gupyFf0MErBV</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#3e6dd964-220c-4b2d-b408-af4a26273c05">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#90485dd8-9e03-4876-9c34-7afef1537a25">
+            <ls:identifier>2aHXCxFxX9gupyFf0MErBV</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#3cc99563-35a1-41c1-a65d-1ee43a0f2dd3">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#3b20beb6-4103-4855-a6b1-8fd1ea0e3dbd">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#c38b836d-4d8a-4ba1-aab5-cbfc0c0a860b">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#2fpgLTNmv6xA0qIbJYxYR$</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#86d839e4-cc7b-4a5e-9ea6-c3816a0777a3">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#5ab6c068-2f5e-480c-b61c-0d52e4e89b85">
+            <ls:identifier>2fpgLTNmv6xA0qIbJYxYR$</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#e4e7c478-6843-48d5-aa33-15dcd7f669f0">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#bf403647-e5fc-4e4a-b2f4-2c01a3ec1144">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#bb2b8133-b53a-4487-8e9b-a58128d1596e">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1Lhm$G58LAkBDQqJdnJuMJ</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#d6e7938b-f6a3-4bd2-9794-c18206b0e2c1">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#18292274-e7f8-4185-b744-b7c00306ce04">
+            <ls:identifier>1Lhm$G58LAkBDQqJdnJuMJ</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#418af468-af5c-4ae1-bbc9-b96ca32aff00">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#7c578fb4-7855-496b-80e1-a00f3945da51">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#7372aba6-1733-4bef-90ac-b60c5b978543">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3mPNFRMfv1o8iSS1xiknue</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#cf5a177d-594b-4f1f-bfc4-42960d062e67">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#349e79bc-779f-4b67-b818-4ec8df97e4a5">
+            <ls:identifier>3mPNFRMfv1o8iSS1xiknue</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#4644f82d-bf7f-43c3-8614-aa7c4b862046">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#e8541eaf-27ef-4b22-bec8-45860a8dfed1">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#22213ba9-7853-4fa9-a27f-9da8dcfea57d">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0F8pmB4NXALwnPaSe6zKsy</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#66c16a33-d8fe-4057-97d7-e672dd6ad8c6">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#05afbb3b-a0e0-4d65-a931-8085362c1957">
+            <ls:identifier>0F8pmB4NXALwnPaSe6zKsy</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#c8999fc9-7fc8-46dc-aecc-be769c1cb2ed">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#cf28c4f5-ac88-4528-935b-3f7ef3570a32">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#a2d4e810-de0d-4009-9894-34f52a82df96">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#13XiSi9on9EAaDXSNfxIL0</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#09fe14d4-bf0c-4fa3-872b-865f39b64ab7">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#3c0ddf46-3ac1-41f2-abcb-4b2553ade787">
+            <ls:identifier>13XiSi9on9EAaDXSNfxIL0</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#d38ed0eb-c41e-4004-a334-bb27493eba99">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#c854f111-42af-4d0d-af5c-f2e041ba3414">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#e4da3920-f457-4c06-b65f-1ccfd1b6fc4e">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3fmuu9QMv3f9RuDCjKKDIm</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#0df27259-a871-4f41-8a8f-21ef4d8e48ec">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#1eec2d76-30f2-4edb-a7e4-0293634ff2c6">
+            <ls:identifier>3fmuu9QMv3f9RuDCjKKDIm</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#d64083a6-8943-4f32-9176-d19e7195d938">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#9facff43-cc1c-4bc9-ad0e-5b402fa50529">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#1303eb07-8607-46b1-9744-d18c242db693">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3MWr8tTz936gAl$Q$Rkc$b</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#1f55ebdb-130c-402c-ad4f-39b5152182f3">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#4fcfaa8d-ff8d-4e4a-aa8f-0b94c9b459aa">
+            <ls:identifier>3MWr8tTz936gAl$Q$Rkc$b</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#baa4db64-83e2-4db1-836f-7d3dff45a286">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#f8317c36-9150-4de0-b3a8-c6a9844b6ad1">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#3f742049-ea73-4ce8-af30-bb50e9137b2c">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3deVaFX353G97SGtG36gYs</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#ff70bd8a-217d-4f50-8ced-a987b904ed33">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#a2a02539-3f80-4413-9349-ac06e8027cd8">
+            <ls:identifier>3deVaFX353G97SGtG36gYs</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#294e4fd0-4948-460d-90ae-aa7b4dcc33e7">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#6a08da29-dfcd-4e3b-b12c-f72fb0adbf0c">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#0ff754ee-a84b-450e-9613-e7fb6b09ee8d">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1F3wRCISj6o9jFd98hOXft</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#9c9854da-02cf-43b6-9d91-68b07c25df29">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#7f017cc0-5432-4f44-8167-fc2b4ec1185d">
+            <ls:identifier>1F3wRCISj6o9jFd98hOXft</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#aa950dca-8550-4968-a7bb-c92a69efa99e">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#657d8b71-00ca-48ab-8a74-f88b2844a6d4">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#4ee8b49c-fca7-480d-bda8-cee1e31b0a17">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0A6lyF_EzBjx4oY2ZihrTm</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#271c2a51-e927-45a9-8f25-9a781f940e54">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#c4f69077-cf14-4d5d-9ab3-9fc1a78508b3">
+            <ls:identifier>0A6lyF_EzBjx4oY2ZihrTm</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#30d3c21d-4e2b-4c11-a8b5-19c4d273c257">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#8830912a-bc2a-4d7c-8704-f0b20b487dc2">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#b4585f60-fe96-44e5-b14f-00552e68b669">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#2hxCrWc6jAKBc2blCCpPje</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#d89c42b8-2292-498b-ba8d-60fdc2d02a3b">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#2edd304f-7fa9-4809-979b-73c6f54f5aa4">
+            <ls:identifier>2hxCrWc6jAKBc2blCCpPje</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#78a2be82-eeb4-4fd5-b6be-03bdbd3b69aa">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#c2ce8aa4-fe30-41d9-93d3-a9d4d42f2ee8">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#33da18f9-100f-4445-b833-f01c54fd012a">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#2MpnAjSYb2HhwvkxIYDXcd</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#6fe66e8f-bafd-44fe-aea4-2006b32d44e3">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#aff154e9-dc7f-46c6-93a1-f057f8941c3c">
+            <ls:identifier>2MpnAjSYb2HhwvkxIYDXcd</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#e3677d23-2b65-4480-861c-4cf7d4371755">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#ab886964-c17c-4dbd-9774-b490c1f06d9f">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#50ef5838-efe5-40c5-8ffe-6cf735d44768">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0_C_7pkZfBgBdYewqAHzLN</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#cee53f9d-8866-4aac-8cbf-850b619bbac5">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#11cdb587-2044-4ea8-befe-d6f19adb522e">
+            <ls:identifier>0_C_7pkZfBgBdYewqAHzLN</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#e7588621-6afd-451b-90a1-f876ab5d812b">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#c19e3d17-7def-4eec-88a4-d539e6daded5">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#99bc2fce-7627-4830-a9d9-1dc4d33ac9fd">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#08JukPzUzE$OJbfpTykPJx</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#27078884-adc8-407e-9267-b365a4dafcb7">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#3494c458-cf9f-4cc7-a9d0-a69e3e318f01">
+            <ls:identifier>08JukPzUzE$OJbfpTykPJx</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#95137390-5dc9-4f2c-819b-ddbde8509df1">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#32b6fa65-c951-41a0-af67-534680fb633c">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#45c70c51-4884-4395-9143-90889ab096b2">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0GAfevVUb2Exh2Mvkcq1sj</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#e29f2815-a05e-4cfc-8030-d1bb1d0b3333">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#c9adca16-8e3e-4c9f-8ae8-36fe6c126e29">
+            <ls:identifier>0GAfevVUb2Exh2Mvkcq1sj</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#60a44bbf-6f74-49aa-88f5-4025fc44ea01">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#aab12f60-8997-4f7f-ab23-5a823157f96d">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#fb98be00-149f-4a3d-a8d9-1f3953cf28dd">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#08qj$VV3zBu9sG48wP5$Pu</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#75199578-986c-4812-8e62-b2499d246b24">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#25d7809e-c7c4-437a-b256-b7978b6b3030">
+            <ls:identifier>08qj$VV3zBu9sG48wP5$Pu</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#65c75e76-fe9d-405b-b449-862240186953">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#639d322c-e54a-4cc8-bc61-c5475ef32766">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#da3136db-67b1-4714-87c5-7688f8c3aeba">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3AblAeVZLAvPjUvEEJ08Ly</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#3ba2cdc2-35c4-4351-9238-8a9d9a853d09">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#ca05c97b-2f2d-4079-a55e-e8746c80cb28">
+            <ls:identifier>3AblAeVZLAvPjUvEEJ08Ly</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#6b6cc5e9-2000-470a-8903-251f5b01e066">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#46011c73-1c98-49bb-ab81-dc62880ecf54">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#c5f08500-a68c-44d7-8a66-ab8fd27a1293">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3j204Ax7v2NAyel57ijdVm</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#3517187b-8f4d-4e92-b473-face2d1532db">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#9a6d9032-5b69-46a8-8bba-bcf498e61039">
+            <ls:identifier>3j204Ax7v2NAyel57ijdVm</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#b348cb87-a59b-4368-9be9-a7d397a67e46">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#bd95bcf7-bfcf-4da6-8ccd-7d3bab8989c6">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#18847481-c9eb-4668-9fbe-7699b609f298">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#27MICrNTDCXAYsrxi714tV</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#8555d90b-2968-4dd8-b64d-9e9e05c9a44b">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#2e14393b-f1a9-4d0e-8e13-7732f2f7e9e4">
+            <ls:identifier>27MICrNTDCXAYsrxi714tV</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#2b7d390c-62a1-4d6d-a486-42f0b5cd89d8">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#b260810f-0f6d-41cc-8abe-f41cc1987839">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#dae53798-d998-4cd9-beb0-1b0d81a3ba14">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0QwtUP2TDA_Pz9n5QAZ7w5</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#2cf72d74-982f-4583-8d72-4a1f83181851">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#f929c8b8-5bce-480c-adb4-d839c876b367">
+            <ls:identifier>0QwtUP2TDA_Pz9n5QAZ7w5</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#75630b04-e704-4ad2-b98b-50769172be23">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#7f5c41b0-ecd2-4d37-952f-288670c6fdd9">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#24f434f4-0577-4fb1-b851-a38528da534d">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0jlP6ykgv0CwpBc$AhNKvA</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#00aaf080-899f-454e-909b-5fde163dd54d">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#134ed190-126f-4a65-a206-3bfd777d1f33">
+            <ls:identifier>0jlP6ykgv0CwpBc$AhNKvA</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#12066f13-6aec-491a-8ed3-77b7d341a947">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#121378bf-0272-4e45-abd5-382516bb704e">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#71fbf2d9-2b0e-40d4-b7df-bfc693b78468">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0U8evudTP8gwzri6J_cSmN</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#946ef118-24a1-401e-9ed7-eecbbcc60870">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#5c0a06f3-a433-4336-b6e5-6d5ddb7a3087">
+            <ls:identifier>0U8evudTP8gwzri6J_cSmN</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#49642caa-ca8d-40e9-af83-f7c8328bdb04">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#c4c4e98d-c80e-4588-b38f-12dfb9bacc76">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#5814da87-d70e-4d29-9f84-5a4572cea150">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1S1SjQi6vCDfVU$IYPMgOe</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#c19f1e7b-1b6d-4352-a625-bc18500293a5">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#a35afeac-ce06-45ce-a8fd-29a096b6efcc">
+            <ls:identifier>1S1SjQi6vCDfVU$IYPMgOe</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#9fc11aa9-ef41-4809-b37b-8a6237ccb098">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#6cecdd96-d8e1-491d-a34e-b0098f9585b1">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#86c5c21e-d828-408e-8dc3-457e4f5de9db">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3hu0cB2IXCVAIOanTTk5Y4</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#2c54c5ee-9b32-4f9c-8ee0-61419e53afae">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#2dbceb6f-58ea-44b2-9da0-77e0c0e12d3f">
+            <ls:identifier>3hu0cB2IXCVAIOanTTk5Y4</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#8572914b-ab96-403e-bb1e-66415bd3bce7">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#df5d9da7-e1bd-4bb8-ab3b-d3b7a734c64c">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#20545dae-6faa-4ccc-ae79-84ab722b251e">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0Fmmok4THAOxdYY$T0xRqr</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#1b662c16-bef3-46bb-94a7-38042d853393">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#0f89184b-7911-4100-b301-672dfaf2af9e">
+            <ls:identifier>0Fmmok4THAOxdYY$T0xRqr</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#fb283c45-0c2b-4b87-bd85-fa7b84afc535">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#18ce9f49-3320-4cf6-9a1d-3a0e7d0c2e3d">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#117f9d72-4d08-4809-a953-5905be6b28b2">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#28bMuO3bf3NvHhJf9yU2Pi</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#4e9746c3-b9c3-4937-b352-5687ce653ce2">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#11bfd9fd-6467-412b-baa9-26ee460c7001">
+            <ls:identifier>28bMuO3bf3NvHhJf9yU2Pi</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#4ddef61b-093b-4c93-a4f8-9b3905fb127d">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#9398b3d9-a079-44b5-b010-7dfad19bcd69">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#11d6662b-adff-4e94-a58f-051f08c1f6b4">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3dhMUsYdH6IOaRNuYMYYru</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#588f6e06-d28e-4e54-972d-f5a6fad123db">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#3c314469-2f40-48c2-9216-457e3b03c1cb">
+            <ls:identifier>3dhMUsYdH6IOaRNuYMYYru</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#f7fb3aa6-9ee7-4834-9c6a-d68cb89131d3">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#e736efd9-8f3c-4244-a27b-4221a415907f">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#27297d68-7882-4020-b352-3f0e3e25ef1d">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1hrqCYpGv1VADtTfK_tdgG</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#77707be6-a35f-4adf-bf68-d3c7260231dd">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#b05101d9-9c32-4a6e-b17c-0033554124b3">
+            <ls:identifier>1hrqCYpGv1VADtTfK_tdgG</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#caa50dc0-e859-431c-8293-19eea2ac001e">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#3c486cd9-32c2-49ca-bab1-5ad1e08d42dc">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#e776b358-e52d-4082-b361-93e7e2374788">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1mrbK37wvBGRarBmoBKdrZ</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#06b19429-2f3b-4db6-b846-165da307ffe3">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#660d5674-4248-47bc-8273-88a0d1bcd7ce">
+            <ls:identifier>1mrbK37wvBGRarBmoBKdrZ</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#4759194d-1c33-45cd-bab0-e01e7644b325">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#03daf3d3-82e0-454b-98b0-20e326b455bb">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#bb258bf2-a40b-4982-ac8c-b4e134c78f21">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1KO5lzBZj8jQGcpZVjVytA</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#34cac928-4535-4d45-bdfb-6d7b6e343e33">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#59571df7-5483-4f80-a7cf-ec17af6a8909">
+            <ls:identifier>1KO5lzBZj8jQGcpZVjVytA</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#e8a2f775-a969-44ef-9203-55a3d63cbbb7">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#a12f6b4a-c4ae-4051-9d21-2019aa613ea6">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#f28aa656-ae81-49de-9b20-aa2f85235926">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0JpqNfSU17L8J9cyx2leLo</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#f9788b75-4008-466d-ade2-f1e59ad42881">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#f04f9468-4f8f-404e-ac1e-345e4e40d48c">
+            <ls:identifier>0JpqNfSU17L8J9cyx2leLo</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#fcd02ba3-8a41-482d-96ce-28b37e8ed20b">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#23abc3ed-a7de-46b0-a3ed-6b288c7c37a0">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#b2bd4b8c-7e19-4e17-b4dc-c6cd99c60569">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0tvoAjYHP5a8XFd70MXp5O</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#0fc7492e-770e-4fc1-9639-61bad9396cb0">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#fe2f8204-b9b7-49cc-9677-4f955f74682e">
+            <ls:identifier>0tvoAjYHP5a8XFd70MXp5O</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#6ef95604-7ca3-412a-af5a-e0af977a87d8">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#614dd51b-c997-4c46-ad5a-1e4acb99e7cf">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#f049972e-e9aa-4e14-b497-f946cb6c73f3">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1edHQCUQ5BiufFEMWeCLlQ</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#ec6a95bc-fc64-47c9-b2a1-760bbe81df8f">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#afe8e92a-34d8-4987-9e78-2c0892d70b0e">
+            <ls:identifier>1edHQCUQ5BiufFEMWeCLlQ</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#e7cc5ad3-6879-4c0a-9c74-1517e1989322">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#fb499b44-235e-40c2-9d96-41960d1b3bea">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#6d3e60ae-d5c2-4f83-828e-97e75cbce366">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1XtQpURGz3xBiFQHbfk_Zx</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#01bcb60b-014f-48d0-8930-e8231e4ea591">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#e453aa13-c746-417e-aea7-bb0eb5341333">
+            <ls:identifier>1XtQpURGz3xBiFQHbfk_Zx</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#531fea49-0ec9-48da-ba91-40af8f56faa9">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#0d3c855f-0204-48ae-b05a-e8b2e2153ebd">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#662eb84e-fb77-4251-8d65-9676232616f0">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3EuNgqG_rB5wtX5e$cCL_5</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#7390bc4a-4a33-431e-b016-01ee3d7db975">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#46889480-6849-4bb8-b518-3a718214df65">
+            <ls:identifier>3EuNgqG_rB5wtX5e$cCL_5</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#349e24e1-006f-49aa-ba89-4fe4f5d097fc">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#71780276-0c57-42ed-8d9a-7cd54b230485">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#17cc2f7d-c9d8-4c47-9fe9-014e5219dc6e">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1Qcf4lexz4LO4x1UOtLGFw</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#b8f112fc-3450-46bd-9dbf-baddade4d5ce">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#af968eba-1e83-4d70-960f-31c39733eb0d">
+            <ls:identifier>1Qcf4lexz4LO4x1UOtLGFw</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#b7505ae5-22f4-4c6b-8ee4-6a85bfa64696">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#e173594a-a442-4ff8-b8d5-3249d3b90e17">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#49578cf7-fa4b-484f-8cde-24d16c380031">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0l1BBO8rv4QhH1eFpkBc_c</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#b3879d92-9dbc-45a9-8c01-a3682a2dd071">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#e4196158-c300-4a23-80a2-b19bd2613fab">
+            <ls:identifier>0l1BBO8rv4QhH1eFpkBc_c</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#5036f2fb-7fd1-40cf-a1bd-2b51ccfd7dc9">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#9e909aa3-53e5-40f5-b8b7-fdb319198172">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#fbb66922-7b83-499e-89cf-c5ae0da1fff6">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3kepiMDpr8nwROgmq0fBRu</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#c7175c02-0a96-45b2-9dd5-155e86577d3f">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#74667ebd-1be9-4883-bb0f-316bfbbc468a">
+            <ls:identifier>3kepiMDpr8nwROgmq0fBRu</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#2d64efce-0e95-4447-9abd-b5ce3b97cf0c">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#f1c9d515-fd8b-4dbd-a506-62d5b2ed0bc8">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#0436bd0c-69f8-48d3-80a5-84f400c6757a">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3eRhty6cDFcvSLj8ZTOvjd</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#f59f78af-3e69-464e-b404-374b07560d8e">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#5aa7f4e7-d0dc-4646-9810-4bddf882a3ff">
+            <ls:identifier>3eRhty6cDFcvSLj8ZTOvjd</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#e615f22a-819e-48be-a9e1-594cdf5232f0">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#d4588c4d-84fa-4a82-9b10-454c5ad0d3c9">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#a13070a1-925a-4241-b13c-7700dac625d9">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#2ohgW5qfrCFvDyPDzTeLJ4</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#c031cc15-3c3f-426f-915b-1db217cbe592">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#3eadf7e8-d486-4fc0-9b7c-f40351f4542d">
+            <ls:identifier>2ohgW5qfrCFvDyPDzTeLJ4</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#592a337a-3b83-47bb-bb78-dcaf7364425f">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#fbc9b6f7-f261-4086-a4c0-2a8393064cce">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#6694ffa1-ab14-4f17-876f-3d4df7e2d42d">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#25tTPkRA13NP2XOjngzCvv</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#e8239b6f-f813-4ee9-8bfd-8a685709b2c1">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#cfb3a1e4-37c5-4e99-8294-6e55f714d31b">
+            <ls:identifier>25tTPkRA13NP2XOjngzCvv</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#0fcab232-2e2d-4077-9ff6-babbbb402cae">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#3e1142cb-1345-4dec-8c37-c886d7fdec48">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#ddcc3cc8-9ff2-4d2a-bae6-0c43f4a13356">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3hA0greQb9XPkzMlDXjwqy</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#bc0122fe-fad4-42c6-9e0b-792934a71f27">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#af4d28b6-bd75-41fb-9de5-1ba733691f85">
+            <ls:identifier>3hA0greQb9XPkzMlDXjwqy</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#6471a932-2a75-42ba-8a6e-7ee90ea68abd">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#fc2d6587-20ce-44c1-90aa-f8fba22e5dd9">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#f0a58cfa-83b0-4938-8e85-ff6673e13957">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0vnxmH7AT6IfbHlS2iwWgl</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#479a5a78-0043-47fa-843d-b1c30de1183e">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#d3f64e3a-1ca6-4a64-80c5-0cbc6cce89e4">
+            <ls:identifier>0vnxmH7AT6IfbHlS2iwWgl</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#87efea53-8548-47cd-8411-d251a46ef157">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#431c4016-5e25-41f6-a9e9-d916dfc13b2c">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#7c09fa54-bb06-4466-be0d-4969b0e2300d">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0WlBZPCq54MwS5IzK$4Mnu</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#809c98f8-e0dd-4943-b07b-ef3539f73b47">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#2ef4b791-2efe-4207-aec9-6f0ba4a39c46">
+            <ls:identifier>0WlBZPCq54MwS5IzK$4Mnu</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#610e1540-d4e9-41e9-bcba-3b648ff257b2">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#3fdfb069-b0c2-415e-9654-527c1d97c8e2">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#1257cd2b-57b9-4c2e-a8d2-7925ec243275">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#2SR$xd8YX9GuIf3Rv5pJFc</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#b7603601-59dd-4817-836b-481f4e57eac7">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#7a7f45cd-32eb-4e9a-9f5b-f882f314979d">
+            <ls:identifier>2SR$xd8YX9GuIf3Rv5pJFc</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#8a2580fa-9f1a-4f12-8c7d-5c0b47fed96c">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#e551f46d-c19f-42a5-a7ba-f96e3287f5ff">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#7a5e1a50-9bc4-4cd0-b55a-570059d212e9">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1dkJutsND4QfR$9mQ3d4hr</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#4a65ce63-4f79-42b4-9b94-6afd03ca30e3">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#d2a4d336-378e-47a7-9560-3415978f2536">
+            <ls:identifier>1dkJutsND4QfR$9mQ3d4hr</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#4fde1be0-b28a-494b-834e-669ac2c04d67">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#052ef365-100a-46da-8118-2996befd184b">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#3d606c49-a6ab-480a-ba53-2dafc4f0e7cf">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1DPvP8SMP7XBYQRNu_dLk9</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#f04ec7ef-f111-4ae7-8aa3-3b90db5d0ffa">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#2ce5fd23-6d1d-48c1-b4b9-f10a1f3b8264">
+            <ls:identifier>1DPvP8SMP7XBYQRNu_dLk9</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#7bba85d6-b88e-46ee-a2cc-4001514570e9">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#bfe4680d-6858-48ff-9f88-422f67bab090">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#2d735be2-ce3d-41fc-8033-3551d12f0fd3">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1HI5gUP214NuM19arKfzyC</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#9dedde88-221e-4617-8e96-4cdde78f67d9">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#fc92e8c2-ab5c-4b9c-893d-4c1a147f0ce1">
+            <ls:identifier>1HI5gUP214NuM19arKfzyC</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#d0158963-ee03-4129-8ca0-d1ef8f380236">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#96f9b151-7681-4a25-b131-e3d9a1105b83">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#3dbdd8e9-4a33-4dfc-8946-91d342d6532a">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3V21Dnqsv6PP1e9TMRfO2p</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#4e6a0dcd-713f-4e43-b563-97376a887a43">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#82fa6498-6ea0-4286-9f0a-39612d473ff2">
+            <ls:identifier>3V21Dnqsv6PP1e9TMRfO2p</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#404109df-b594-44f6-8a21-cecbb1ad8b39">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#041ea741-63e5-458f-a445-b65ce159b597">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#29bd6433-24c9-40b6-94a7-98b3781c7d20">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1Jsruwj6v82xuNR9o70ozy</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#4f217580-84b6-4605-a508-bbb702b173ad">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#0f34914c-12bb-4e10-aa0b-438c4305ed2b">
+            <ls:identifier>1Jsruwj6v82xuNR9o70ozy</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#fff050be-ccbb-49eb-aedf-d662d44bc953">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#73149f3d-42d6-499b-9c4d-e7296cfe34c5">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#3302683f-66cf-42bd-b7c2-9d61fef60bce">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#0NIDY__lr5G9QARL0eKdFd</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#4443bed6-9941-4613-95e7-a199d954c36f">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#6aed7186-7e88-479f-b112-1dddbfa732fe">
+            <ls:identifier>0NIDY__lr5G9QARL0eKdFd</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#7e0b4842-055d-4753-9478-bd8949c19b46">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#21903720-7c6f-4769-b5bf-67a8ebe3b804">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#61e50284-71c2-4623-aca5-12fccce06393">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1oDJuZ2V1F8hTdoH5kEY5A</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#c2a1dbf1-759e-4c38-b9fd-64c4b29f40ee">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#d9659cfc-3f95-436a-95c6-1598816fea95">
+            <ls:identifier>1oDJuZ2V1F8hTdoH5kEY5A</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#14d76c7c-33d6-42ef-9f02-fc3831bad222">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#59d9b87d-7344-4e1e-a3f5-fd3cf62ac121">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#c10fc17e-170c-40c1-a602-1da360bc4c62">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3vttNqsab3fh9T503T3bJG</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#7dee31ac-d1a6-4d2c-bd38-20ba29d422fc">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#f52bc2aa-fd69-41e7-81f1-025b4685d7e3">
+            <ls:identifier>3vttNqsab3fh9T503T3bJG</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#4076c7ec-5e61-43ef-85a4-bfb113ddf1e4">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#ebe06a0b-6591-4f72-b4b1-faf5062823f0">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#74fd3610-99e7-4118-91fa-f4379df0b3f3">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1aRlzwelnFnwUk_mju8v3S</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#168e3d2d-2a70-4d96-a6e6-25033353c2d8">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#dc4cabd7-fa39-4260-abd9-6f85b806833d">
+            <ls:identifier>1aRlzwelnFnwUk_mju8v3S</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#94ca1951-3075-4817-9533-fa58433f625b">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#fba8207c-d037-4660-87a5-b70dd04ce2ff">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#20df6b95-c524-43eb-9301-ea03f6b59e3b">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#36hJ1IIVn66hinabMgyZjH</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#0f6bc55e-f782-4293-a355-22183603e60a">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#79edcfd8-7c30-4927-8f1e-f725e326242a">
+            <ls:identifier>36hJ1IIVn66hinabMgyZjH</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#9ae49669-fdb1-428e-88e1-d3953931ac46">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#e2ec3cf0-94cf-414c-a8bc-6cd966bd52a0">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#ed34ee13-138f-4954-8002-d02659256a06">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#2olXq4u8b05eNhBTTmIecB</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#b8df7d8e-e7da-4470-bea8-ecf4eced9acf">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#e5d1f93c-8c42-44ca-b463-476a7c5e83e9">
+            <ls:identifier>2olXq4u8b05eNhBTTmIecB</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#b2d6e958-bd7a-4f14-b7e4-3939cbe1d4a2">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#3c5c63b3-eca3-453c-9c4c-f15c16d90a8e">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#11e2e107-1b5f-4788-8ea0-7e91f3468a6e">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1CBvdP3$X5nBIVPbRw3De7</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#5b4a3c2c-f71e-4907-8e7e-5aac2d2a8b15">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#d9fdb299-68e2-4006-8e4d-35a0ea371601">
+            <ls:identifier>1CBvdP3$X5nBIVPbRw3De7</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#893f2765-1403-4370-89f1-b1405f884db1">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#eac1e864-7c7e-411c-ab71-2b7041b08d2f">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#c61bb7f1-603f-4c03-a7d5-b2bcbd973daf">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1ZPHRkLVT36BbjO_fUmNXP</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#3ab0ed3c-26cf-4018-9216-75ee836c90c6">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#b2e64dbb-52b7-4a7c-9404-0f5ae34a1c87">
+            <ls:identifier>1ZPHRkLVT36BbjO_fUmNXP</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#a7f4cd20-aefa-417e-9118-41394d9611dc">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#4df5c352-425d-41f6-b27e-ef6329737da5">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#60150a6b-774d-41f6-87f1-5a8e1f69c279">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#2qw4yV6Tr4xhSpru_u3Ebv</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#7e25f926-66fd-42b3-b8af-8d02399bc490">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#7a548f29-adc4-4d37-8627-74dea161a0ea">
+            <ls:identifier>2qw4yV6Tr4xhSpru_u3Ebv</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#8f4f0e1f-0835-47d4-af4b-912421823c93">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#4399fe95-4433-4da7-bda8-014f0805575f">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#dcf5962e-0252-48ad-9518-6c2024aad286">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1chnUbgXjAe9egn0i_9uVp</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#136d7664-d93c-4abd-be03-f7bdced63dc6">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#05847ae1-93a3-430b-baee-7fe567d995db">
+            <ls:identifier>1chnUbgXjAe9egn0i_9uVp</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#3c520923-0862-40da-b5e3-58687877a5ae">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#bd267db7-b815-4eb2-9b5d-6b1cad64b070">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#b1461db0-e1f3-4e29-ab53-dc34d94aca7d">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1d8qmF5zL9SfOTdNgYBvTm</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#1ace6bb1-f3e4-40a7-9f02-f58cbb1974ee">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#7b41ed85-61ff-40aa-90a2-147012adc804">
+            <ls:identifier>1d8qmF5zL9SfOTdNgYBvTm</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#c856f8fe-79cc-4978-9c39-5cb88c8af480">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#b57f338d-2efa-46be-95b0-9aa3d34deea3">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#881eeb0a-d524-48f9-8574-eeb0e3f7962d">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1Tq3U2drv4$ukSl8y_92Et</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#6e8e7e0c-fc84-44fa-a7b9-fe3c89b332a3">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#12e5d707-8a33-40f7-879d-2860c8a9c516">
+            <ls:identifier>1Tq3U2drv4$ukSl8y_92Et</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#4850f99e-402f-4acf-bc22-6fd10db8e794">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#73d76a03-64eb-467b-9054-b81baf5cd1f8">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#a3c690c4-2b0d-4fd1-aa35-55b217a432d1">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#1Pehfi_09Bvw4ETCApgaC9</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#fc76c38a-31fa-43e3-a50e-a197d9a0a5fb">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#54179a18-70f0-485d-9b44-985d0c8ec941">
+            <ls:identifier>1Pehfi_09Bvw4ETCApgaC9</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:about="http://ifcToBrot.de#bf507c30-4fe0-4a4e-bd2a-46a9f19a6bbd">
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#187af1b4-7a0e-457f-a195-ad2bb52402b9">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#bf486337-a9db-4239-8802-c3150bea9fff">
+            <ls:identifier>http://www.semanticweb.org/taras.kozak/brot-Abox#3HL787CJnElwvilypS9bSs</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#4aeef040-e567-4237-b5e5-310dff4938f7"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:about="http://ifcToBrot.de#f52172e9-9fe7-4553-b770-4675d1f8479d">
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:about="http://ifcToBrot.de#ec43face-d2c5-4193-b9af-46478cac8cae">
+            <ls:identifier>3HL787CJnElwvilypS9bSs</ls:identifier>
+            <rdf:type rdf:resource="http://www.iso-icdd.org/draft/Linkset.rdf#Identifier"/>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="http://ifc-brot.de#2e9e7a05-f0f1-49ec-9fa4-ac8a2ab48bb0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+</rdf:RDF>
