@@ -1,1015 +1,96 @@
-@prefix : <http://www.semanticweb.org/alhakam/brot-Abox#> .
+@prefix : <https://wisib.de/ontologie/abox/germanroadbridge/d1#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
-@prefix dot: <http://w3id.org/dot#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix bmat: <http://w3id.org/bmat#> .
-@prefix brot: <http://w3id.org/brot#> .
-@prefix inst: <http://www.semanticweb.org/taras.kozak/brot-Abox#> .
+@prefix bmat: <https://wisib.de/ontologie/bmat#> .
+@prefix brot: <https://wisib.de/ontologie/brot#> .
+@prefix inst: <https://wisib.de/ontologie/abox/germanroadbridge/d1#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix brstr: <http://w3id.org/bmat#> .
-@prefix dtsup: <http://w3id.org/dtsup#> .
-@prefix brcomp: <http://w3id.org/brcomp#> .
-@prefix bridge: <http://w3id.org/bridge#> .
-@base <http://www.semanticweb.org/alhakam/brot-Abox> .
+@prefix brstr: <https://wisib.de/ontologie/brstr#> .
+@prefix brcomp: <https://wisib.de/ontologie/brcomp#> .
+@prefix bridge: <https://wisib.de/ontologie/bridge#> .
+@base <https://wisib.de/ontologie/abox/germanroadbridge/d1> .
 
-<http://www.semanticweb.org/alhakam/brot-Abox> rdf:type owl:Ontology ;
-                                                owl:versionIRI <http://www.semanticweb.org/alhakam/brot-Abox/0.1> ;
-                                                owl:imports <http://w3id.org/bmat/0.1> ,
-                                                            <http://w3id.org/brcomp/0.1> ,
-                                                            <http://w3id.org/bridge/0.1> ,
-                                                            <http://w3id.org/brot/0.1> ,
-                                                            <http://w3id.org/brstr/0.1> ,
-                                                            <https://w3id.org/cdo#/0.4.0> ,
-                                                            <https://w3id.org/damagemodels/dmo#/0.2.0> ,
-                                                            <https://w3id.org/dot/0.5> ,
-                                                            <https://w3id.org/dtsup#> .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://w3id.org/brot#cementContent
-brot:cementContent rdf:type owl:AnnotationProperty .
-
-
-###  http://w3id.org/brot#cementDesignation
-brot:cementDesignation rdf:type owl:AnnotationProperty .
-
-
-###  http://w3id.org/brot#cementType
-brot:cementType rdf:type owl:AnnotationProperty .
-
-
-###  http://w3id.org/brot#concreteStrengthClass
-brot:concreteStrengthClass rdf:type owl:AnnotationProperty .
-
-
-###  http://w3id.org/brot#reinforcementGrade
-brot:reinforcementGrade rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://dbpedia.org/ontology/locationCity
-dbo:locationCity rdf:type owl:ObjectProperty .
-
-
-###  http://dbpedia.org/ontology/manufacturer
-dbo:manufacturer rdf:type owl:ObjectProperty .
-
-
-###  http://dbpedia.org/ontology/nearestCity
-dbo:nearestCity rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://dbpedia.org/ontology/AdministrativeRegion
-dbo:AdministrativeRegion rdf:type owl:Class .
-
-
-###  http://dbpedia.org/ontology/City
-dbo:City rdf:type owl:Class .
-
+<https://wisib.de/ontologie/abox/germanroadbridge/d1> rdf:type owl:Ontology ;
+                                                      owl:versionIRI <https://wisib.de/ontologie/abox/germanroadbridge/d1/0.1> ;
+                                                      owl:imports <https://wisib.de/ontologie/bmat/0.2> ,
+                                                                  <https://wisib.de/ontologie/brcomp/0.1> ,
+                                                                  <https://wisib.de/ontologie/bridge/0.1> ,
+                                                                  <https://wisib.de/ontologie/brot/0.2> ,
+                                                                  <https://wisib.de/ontologie/brstr/0.1> .
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://sv.dbpedia.org/page/AnonymeStadt1
-<http://sv.dbpedia.org/page/AnonymeStadt1> rdf:type owl:NamedIndividual ,
-                                                    dbo:AdministrativeRegion ,
-                                                    dbo:City ,
-                                                    dbo:Organisation ;
-                                           rdfs:label "AnonymeStadt1 - Stadtmitte"@de .
+###  http://sv.dbpedia.org/page/GermanCity
+<http://sv.dbpedia.org/page/GermanCity> rdf:type owl:NamedIndividual ,
+                                                dbo:AdministrativeRegion ,
+                                                dbo:City ,
+                                                dbo:Organisation ;
+                                       rdfs:label "GermanCity - Stadtmitte"@de .
 
 
-###  http://www.semanticweb.org/alhakam/brot-Abox#0A6lyF_EzBjx4oY2ZihrTm
-<http://www.semanticweb.org/alhakam/brot-Abox#0A6lyF_EzBjx4oY2ZihrTm> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#AIB
+inst:AIB rdf:type owl:NamedIndividual ,
+                  brot:Coating ;
+         dbo:manufacturer inst:GermanCompany ;
+         rdfs:comment """Inerol Spritzisolierung"""@de ;
+         rdfs:label "Dichtungsaufstrich"@de ;
+         brcomp:installationYear 1973 .
 
 
-###  http://www.semanticweb.org/alhakam/brot-Abox#0F8pmB4NXALwnPaSe6zKsy
-<http://www.semanticweb.org/alhakam/brot-Abox#0F8pmB4NXALwnPaSe6zKsy> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#GermanCompany
+inst:GermanCompany rdf:type owl:NamedIndividual ,
+                             dbo:Organisation ;
+                    rdfs:comment """GermanCompany"""@de ;
+                    rdfs:label "GermanCompany"@de .
 
 
-###  http://www.semanticweb.org/alhakam/brot-Abox#0GAfevVUb2Exh2Mvkcq1sj
-<http://www.semanticweb.org/alhakam/brot-Abox#0GAfevVUb2Exh2Mvkcq1sj> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeCap ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:width "2.25"^^xsd:double ;
-                                                                      rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#CompanyNaturalStone
+inst:CompanyNaturalStone rdf:type owl:NamedIndividual ,
+                                    dbo:Organisation ;
+                           rdfs:label "Arbeitsgemeinschaft Natursteingewerke" .
 
-Einbauort: westlicher Kragarm der Vollplatte""" ;
-                                                                      rdfs:label "Cap-2" .
 
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#Aluminium1
+inst:Aluminium1 rdf:type owl:NamedIndividual ,
+                         bmat:Aluminium ;
+                dbo:manufacturer inst:GermanCompany2 .
 
-###  http://www.semanticweb.org/alhakam/brot-Abox#0JpqNfSU17L8J9cyx2leLo
-<http://www.semanticweb.org/alhakam/brot-Abox#0JpqNfSU17L8J9cyx2leLo> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
 
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#BSt420S
+inst:BSt420S rdf:type owl:NamedIndividual ,
+                      bmat:ReinforecementSteel ;
+             rdfs:label "BSt 420 S (III S) nach DIN 488 Ausgabe 1984"@de ;
+             brcomp:installationYear 1984 ;
+             bmat:reinforcementGrade "BSt 420 S (III S)" ;
+             bmat:materialStandard "DIN 488" .
 
-###  http://www.semanticweb.org/alhakam/brot-Abox#0NIDY__lr5G9QARL0eKdFd
-<http://www.semanticweb.org/alhakam/brot-Abox#0NIDY__lr5G9QARL0eKdFd> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeGirderSegment ;
-                                                                      <https://w3id.org/brot#aggregates> <http://www.semanticweb.org/alhakam/brot-Abox#1aRlzwelnFnwUk_mju8v3S> ,
-                                                                                                         <http://www.semanticweb.org/alhakam/brot-Abox#1mrbK37wvBGRarBmoBKdrZ> ,
-                                                                                                         <http://www.semanticweb.org/alhakam/brot-Abox#2c$4jTO6r6uBJf7OdPzxwM> ;
-                                                                      rdfs:label "Slab.3" .
 
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#0QwtUP2TDA_Pz9n5QAZ7w5
-<http://www.semanticweb.org/alhakam/brot-Abox#0QwtUP2TDA_Pz9n5QAZ7w5> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgePotBearings ,
-                                                                               brcomp:BridgeSlidingBearing ;
-                                                                      dbo:manufacturer inst:AnonymeOrganisation3 ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#3hA0greQb9XPkzMlDXjwqy> ;
-                                                                      brcomp:criticalTempSummer "0.0"^^xsd:double ;
-                                                                      brcomp:criticalTempWinter "0.0"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:type "NGa 100" ;
-                                                                      <http://w3id.org/brstr#supportHeight> "2.8"^^xsd:double ;
-                                                                      <http://w3id.org/brstr#yMovement> "fix" ;
-                                                                      <http://w3id.org/brstr#zMovement> "fix" ;
-                                                                      rdfs:label "Bearing-1" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#0U8evudTP8gwzri6J_cSmN
-<http://www.semanticweb.org/alhakam/brot-Abox#0U8evudTP8gwzri6J_cSmN> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#0_C_7pkZfBgBdYewqAHzLN
-<http://www.semanticweb.org/alhakam/brot-Abox#0_C_7pkZfBgBdYewqAHzLN> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#0_oQ_1cqr4oxsuU3LFDetK
-<http://www.semanticweb.org/alhakam/brot-Abox#0_oQ_1cqr4oxsuU3LFDetK> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeGirderDeck ;
-                                                                      brot:hasCoating inst:MastixARGEGirder ;
-                                                                      rdfs:label "Deck-2" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#0aMicdC558jf9BhHzofPqm
-<http://www.semanticweb.org/alhakam/brot-Abox#0aMicdC558jf9BhHzofPqm> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#0l1BBO8rv4QhH1eFpkBc_c
-<http://www.semanticweb.org/alhakam/brot-Abox#0l1BBO8rv4QhH1eFpkBc_c> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#0tvoAjYHP5a8XFd70MXp5O
-<http://www.semanticweb.org/alhakam/brot-Abox#0tvoAjYHP5a8XFd70MXp5O> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#0vnxmH7AT6IfbHlS2iwWgl
-<http://www.semanticweb.org/alhakam/brot-Abox#0vnxmH7AT6IfbHlS2iwWgl> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#04DMsgNOvFye2K3CQlZpOH
-<http://www.semanticweb.org/alhakam/brot-Abox#04DMsgNOvFye2K3CQlZpOH> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeGirderDeck ;
-                                                                      brot:hasCoating inst:MastixARGEGirder ;
-                                                                      rdfs:label "Deck-1" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#08JukPzUzE$OJbfpTykPJx
-<http://www.semanticweb.org/alhakam/brot-Abox#08JukPzUzE$OJbfpTykPJx> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgePier ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#1KO5lzBZj8jQGcpZVjVytA> ;
-                                                                      <http://w3id.org/brstr#alignmentWidth> "14.0"^^xsd:double ;
-                                                                      rdfs:label "Pier-1" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#08qj$VV3zBu9sG48wP5$Pu
-<http://www.semanticweb.org/alhakam/brot-Abox#08qj$VV3zBu9sG48wP5$Pu> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeCap ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:width "2.25"^^xsd:double ;
-                                                                      rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
-
-Einbauort: westlicher Kragarm der Vollplatte""" ;
-                                                                      rdfs:label "Cap-1" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#0Fmmok4THAOxdYY$T0xRqr
-<http://www.semanticweb.org/alhakam/brot-Abox#0Fmmok4THAOxdYY$T0xRqr> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#0GGyOhV4P81v$QMMai2$r$
-<http://www.semanticweb.org/alhakam/brot-Abox#0GGyOhV4P81v$QMMai2$r$> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeFoundation ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#3eRhty6cDFcvSLj8ZTOvjd> ;
-                                                                      <http://w3id.org/brstr#restsOn> <http://www.semanticweb.org/alhakam/brot-Abox#0JpqNfSU17L8J9cyx2leLo> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#0aMicdC558jf9BhHzofPqm> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#0tvoAjYHP5a8XFd70MXp5O> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#0vnxmH7AT6IfbHlS2iwWgl> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#0Fmmok4THAOxdYY$T0xRqr> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#0jlP6ykgv0CwpBc$AhNKvA> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#1DPvP8SMP7XBYQRNu_dLk9> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#1Qcf4lexz4LO4x1UOtLGFw> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#1Lhm$G58LAkBDQqJdnJuMJ> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#2MpnAjSYb2HhwvkxIYDXcd> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#2ohgW5qfrCFvDyPDzTeLJ4> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#2olXq4u8b05eNhBTTmIecB> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#28bMuO3bf3NvHhJf9yU2Pi> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#3hu0cB2IXCVAIOanTTk5Y4> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#3vttNqsab3fh9T503T3bJG> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#33bCjVpar2ZP4HeX51HWAX> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#3EuNgqG_rB5wtX5e$cCL_5> ;
-                                                                      rdfs:label "Foundation-1" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#0WlBZPCq54MwS5IzK$4Mnu
-<http://www.semanticweb.org/alhakam/brot-Abox#0WlBZPCq54MwS5IzK$4Mnu> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeGirderDeck ;
-                                                                      brot:hasCoating inst:MastixARGEGirder ;
-                                                                      rdfs:label "Deck-3" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#0jlP6ykgv0CwpBc$AhNKvA
-<http://www.semanticweb.org/alhakam/brot-Abox#0jlP6ykgv0CwpBc$AhNKvA> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1DPvP8SMP7XBYQRNu_dLk9
-<http://www.semanticweb.org/alhakam/brot-Abox#1DPvP8SMP7XBYQRNu_dLk9> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1F3wRCISj6o9jFd98hOXft
-<http://www.semanticweb.org/alhakam/brot-Abox#1F3wRCISj6o9jFd98hOXft> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1HI5gUP214NuM19arKfzyC
-<http://www.semanticweb.org/alhakam/brot-Abox#1HI5gUP214NuM19arKfzyC> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeGirderDeck ;
-                                                                      brot:hasCoating inst:MastixARGEGirder ;
-                                                                      rdfs:label "Deck-5" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1Jsruwj6v82xuNR9o70ozy
-<http://www.semanticweb.org/alhakam/brot-Abox#1Jsruwj6v82xuNR9o70ozy> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgePotBearings ,
-                                                                               brcomp:BridgeSlidingBearing ;
-                                                                      dbo:manufacturer inst:AnonymeOrganisation3 ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#3dhMUsYdH6IOaRNuYMYYru> ;
-                                                                      brcomp:criticalTempSummer "0.0"^^xsd:double ;
-                                                                      brcomp:criticalTempWinter "0.0"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:type "NGa 100" ;
-                                                                      <http://w3id.org/brstr#supportHeight> "3.6"^^xsd:double ;
-                                                                      <http://w3id.org/brstr#zMovement> "fix" ;
-                                                                      rdfs:label "Bearing-3" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1KO5lzBZj8jQGcpZVjVytA
-<http://www.semanticweb.org/alhakam/brot-Abox#1KO5lzBZj8jQGcpZVjVytA> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgePotBearings ,
-                                                                               brcomp:BridgeSlidingBearing ;
-                                                                      dbo:manufacturer inst:AnonymeOrganisation3 ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#3dhMUsYdH6IOaRNuYMYYru> ;
-                                                                      brcomp:criticalTempSummer "0.0"^^xsd:double ;
-                                                                      brcomp:criticalTempWinter "0.0"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:type "NGa 100" ;
-                                                                      <http://w3id.org/brstr#supportHeight> "3.6"^^xsd:double ;
-                                                                      <http://w3id.org/brstr#zMovement> "fix" ;
-                                                                      rdfs:label "Bearing-4" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1Pehfi_09Bvw4ETCApgaC9
-<http://www.semanticweb.org/alhakam/brot-Abox#1Pehfi_09Bvw4ETCApgaC9> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeCap ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:width "2.25"^^xsd:double ;
-                                                                      rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
-
-Einbauort: westlicher Kragarm der Vollplatte""" ;
-                                                                      rdfs:label "Cap-4" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1Qcf4lexz4LO4x1UOtLGFw
-<http://www.semanticweb.org/alhakam/brot-Abox#1Qcf4lexz4LO4x1UOtLGFw> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1XtQpURGz3xBiFQHbfk_Zx
-<http://www.semanticweb.org/alhakam/brot-Abox#1XtQpURGz3xBiFQHbfk_Zx> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeCap ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:width "1.0"^^xsd:double ;
-                                                                      rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
-
-Einbauort: östlicher Kragarm der Vollplatte""" ;
-                                                                      rdfs:label "Cap-6" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1ZPHRkLVT36BbjO_fUmNXP
-<http://www.semanticweb.org/alhakam/brot-Abox#1ZPHRkLVT36BbjO_fUmNXP> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1aRlzwelnFnwUk_mju8v3S
-<http://www.semanticweb.org/alhakam/brot-Abox#1aRlzwelnFnwUk_mju8v3S> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeGirderDeck ;
-                                                                      brot:hasCoating inst:MastixARGEGirder ;
-                                                                      rdfs:label "Deck-4" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1chnUbgXjAe9egn0i_9uVp
-<http://www.semanticweb.org/alhakam/brot-Abox#1chnUbgXjAe9egn0i_9uVp> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeGirderSegment ;
-                                                                      <https://w3id.org/brot#adjacentElement> <http://www.semanticweb.org/alhakam/brot-Abox#0NIDY__lr5G9QARL0eKdFd> ;
-                                                                      <https://w3id.org/brot#aggregates> <http://www.semanticweb.org/alhakam/brot-Abox#0GAfevVUb2Exh2Mvkcq1sj> ,
-                                                                                                         <http://www.semanticweb.org/alhakam/brot-Abox#1HI5gUP214NuM19arKfzyC> ,
-                                                                                                         <http://www.semanticweb.org/alhakam/brot-Abox#1XtQpURGz3xBiFQHbfk_Zx> ;
-                                                                      rdfs:label "Slab.1" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1d8qmF5zL9SfOTdNgYBvTm
-<http://www.semanticweb.org/alhakam/brot-Abox#1d8qmF5zL9SfOTdNgYBvTm> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1edHQCUQ5BiufFEMWeCLlQ
-<http://www.semanticweb.org/alhakam/brot-Abox#1edHQCUQ5BiufFEMWeCLlQ> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgePier ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#1Jsruwj6v82xuNR9o70ozy> ;
-                                                                      <http://w3id.org/brstr#alignmentWidth> "14.0"^^xsd:double ;
-                                                                      rdfs:label "Pier-2" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1hrqCYpGv1VADtTfK_tdgG
-<http://www.semanticweb.org/alhakam/brot-Abox#1hrqCYpGv1VADtTfK_tdgG> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1mrbK37wvBGRarBmoBKdrZ
-<http://www.semanticweb.org/alhakam/brot-Abox#1mrbK37wvBGRarBmoBKdrZ> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeCap ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:width "2.25"^^xsd:double ;
-                                                                      rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
-
-Einbauort: westlicher Kragarm der Vollplatte""" ;
-                                                                      rdfs:label "Cap-3" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1oDJuZ2V1F8hTdoH5kEY5A
-<http://www.semanticweb.org/alhakam/brot-Abox#1oDJuZ2V1F8hTdoH5kEY5A> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgePotBearings ,
-                                                                               brcomp:BridgeSlidingBearing ;
-                                                                      dbo:manufacturer inst:AnonymeOrganisation3 ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#0NIDY__lr5G9QARL0eKdFd> ;
-                                                                      brcomp:criticalTempSummer "0.0"^^xsd:double ;
-                                                                      brcomp:criticalTempWinter "0.0"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:type "NGa 100" ;
-                                                                      <http://w3id.org/brstr#supportHeight> "4.3"^^xsd:double ;
-                                                                      <http://w3id.org/brstr#zMovement> "fix" ;
-                                                                      rdfs:label "Bearing-5" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1rnVLTzRv9hAVVHOdMthiQ
-<http://www.semanticweb.org/alhakam/brot-Abox#1rnVLTzRv9hAVVHOdMthiQ> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1zjNfRDL12Hx0Ld_VEbyoM
-<http://www.semanticweb.org/alhakam/brot-Abox#1zjNfRDL12Hx0Ld_VEbyoM> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeGirderDeck ;
-                                                                      brot:hasCoating inst:MastixARGEGirder ;
-                                                                      rdfs:label "Deck-6" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#13XiSi9on9EAaDXSNfxIL0
-<http://www.semanticweb.org/alhakam/brot-Abox#13XiSi9on9EAaDXSNfxIL0> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1CBvdP3$X5nBIVPbRw3De7
-<http://www.semanticweb.org/alhakam/brot-Abox#1CBvdP3$X5nBIVPbRw3De7> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgePotBearings ,
-                                                                               brcomp:BridgeSlidingBearing ;
-                                                                      dbo:manufacturer inst:AnonymeOrganisation3 ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#3hA0greQb9XPkzMlDXjwqy> ;
-                                                                      brcomp:criticalTempSummer "0.0"^^xsd:double ;
-                                                                      brcomp:criticalTempWinter "0.0"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:type "NGa 100" ;
-                                                                      <http://w3id.org/brstr#supportHeight> "2.8"^^xsd:double ;
-                                                                      <http://w3id.org/brstr#yMovement> "fix" ;
-                                                                      <http://w3id.org/brstr#zMovement> "fix" ;
-                                                                      rdfs:label "Bearing-2" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1Lhm$G58LAkBDQqJdnJuMJ
-<http://www.semanticweb.org/alhakam/brot-Abox#1Lhm$G58LAkBDQqJdnJuMJ> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1S1SjQi6vCDfVU$IYPMgOe
-<http://www.semanticweb.org/alhakam/brot-Abox#1S1SjQi6vCDfVU$IYPMgOe> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeCap ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:width "2.25"^^xsd:double ;
-                                                                      rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
-
-Einbauort: westlicher Kragarm der Vollplatte""" ;
-                                                                      rdfs:label "Cap-5" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1Tq3U2drv4$ukSl8y_92Et
-<http://www.semanticweb.org/alhakam/brot-Abox#1Tq3U2drv4$ukSl8y_92Et> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeFoundation ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#08JukPzUzE$OJbfpTykPJx> ,
-                                                                                                    <http://www.semanticweb.org/alhakam/brot-Abox#1edHQCUQ5BiufFEMWeCLlQ> ,
-                                                                                                    <http://www.semanticweb.org/alhakam/brot-Abox#2SR$xd8YX9GuIf3Rv5pJFc> ;
-                                                                      <http://w3id.org/brstr#restsOn> <http://www.semanticweb.org/alhakam/brot-Abox#0A6lyF_EzBjx4oY2ZihrTm> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#0F8pmB4NXALwnPaSe6zKsy> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#0_C_7pkZfBgBdYewqAHzLN> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#1hrqCYpGv1VADtTfK_tdgG> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#2CsyCp5_r8qg7bQc3fdLK3> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#2zVkYLPLv4$O9iRIozSQ9i> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#3HL787CJnElwvilypS9bSs> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#3MWr8tTz936gAl$Q$Rkc$b> ;
-                                                                      rdfs:label "Foundation-3" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#1dkJutsND4QfR$9mQ3d4hr
-<http://www.semanticweb.org/alhakam/brot-Abox#1dkJutsND4QfR$9mQ3d4hr> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeFoundation ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#3deVaFX353G97SGtG36gYs> ;
-                                                                      <http://w3id.org/brstr#restsOn> <http://www.semanticweb.org/alhakam/brot-Abox#0U8evudTP8gwzri6J_cSmN> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#0l1BBO8rv4QhH1eFpkBc_c> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#1F3wRCISj6o9jFd98hOXft> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#1ZPHRkLVT36BbjO_fUmNXP> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#1d8qmF5zL9SfOTdNgYBvTm> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#1rnVLTzRv9hAVVHOdMthiQ> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#13XiSi9on9EAaDXSNfxIL0> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#2aHXCxFxX9gupyFf0MErBV> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#27MICrNTDCXAYsrxi714tV> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#2fpgLTNmv6xA0qIbJYxYR$> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#3fmuu9QMv3f9RuDCjKKDIm> ,
-                                                                                                      <http://www.semanticweb.org/alhakam/brot-Abox#3kepiMDpr8nwROgmq0fBRu> ;
-                                                                      rdfs:label "Foundation-2" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#2CsyCp5_r8qg7bQc3fdLK3
-<http://www.semanticweb.org/alhakam/brot-Abox#2CsyCp5_r8qg7bQc3fdLK3> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#2MpnAjSYb2HhwvkxIYDXcd
-<http://www.semanticweb.org/alhakam/brot-Abox#2MpnAjSYb2HhwvkxIYDXcd> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#2aHXCxFxX9gupyFf0MErBV
-<http://www.semanticweb.org/alhakam/brot-Abox#2aHXCxFxX9gupyFf0MErBV> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#2hxCrWc6jAKBc2blCCpPje
-<http://www.semanticweb.org/alhakam/brot-Abox#2hxCrWc6jAKBc2blCCpPje> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeCap ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:width "1.0"^^xsd:double ;
-                                                                      rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
-
-Einbauort: östlicher Kragarm der Vollplatte""" ;
-                                                                      rdfs:label "Cap-8" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#2jozzPD4LCeAKMlm_i2mcV
-<http://www.semanticweb.org/alhakam/brot-Abox#2jozzPD4LCeAKMlm_i2mcV> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeCap ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:width "2.25"^^xsd:double ;
-                                                                      rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
-
-Einbauort: westlicher Kragarm der Vollplatte""" ;
-                                                                      rdfs:label "Cap-9" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#2ohgW5qfrCFvDyPDzTeLJ4
-<http://www.semanticweb.org/alhakam/brot-Abox#2ohgW5qfrCFvDyPDzTeLJ4> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#2olXq4u8b05eNhBTTmIecB
-<http://www.semanticweb.org/alhakam/brot-Abox#2olXq4u8b05eNhBTTmIecB> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#2qw4yV6Tr4xhSpru_u3Ebv
-<http://www.semanticweb.org/alhakam/brot-Abox#2qw4yV6Tr4xhSpru_u3Ebv> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeGirderSegment ;
-                                                                      <https://w3id.org/brot#adjacentElement> <http://www.semanticweb.org/alhakam/brot-Abox#3dhMUsYdH6IOaRNuYMYYru> ;
-                                                                      <https://w3id.org/brot#aggregates> <http://www.semanticweb.org/alhakam/brot-Abox#04DMsgNOvFye2K3CQlZpOH> ,
-                                                                                                         <http://www.semanticweb.org/alhakam/brot-Abox#2hxCrWc6jAKBc2blCCpPje> ,
-                                                                                                         <http://www.semanticweb.org/alhakam/brot-Abox#2jozzPD4LCeAKMlm_i2mcV> ;
-                                                                      rdfs:label "Slab.2" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#25tTPkRA13NP2XOjngzCvv
-<http://www.semanticweb.org/alhakam/brot-Abox#25tTPkRA13NP2XOjngzCvv> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgePotBearings ,
-                                                                               brcomp:BridgeSlidingBearing ;
-                                                                      dbo:manufacturer inst:AnonymeOrganisation3 ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#0NIDY__lr5G9QARL0eKdFd> ;
-                                                                      brcomp:criticalTempSummer "0.0"^^xsd:double ;
-                                                                      brcomp:criticalTempWinter "0.0"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:type "NGa 100" ;
-                                                                      <http://w3id.org/brstr#supportHeight> "4.3"^^xsd:double ;
-                                                                      <http://w3id.org/brstr#zMovement> "fix" ;
-                                                                      rdfs:label "Bearing-6" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#27MICrNTDCXAYsrxi714tV
-<http://www.semanticweb.org/alhakam/brot-Abox#27MICrNTDCXAYsrxi714tV> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#28bMuO3bf3NvHhJf9yU2Pi
-<http://www.semanticweb.org/alhakam/brot-Abox#28bMuO3bf3NvHhJf9yU2Pi> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#2SR$xd8YX9GuIf3Rv5pJFc
-<http://www.semanticweb.org/alhakam/brot-Abox#2SR$xd8YX9GuIf3Rv5pJFc> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgePier ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#36hJ1IIVn66hinabMgyZjH> ;
-                                                                      <http://w3id.org/brstr#alignmentWidth> "14.0"^^xsd:double ;
-                                                                      rdfs:label "Pier-3" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#2c$4jTO6r6uBJf7OdPzxwM
-<http://www.semanticweb.org/alhakam/brot-Abox#2c$4jTO6r6uBJf7OdPzxwM> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeCap ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:width "1.0"^^xsd:double ;
-                                                                      rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
-
-Einbauort: östlicher Kragarm der Vollplatte""" ;
-                                                                      rdfs:label "Cap-7" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#2fpgLTNmv6xA0qIbJYxYR$
-<http://www.semanticweb.org/alhakam/brot-Abox#2fpgLTNmv6xA0qIbJYxYR$> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#2zVkYLPLv4$O9iRIozSQ9i
-<http://www.semanticweb.org/alhakam/brot-Abox#2zVkYLPLv4$O9iRIozSQ9i> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3AblAeVZLAvPjUvEEJ08Ly
-<http://www.semanticweb.org/alhakam/brot-Abox#3AblAeVZLAvPjUvEEJ08Ly> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgePotBearings ,
-                                                                               brcomp:BridgeSlidingBearing ;
-                                                                      dbo:manufacturer inst:AnonymeOrganisation3 ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#3hA0greQb9XPkzMlDXjwqy> ;
-                                                                      brcomp:criticalTempSummer "0.0"^^xsd:double ;
-                                                                      brcomp:criticalTempWinter "0.0"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:type "NGa 100" ;
-                                                                      <http://w3id.org/brstr#supportHeight> "2.8"^^xsd:double ;
-                                                                      <http://w3id.org/brstr#zMovement> "fix" ;
-                                                                      rdfs:label "Bearing-8" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3HL787CJnElwvilypS9bSs
-<http://www.semanticweb.org/alhakam/brot-Abox#3HL787CJnElwvilypS9bSs> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3V21Dnqsv6PP1e9TMRfO2p
-<http://www.semanticweb.org/alhakam/brot-Abox#3V21Dnqsv6PP1e9TMRfO2p> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeCap ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:width "1.0"^^xsd:double ;
-                                                                      rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
-
-Einbauort: östlicher Kragarm der Vollplatte""" ;
-                                                                      rdfs:label "Cap-11" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3ZDymkAmDCY8FaZdgJA1fa
-<http://www.semanticweb.org/alhakam/brot-Abox#3ZDymkAmDCY8FaZdgJA1fa> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeCap ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:width "1.0"^^xsd:double ;
-                                                                      rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
-
-Einbauort: östlicher Kragarm der Vollplatte""" ;
-                                                                      rdfs:label "Cap-12" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3deVaFX353G97SGtG36gYs
-<http://www.semanticweb.org/alhakam/brot-Abox#3deVaFX353G97SGtG36gYs> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeAbutment ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#1oDJuZ2V1F8hTdoH5kEY5A> ,
-                                                                                                    <http://www.semanticweb.org/alhakam/brot-Abox#25tTPkRA13NP2XOjngzCvv> ;
-                                                                      <http://w3id.org/brstr#alignmentWidth> "0.0"^^xsd:double ;
-                                                                      rdfs:label "Abutment-1" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3dhMUsYdH6IOaRNuYMYYru
-<http://www.semanticweb.org/alhakam/brot-Abox#3dhMUsYdH6IOaRNuYMYYru> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeGirderSegment ;
-                                                                      <https://w3id.org/brot#adjacentElement> <http://www.semanticweb.org/alhakam/brot-Abox#1chnUbgXjAe9egn0i_9uVp> ;
-                                                                      <https://w3id.org/brot#aggregates> <http://www.semanticweb.org/alhakam/brot-Abox#0_oQ_1cqr4oxsuU3LFDetK> ,
-                                                                                                         <http://www.semanticweb.org/alhakam/brot-Abox#1S1SjQi6vCDfVU$IYPMgOe> ,
-                                                                                                         <http://www.semanticweb.org/alhakam/brot-Abox#3mPNFRMfv1o8iSS1xiknue> ;
-                                                                      rdfs:label "Slab.4" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3eRhty6cDFcvSLj8ZTOvjd
-<http://www.semanticweb.org/alhakam/brot-Abox#3eRhty6cDFcvSLj8ZTOvjd> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeAbutment ,
-                                                                               <http://w3id.org/brstr#AlignmentOrigin> ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#0QwtUP2TDA_Pz9n5QAZ7w5> ,
-                                                                                                    <http://www.semanticweb.org/alhakam/brot-Abox#1CBvdP3$X5nBIVPbRw3De7> ,
-                                                                                                    <http://www.semanticweb.org/alhakam/brot-Abox#3AblAeVZLAvPjUvEEJ08Ly> ;
-                                                                      <http://w3id.org/brstr#alignmentWidth> "14.0"^^xsd:double ;
-                                                                      rdfs:label "Abutment-2" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3fmuu9QMv3f9RuDCjKKDIm
-<http://www.semanticweb.org/alhakam/brot-Abox#3fmuu9QMv3f9RuDCjKKDIm> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3hA0greQb9XPkzMlDXjwqy
-<http://www.semanticweb.org/alhakam/brot-Abox#3hA0greQb9XPkzMlDXjwqy> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeGirderSegment ;
-                                                                      <https://w3id.org/brot#adjacentElement> <http://www.semanticweb.org/alhakam/brot-Abox#3j204Ax7v2NAyel57ijdVm> ;
-                                                                      <https://w3id.org/brot#aggregates> <http://www.semanticweb.org/alhakam/brot-Abox#1Pehfi_09Bvw4ETCApgaC9> ,
-                                                                                                         <http://www.semanticweb.org/alhakam/brot-Abox#1zjNfRDL12Hx0Ld_VEbyoM> ,
-                                                                                                         <http://www.semanticweb.org/alhakam/brot-Abox#3ZDymkAmDCY8FaZdgJA1fa> ;
-                                                                      brcomp:concreteCover 30 ;
-                                                                      rdfs:label "Slab.5" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3hu0cB2IXCVAIOanTTk5Y4
-<http://www.semanticweb.org/alhakam/brot-Abox#3hu0cB2IXCVAIOanTTk5Y4> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3j204Ax7v2NAyel57ijdVm
-<http://www.semanticweb.org/alhakam/brot-Abox#3j204Ax7v2NAyel57ijdVm> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeGirderSegment ;
-                                                                      <https://w3id.org/brot#adjacentElement> <http://www.semanticweb.org/alhakam/brot-Abox#2qw4yV6Tr4xhSpru_u3Ebv> ;
-                                                                      <https://w3id.org/brot#aggregates> <http://www.semanticweb.org/alhakam/brot-Abox#08qj$VV3zBu9sG48wP5$Pu> ,
-                                                                                                         <http://www.semanticweb.org/alhakam/brot-Abox#0WlBZPCq54MwS5IzK$4Mnu> ,
-                                                                                                         <http://www.semanticweb.org/alhakam/brot-Abox#3V21Dnqsv6PP1e9TMRfO2p> ;
-                                                                      rdfs:label "Slab.6" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3kepiMDpr8nwROgmq0fBRu
-<http://www.semanticweb.org/alhakam/brot-Abox#3kepiMDpr8nwROgmq0fBRu> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3mPNFRMfv1o8iSS1xiknue
-<http://www.semanticweb.org/alhakam/brot-Abox#3mPNFRMfv1o8iSS1xiknue> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgeCap ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:width "1.0"^^xsd:double ;
-                                                                      rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
-
-Einbauort: östlicher Kragarm der Vollplatte""" ;
-                                                                      rdfs:label "Cap-10" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3vttNqsab3fh9T503T3bJG
-<http://www.semanticweb.org/alhakam/brot-Abox#3vttNqsab3fh9T503T3bJG> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#33bCjVpar2ZP4HeX51HWAX
-<http://www.semanticweb.org/alhakam/brot-Abox#33bCjVpar2ZP4HeX51HWAX> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#350F
-<http://www.semanticweb.org/alhakam/brot-Abox#350F> rdf:type owl:NamedIndividual ,
-                                                             brstr:ReinforcedConcrete ;
-                                                    brstr:concreteAdmixture "Rheinkies" ,
-                                                                            "Rheinsand" ;
-                                                    brstr:concreteAggregate "Bv" ;
-                                                    brstr:materialAge 1978 ;
-                                                    brstr:materialStandard "DIN 1045" ;
-                                                    brot:cementContent 330 ;
-                                                    brot:cementDesignation "350 F" ;
-                                                    brot:concreteStrengthClass "Bn 450" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#36hJ1IIVn66hinabMgyZjH
-<http://www.semanticweb.org/alhakam/brot-Abox#36hJ1IIVn66hinabMgyZjH> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:BridgePotBearings ,
-                                                                               brcomp:BridgeSlidingBearing ;
-                                                                      dbo:manufacturer inst:AnonymeOrganisation3 ;
-                                                                      <http://w3id.org/brstr#bears> <http://www.semanticweb.org/alhakam/brot-Abox#3dhMUsYdH6IOaRNuYMYYru> ;
-                                                                      brcomp:criticalTempSummer "0.0"^^xsd:double ;
-                                                                      brcomp:criticalTempWinter "0.0"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      brcomp:type "NGa 100" ;
-                                                                      <http://w3id.org/brstr#supportHeight> "3.6"^^xsd:double ;
-                                                                      <http://w3id.org/brstr#zMovement> "fix" ;
-                                                                      rdfs:label "Bearing-7" .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3EuNgqG_rB5wtX5e$cCL_5
-<http://www.semanticweb.org/alhakam/brot-Abox#3EuNgqG_rB5wtX5e$cCL_5> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#3MWr8tTz936gAl$Q$Rkc$b
-<http://www.semanticweb.org/alhakam/brot-Abox#3MWr8tTz936gAl$Q$Rkc$b> rdf:type owl:NamedIndividual ,
-                                                                               brcomp:DrilledPile ;
-                                                                      brstr:hasBuildingMaterial inst:BSt420S ,
-                                                                                                inst:HOZ350L ;
-                                                                      brot:hasCoating inst:AIB ;
-                                                                      brcomp:diameter "0.53"^^xsd:double ;
-                                                                      brcomp:installationYear 1973 ;
-                                                                      rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de .
-
-
-###  http://www.semanticweb.org/alhakam/brot-Abox#RPS_LK_AnonymeStadt1_(UI)
-<http://www.semanticweb.org/alhakam/brot-Abox#RPS_LK_AnonymeStadt1_(UI)> rdf:type owl:NamedIndividual ,
-                                                                                  bridge:Department .
-
-
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#A1
-inst:A1 rdf:type owl:NamedIndividual ,
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#D1
+inst:D1 rdf:type owl:NamedIndividual ,
                  bridge:BoxGirderBridge ,
                  bridge:PrestressedConcreteBridge ,
                  bridge:RoadBridge ,
                  bridge:SlabBridge ;
-        bridge:directionOrigin inst:South ;
-        bridge:directionTarget inst:North ;
-        bridge:hasMainResponsible <http://sv.dbpedia.org/page/AnonymeStadt1> ;
-        bridge:hasResponsibleDepartment <http://www.semanticweb.org/alhakam/brot-Abox#RPS_LK_AnonymeStadt1_(UI)> ;
-        bridge:hasUIUAPartner <http://sv.dbpedia.org/page/AnonymeStadt1> ;
-        <http://w3id.org/brstr#hasStructuralAssessment> inst:DIN1072Assessment ,
-                                                        inst:STANAGAssessment ;
-        <https://w3id.org/brot#containsZone> inst:A1-SubStructure ,
-                                             inst:A1SuperStructure ;
+        rdfs:comment "Bemerkung Baugrund: generell in Höhe der Gründungssohle der Pfahlgründungen: Mergel bunt"@de ,
+                     """das Teilbauwerk beginnt am Widerlager Süd in Achse 13 und endet am
+Widerlager Nord in Achse 15"""@de ;
+        rdfs:label "Rampe Stadtmitte, westlicher Überbau"@de ;
         bridge:bridgeArea "268.0"^^xsd:double ;
         bridge:bridgeWidth "10.0"^^xsd:double ;
         bridge:completedDataAcquisition "true"^^xsd:boolean ;
         bridge:constructionYear 1973 ;
         bridge:curvature "false"^^xsd:boolean ;
+        bridge:directionOrigin inst:South ;
+        bridge:directionTarget inst:North ;
         bridge:fileID "673/3" ;
+        bridge:hasMainResponsible <http://sv.dbpedia.org/page/GermanCity> ;
+        bridge:hasResponsibleDepartment inst:RPS_LK_GermanCity ;
+        bridge:hasUIUAPartner <http://sv.dbpedia.org/page/GermanCity> ;
         bridge:historicPreservation "false"^^xsd:boolean ;
         bridge:maxConstructionHeight "0.6"^^xsd:double ;
         bridge:maxLongitudinalGradient "5.5"^^xsd:double ;
@@ -1018,235 +99,1079 @@ inst:A1 rdf:type owl:NamedIndividual ,
         bridge:overalLength "26.8"^^xsd:double ;
         bridge:overallWidth "10.25"^^xsd:double ;
         bridge:spacingSuperStructure "0.02"^^xsd:double ;
-        bridge:underTraffic "true"^^xsd:boolean .
+        bridge:underTraffic "true"^^xsd:boolean ;
+        brot:containsZone inst:D1-SubStructure ,
+                          inst:D1SuperStructure ;
+        brstr:hasStructuralAssessment inst:DIN1072Assessment ,
+                                      inst:STANAGAssessment .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#A1-SubStructure
-inst:A1-SubStructure rdf:type owl:NamedIndividual ,
-                              brot:BridgeSubstructure ;
-                     <https://w3id.org/brot#containsElement> <http://www.semanticweb.org/alhakam/brot-Abox#0QwtUP2TDA_Pz9n5QAZ7w5> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#08JukPzUzE$OJbfpTykPJx> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#0GGyOhV4P81v$QMMai2$r$> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#1Jsruwj6v82xuNR9o70ozy> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#1KO5lzBZj8jQGcpZVjVytA> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#1edHQCUQ5BiufFEMWeCLlQ> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#1oDJuZ2V1F8hTdoH5kEY5A> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#1CBvdP3$X5nBIVPbRw3De7> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#1Tq3U2drv4$ukSl8y_92Et> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#1dkJutsND4QfR$9mQ3d4hr> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#25tTPkRA13NP2XOjngzCvv> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#2SR$xd8YX9GuIf3Rv5pJFc> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#3AblAeVZLAvPjUvEEJ08Ly> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#3deVaFX353G97SGtG36gYs> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#3eRhty6cDFcvSLj8ZTOvjd> ,
-                                                             <http://www.semanticweb.org/alhakam/brot-Abox#36hJ1IIVn66hinabMgyZjH> .
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#D1-SubStructure
+inst:D1-SubStructure rdf:type owl:NamedIndividual ,
+                              brot:SubStructure ;
+                     brot:containsComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#0QwtUP2TDA_Pz9n5QAZ7w5> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#08JukPzUzE$OJbfpTykPJx> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0GGyOhV4P81v$QMMai2$r$> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Jsruwj6v82xuNR9o70ozy> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1KO5lzBZj8jQGcpZVjVytA> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1edHQCUQ5BiufFEMWeCLlQ> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1oDJuZ2V1F8hTdoH5kEY5A> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1CBvdP3$X5nBIVPbRw3De7> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Tq3U2drv4$ukSl8y_92Et> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1dkJutsND4QfR$9mQ3d4hr> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#25tTPkRA13NP2XOjngzCvv> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2SR$xd8YX9GuIf3Rv5pJFc> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3AblAeVZLAvPjUvEEJ08Ly> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3deVaFX353G97SGtG36gYs> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3eRhty6cDFcvSLj8ZTOvjd> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#36hJ1IIVn66hinabMgyZjH> .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#A1GirderWest
-inst:A1GirderWest rdf:type owl:NamedIndividual ,
-                           brcomp:BridgeGirder ;
-                  brstr:hasBuildingMaterial <http://www.semanticweb.org/alhakam/brot-Abox#350F> ,
-                                            inst:BSt420S ;
-                  <https://w3id.org/brot#aggregates> <http://www.semanticweb.org/alhakam/brot-Abox#0NIDY__lr5G9QARL0eKdFd> ,
-                                                     <http://www.semanticweb.org/alhakam/brot-Abox#1chnUbgXjAe9egn0i_9uVp> ,
-                                                     <http://www.semanticweb.org/alhakam/brot-Abox#2qw4yV6Tr4xhSpru_u3Ebv> ,
-                                                     <http://www.semanticweb.org/alhakam/brot-Abox#3dhMUsYdH6IOaRNuYMYYru> ,
-                                                     <http://www.semanticweb.org/alhakam/brot-Abox#3hA0greQb9XPkzMlDXjwqy> ,
-                                                     <http://www.semanticweb.org/alhakam/brot-Abox#3j204Ax7v2NAyel57ijdVm> ,
-                                                     inst:SafetyKerb1 .
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#D1GirderWest
+inst:D1GirderWest rdf:type owl:NamedIndividual ,
+                           brcomp:Girder ;
+                  brot:aggregates inst:SafetyKerb1 ,
+                                  <https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd> ,
+                                  <https://wisib.de/ontologie/abox/germanroadbridge/d1#1chnUbgXjAe9egn0i_9uVp> ,
+                                  <https://wisib.de/ontologie/abox/germanroadbridge/d1#2qw4yV6Tr4xhSpru_u3Ebv> ,
+                                  <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ,
+                                  <https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy> ,
+                                  <https://wisib.de/ontologie/abox/germanroadbridge/d1#3j204Ax7v2NAyel57ijdVm> ;
+                  bmat:hasBuildingMaterial inst:BSt420S ,
+                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#350F> .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#A1SuperStructure
-inst:A1SuperStructure rdf:type owl:NamedIndividual ,
-                               brot:BridgeSuperstructure ;
-                      <https://w3id.org/brot#containsElement> inst:A1GirderWest .
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#D1SuperStructure
+inst:D1SuperStructure rdf:type owl:NamedIndividual ,
+                               brot:SuperStructure ;
+                      brot:containsComponent inst:D1GirderWest .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#AIB
-inst:AIB rdf:type owl:NamedIndividual ,
-                  brot:Coating ;
-         dbo:manufacturer inst:AnonymeOrganisation1 ;
-         brcomp:installationYear 1973 ;
-         rdfs:label "Dichtungsaufstrich"@de .
-
-
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#Aluminium1
-inst:Aluminium1 rdf:type owl:NamedIndividual ,
-                         brstr:Aluminium ;
-                dbo:manufacturer inst:AnonymeOrganisation2 .
-
-
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#AnonymNaturstein
-inst:AnonymNaturstein rdf:type owl:NamedIndividual ,
-                               dbo:Organisation .
-
-
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#AnonymeID
-inst:AnonymeID rdf:type owl:NamedIndividual ,
-                        brot:Site ;
-               dbo:nearestCity <http://sv.dbpedia.org/page/AnonymeStadt1> ;
-               <https://w3id.org/brot#containsZone> inst:A1 .
-
-
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#AnonymeOrganisation1
-inst:AnonymeOrganisation1 rdf:type owl:NamedIndividual ,
-                                   dbo:Organisation ;
-                          rdfs:comment """ARGE Hochstraße
-
-(Fa. Wolfer & Goebel; 
-Wolff & Müller;
-Karl Stöhr KG)"""@de ;
-                          rdfs:label "ARGE Hochstraße"@de .
-
-
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#AnonymeOrganisation2
-inst:AnonymeOrganisation2 rdf:type owl:NamedIndividual ,
-                                   dbo:Organisation .
-
-
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#AnonymeOrganisation3
-inst:AnonymeOrganisation3 rdf:type owl:NamedIndividual ,
-                                   dbo:Organisation ;
-                          dbo:locationCity inst:AnonymeStadt2 .
-
-
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#AnonymeStadt2
-inst:AnonymeStadt2 rdf:type owl:NamedIndividual ,
-                            dbo:City .
-
-
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#BSt420S
-inst:BSt420S rdf:type owl:NamedIndividual ,
-                      brstr:ReinforecementSteel ;
-             brstr:materialStandard "DIN 488" ;
-             brcomp:installationYear 1984 ;
-             brot:reinforcementGrade "BSt 420 S (III S)" ;
-             rdfs:label "BSt 420 S (III S) nach DIN 488 Ausgabe 1984"@de .
-
-
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#DIN1072Assessment
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#DIN1072Assessment
 inst:DIN1072Assessment rdf:type owl:NamedIndividual ,
-                                <http://w3id.org/brstr#StructuralAssessmentDIN1072> ;
-                       <http://w3id.org/brstr#assessmentYear> 1973 ;
-                       <http://w3id.org/brstr#structuralCapabilityLevel> 60 .
+                                brstr:StructuralAssessmentDIN1072 ;
+                       brstr:assessmentYear 1973 ;
+                       brstr:structuralCapabilityLevel 60 .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#HOZ350L
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#GermanCompany3
+inst:GermanCompany3 rdf:type owl:NamedIndividual ,
+                           dbo:Organisation ;
+                  dbo:locationCity inst:GermanCity2 ;
+                  rdfs:label "GHS" .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#HOZ350L
 inst:HOZ350L rdf:type owl:NamedIndividual ,
-                      brstr:ReinforcedConcrete ;
-             brstr:concreteAdmixture "Rheinkies" ,
+                      bmat:ReinforcedConcrete ;
+             bmat:cementContent 350 ;
+             bmat:cementDesignation "HOZ 350 L" ;
+             bmat:cementType "HOZ" ;
+             bmat:concreteStrengthClass "B 300" ;
+             bmat:concreteAdmixture "Rheinkies" ,
                                      "Rheinsand" ;
-             brstr:materialAge 1972 ;
-             brstr:materialStandard "DIN 1045" ;
-             brot:cementContent 350 ;
-             brot:cementDesignation "HOZ 350 L" ;
-             brot:cementType "HOZ" ;
-             brot:concreteStrengthClass "B 300" .
+             bmat:materialAge 1972 ;
+             bmat:materialStandard "DIN 1045" .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#MastixARGEGirder
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#I01S103
+inst:I01S103 rdf:type owl:NamedIndividual ,
+                      brot:Site ;
+             dbo:nearestCity <http://sv.dbpedia.org/page/GermanCity> ;
+             rdfs:label "GermanRoadBridge"@de ;
+             brot:containsZone inst:D1 .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#GermanCompany2
+inst:GermanCompany2 rdf:type owl:NamedIndividual ,
+                     dbo:Organisation ;
+            rdfs:label "GermanCompany2" .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#MastixARGEGirder
 inst:MastixARGEGirder rdf:type owl:NamedIndividual ,
                                brcomp:MasticAsphalt ;
-                      dbo:manufacturer inst:AnonymeOrganisation1 ;
+                      dbo:manufacturer inst:GermanCompany ;
+                      rdfs:comment "Mastix mit hohem Bindemittelgehalt auf Glasfasergittergewebe"@de ;
                       brcomp:coatingArea 188.0 ;
                       brcomp:coatingThickness "7.0"^^xsd:double ;
-                      brcomp:installationYear 1973 ;
-                      rdfs:comment "Mastix mit hohem Bindemittelgehalt auf Glasfasergittergewebe"@de .
+                      brcomp:installationYear 1973 .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#MastixARGEPavement
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#MastixARGEPavement
 inst:MastixARGEPavement rdf:type owl:NamedIndividual ,
                                  brcomp:MasticAsphalt ;
-                        dbo:manufacturer inst:AnonymeOrganisation1 ;
+                        dbo:manufacturer inst:GermanCompany ;
+                        rdfs:comment "Mastix mit hohem Bindemittelgehalt auf Glasfasergittergewebe"@de ;
                         brcomp:coatingArea 68 ;
                         brcomp:coatingThickness "4.0"^^xsd:double ;
-                        brcomp:installationYear 1973 ;
-                        rdfs:comment "Mastix mit hohem Bindemittelgehalt auf Glasfasergittergewebe"@de .
+                        brcomp:installationYear 1973 .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#NaturalStone1
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#NaturalStone1
 inst:NaturalStone1 rdf:type owl:NamedIndividual ,
-                            brstr:NaturalStone ;
-                   dbo:manufacturer inst:AnonymNaturstein .
+                            bmat:NaturalStone ;
+                   dbo:manufacturer inst:CompanyNaturalStone .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#North
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#North
 inst:North rdf:type owl:NamedIndividual ,
                     <http://dbpedia.org/page/Orientation_(geometry)> .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#Pavement1
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#GermanCity2
+inst:GermanCity2 rdf:type owl:NamedIndividual ,
+                         dbo:City .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#Pavement1
 inst:Pavement1 rdf:type owl:NamedIndividual ,
-                        brcomp:BridgePavement ;
+                        brcomp:Pavement ;
+               brot:aggregates inst:Railing1 ;
                brot:hasCoating inst:MastixARGEPavement ;
-               <http://w3id.org/brstr#restsOn> <http://www.semanticweb.org/alhakam/brot-Abox#0GAfevVUb2Exh2Mvkcq1sj> ,
-                                               <http://www.semanticweb.org/alhakam/brot-Abox#08qj$VV3zBu9sG48wP5$Pu> ,
-                                               <http://www.semanticweb.org/alhakam/brot-Abox#1Pehfi_09Bvw4ETCApgaC9> ,
-                                               <http://www.semanticweb.org/alhakam/brot-Abox#1mrbK37wvBGRarBmoBKdrZ> ,
-                                               <http://www.semanticweb.org/alhakam/brot-Abox#1S1SjQi6vCDfVU$IYPMgOe> ,
-                                               <http://www.semanticweb.org/alhakam/brot-Abox#2jozzPD4LCeAKMlm_i2mcV> ;
-               <https://w3id.org/brot#aggregates> inst:Railing1 .
+               brstr:restsOn <https://wisib.de/ontologie/abox/germanroadbridge/d1#0GAfevVUb2Exh2Mvkcq1sj> ,
+                             <https://wisib.de/ontologie/abox/germanroadbridge/d1#08qj$VV3zBu9sG48wP5$Pu> ,
+                             <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Pehfi_09Bvw4ETCApgaC9> ,
+                             <https://wisib.de/ontologie/abox/germanroadbridge/d1#1mrbK37wvBGRarBmoBKdrZ> ,
+                             <https://wisib.de/ontologie/abox/germanroadbridge/d1#1S1SjQi6vCDfVU$IYPMgOe> ,
+                             <https://wisib.de/ontologie/abox/germanroadbridge/d1#2jozzPD4LCeAKMlm_i2mcV> .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#Railing1
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#Railing1
 inst:Railing1 rdf:type owl:NamedIndividual ,
-                       brcomp:BridgeRailing ;
-              brstr:hasBuildingMaterial inst:Aluminium1 ;
+                       brcomp:Railing ;
+              rdfs:comment "Füllstabgeländer mit Seil" ;
               brcomp:height "1.0"^^xsd:double ;
               brcomp:installationYear 1973 ;
-              rdfs:comment "Füllstabgeländer mit Seil" .
+              bmat:hasBuildingMaterial inst:Aluminium1 .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#STANAGAssessment
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#STANAGAssessment
 inst:STANAGAssessment rdf:type owl:NamedIndividual ,
-                               <http://w3id.org/brstr#StructuralAssessmentSTANAG2021> ;
-                      <http://w3id.org/brstr#assessmentYear> 1973 ;
-                      <http://w3id.org/brstr#singleTrackLaneWidth> 100 ;
-                      <http://w3id.org/brstr#structuralCapabilityLevel> "MLC Rad" ;
-                      <http://w3id.org/brstr#twoTrackLaneWidth> 50 .
+                               brstr:StructuralAssessmentSTANAG2021 ;
+                      brstr:assessmentYear 1973 ;
+                      brstr:singleTrackLaneWidth 100 ;
+                      brstr:structuralCapabilityLevel "MLC Rad" ;
+                      brstr:twoTrackLaneWidth 50 .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#SafetyKerb1
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#SafetyKerb1
 inst:SafetyKerb1 rdf:type owl:NamedIndividual ,
                           brcomp:SafetyKerb ;
-                 brstr:hasBuildingMaterial inst:NaturalStone1 ;
-                 brcomp:height "0.15"^^xsd:double ;
-                 brcomp:installationYear 1973 ;
                  rdfs:comment """Granitstein gestockt
 
-Abmessungen 20 / 23 / 17 cm""" .
+Abmessungen 20 / 23 / 17 cm""" ;
+                 brcomp:height "0.15"^^xsd:double ;
+                 brcomp:installationYear 1973 ;
+                 bmat:hasBuildingMaterial inst:NaturalStone1 .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#South
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#South
 inst:South rdf:type owl:NamedIndividual ,
                     <http://dbpedia.org/page/Orientation_(geometry)> .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#Span1
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#Span1
 inst:Span1 rdf:type owl:NamedIndividual ,
-                    <http://w3id.org/brstr#BridgeSpan> ;
-           <https://w3id.org/brot#containsElement> <http://www.semanticweb.org/alhakam/brot-Abox#0NIDY__lr5G9QARL0eKdFd> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#08JukPzUzE$OJbfpTykPJx> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#1chnUbgXjAe9egn0i_9uVp> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#1edHQCUQ5BiufFEMWeCLlQ> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#2SR$xd8YX9GuIf3Rv5pJFc> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#3deVaFX353G97SGtG36gYs> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#3dhMUsYdH6IOaRNuYMYYru> ;
-           <http://w3id.org/brstr#spanWidth> "12.8"^^xsd:double .
+                    brstr:Span ;
+           brot:containsComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#08JukPzUzE$OJbfpTykPJx> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#1chnUbgXjAe9egn0i_9uVp> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#1edHQCUQ5BiufFEMWeCLlQ> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#2SR$xd8YX9GuIf3Rv5pJFc> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#3deVaFX353G97SGtG36gYs> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ;
+           brstr:spanWidth "12.8"^^xsd:double .
 
 
-###  http://www.semanticweb.org/taras.kozak/brot-Abox#Span2
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#Span2
 inst:Span2 rdf:type owl:NamedIndividual ,
-                    <http://w3id.org/brstr#BridgeSpan> ;
-           <https://w3id.org/brot#containsElement> <http://www.semanticweb.org/alhakam/brot-Abox#08JukPzUzE$OJbfpTykPJx> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#1edHQCUQ5BiufFEMWeCLlQ> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#2qw4yV6Tr4xhSpru_u3Ebv> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#2SR$xd8YX9GuIf3Rv5pJFc> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#3dhMUsYdH6IOaRNuYMYYru> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#3eRhty6cDFcvSLj8ZTOvjd> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#3hA0greQb9XPkzMlDXjwqy> ,
-                                                   <http://www.semanticweb.org/alhakam/brot-Abox#3j204Ax7v2NAyel57ijdVm> ;
-           <http://w3id.org/brstr#spanWidth> "14.0"^^xsd:double .
+                    brstr:Span ;
+           brot:containsComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#08JukPzUzE$OJbfpTykPJx> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#1edHQCUQ5BiufFEMWeCLlQ> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#2qw4yV6Tr4xhSpru_u3Ebv> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#2SR$xd8YX9GuIf3Rv5pJFc> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#3eRhty6cDFcvSLj8ZTOvjd> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#3j204Ax7v2NAyel57ijdVm> ;
+           brstr:spanWidth "14.0"^^xsd:double .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0A6lyF_EzBjx4oY2ZihrTm
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0A6lyF_EzBjx4oY2ZihrTm> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0F8pmB4NXALwnPaSe6zKsy
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0F8pmB4NXALwnPaSe6zKsy> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0GAfevVUb2Exh2Mvkcq1sj
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0GAfevVUb2Exh2Mvkcq1sj> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: westlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-2" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "2.25"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0JpqNfSU17L8J9cyx2leLo
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0JpqNfSU17L8J9cyx2leLo> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderSegment ;
+                                                                            rdfs:label "Slab-3" ;
+                                                                            brot:aggregates <https://wisib.de/ontologie/abox/germanroadbridge/d1#1aRlzwelnFnwUk_mju8v3S> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#1mrbK37wvBGRarBmoBKdrZ> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#2c$4jTO6r6uBJf7OdPzxwM> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0QwtUP2TDA_Pz9n5QAZ7w5
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0QwtUP2TDA_Pz9n5QAZ7w5> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-1" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy> ;
+                                                                            brstr:supportHeight "2.8"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0U8evudTP8gwzri6J_cSmN
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0U8evudTP8gwzri6J_cSmN> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0_C_7pkZfBgBdYewqAHzLN
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0_C_7pkZfBgBdYewqAHzLN> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0_oQ_1cqr4oxsuU3LFDetK
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0_oQ_1cqr4oxsuU3LFDetK> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderDeck ;
+                                                                            rdfs:label "Deck-2" ;
+                                                                            brot:hasCoating inst:MastixARGEGirder .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0aMicdC558jf9BhHzofPqm
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0aMicdC558jf9BhHzofPqm> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0l1BBO8rv4QhH1eFpkBc_c
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0l1BBO8rv4QhH1eFpkBc_c> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0tvoAjYHP5a8XFd70MXp5O
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0tvoAjYHP5a8XFd70MXp5O> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0vnxmH7AT6IfbHlS2iwWgl
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0vnxmH7AT6IfbHlS2iwWgl> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#04DMsgNOvFye2K3CQlZpOH
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#04DMsgNOvFye2K3CQlZpOH> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderDeck ;
+                                                                            rdfs:label "Deck-1" ;
+                                                                            brot:hasCoating inst:MastixARGEGirder .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#08JukPzUzE$OJbfpTykPJx
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#08JukPzUzE$OJbfpTykPJx> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Pier ;
+                                                                            rdfs:label "Pier-1" ;
+                                                                            brstr:alignmentWidth "14.0"^^xsd:double ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#1KO5lzBZj8jQGcpZVjVytA> ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#08qj$VV3zBu9sG48wP5$Pu
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#08qj$VV3zBu9sG48wP5$Pu> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: westlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-1" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "2.25"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0Fmmok4THAOxdYY$T0xRqr
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0Fmmok4THAOxdYY$T0xRqr> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0GGyOhV4P81v$QMMai2$r$
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0GGyOhV4P81v$QMMai2$r$> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Foundation ;
+                                                                            rdfs:label "Foundation-1" ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3eRhty6cDFcvSLj8ZTOvjd> ;
+                                                                            brstr:restsOn <https://wisib.de/ontologie/abox/germanroadbridge/d1#0JpqNfSU17L8J9cyx2leLo> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0aMicdC558jf9BhHzofPqm> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0tvoAjYHP5a8XFd70MXp5O> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0vnxmH7AT6IfbHlS2iwWgl> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0Fmmok4THAOxdYY$T0xRqr> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0jlP6ykgv0CwpBc$AhNKvA> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1DPvP8SMP7XBYQRNu_dLk9> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Qcf4lexz4LO4x1UOtLGFw> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Lhm$G58LAkBDQqJdnJuMJ> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2MpnAjSYb2HhwvkxIYDXcd> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2ohgW5qfrCFvDyPDzTeLJ4> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2olXq4u8b05eNhBTTmIecB> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#28bMuO3bf3NvHhJf9yU2Pi> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3hu0cB2IXCVAIOanTTk5Y4> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3vttNqsab3fh9T503T3bJG> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#33bCjVpar2ZP4HeX51HWAX> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3EuNgqG_rB5wtX5e$cCL_5> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0WlBZPCq54MwS5IzK$4Mnu
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0WlBZPCq54MwS5IzK$4Mnu> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderDeck ;
+                                                                            rdfs:label "Deck-3" ;
+                                                                            brot:hasCoating inst:MastixARGEGirder .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0jlP6ykgv0CwpBc$AhNKvA
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0jlP6ykgv0CwpBc$AhNKvA> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1DPvP8SMP7XBYQRNu_dLk9
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1DPvP8SMP7XBYQRNu_dLk9> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1F3wRCISj6o9jFd98hOXft
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1F3wRCISj6o9jFd98hOXft> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1HI5gUP214NuM19arKfzyC
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1HI5gUP214NuM19arKfzyC> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderDeck ;
+                                                                            rdfs:label "Deck-5" ;
+                                                                            brot:hasCoating inst:MastixARGEGirder .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1Jsruwj6v82xuNR9o70ozy
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1Jsruwj6v82xuNR9o70ozy> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-3" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ;
+                                                                            brstr:supportHeight "3.6"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1KO5lzBZj8jQGcpZVjVytA
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1KO5lzBZj8jQGcpZVjVytA> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-4" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ;
+                                                                            brstr:supportHeight "3.6"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1Pehfi_09Bvw4ETCApgaC9
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1Pehfi_09Bvw4ETCApgaC9> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: westlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-4" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "2.25"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1Qcf4lexz4LO4x1UOtLGFw
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1Qcf4lexz4LO4x1UOtLGFw> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1XtQpURGz3xBiFQHbfk_Zx
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1XtQpURGz3xBiFQHbfk_Zx> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: östlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-6" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "1.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1ZPHRkLVT36BbjO_fUmNXP
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1ZPHRkLVT36BbjO_fUmNXP> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1aRlzwelnFnwUk_mju8v3S
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1aRlzwelnFnwUk_mju8v3S> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderDeck ;
+                                                                            rdfs:label "Deck-4" ;
+                                                                            brot:hasCoating inst:MastixARGEGirder .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1chnUbgXjAe9egn0i_9uVp
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1chnUbgXjAe9egn0i_9uVp> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderSegment ;
+                                                                            rdfs:label "Slab.1" ;
+                                                                            brot:adjacentComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd> ;
+                                                                            brot:aggregates <https://wisib.de/ontologie/abox/germanroadbridge/d1#0GAfevVUb2Exh2Mvkcq1sj> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#1HI5gUP214NuM19arKfzyC> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#1XtQpURGz3xBiFQHbfk_Zx> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1d8qmF5zL9SfOTdNgYBvTm
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1d8qmF5zL9SfOTdNgYBvTm> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1edHQCUQ5BiufFEMWeCLlQ
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1edHQCUQ5BiufFEMWeCLlQ> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Pier ;
+                                                                            rdfs:label "Pier-2" ;
+                                                                            brstr:alignmentWidth "14.0"^^xsd:double ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Jsruwj6v82xuNR9o70ozy> ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1hrqCYpGv1VADtTfK_tdgG
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1hrqCYpGv1VADtTfK_tdgG> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1mrbK37wvBGRarBmoBKdrZ
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1mrbK37wvBGRarBmoBKdrZ> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: westlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-3" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "2.25"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1oDJuZ2V1F8hTdoH5kEY5A
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1oDJuZ2V1F8hTdoH5kEY5A> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-5" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd> ;
+                                                                            brstr:supportHeight "4.3"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1rnVLTzRv9hAVVHOdMthiQ
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1rnVLTzRv9hAVVHOdMthiQ> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1zjNfRDL12Hx0Ld_VEbyoM
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1zjNfRDL12Hx0Ld_VEbyoM> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderDeck ;
+                                                                            rdfs:label "Deck-6" ;
+                                                                            brot:hasCoating inst:MastixARGEGirder .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#13XiSi9on9EAaDXSNfxIL0
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#13XiSi9on9EAaDXSNfxIL0> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1CBvdP3$X5nBIVPbRw3De7
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1CBvdP3$X5nBIVPbRw3De7> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-2" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy> ;
+                                                                            brstr:supportHeight "2.8"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1Lhm$G58LAkBDQqJdnJuMJ
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1Lhm$G58LAkBDQqJdnJuMJ> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1S1SjQi6vCDfVU$IYPMgOe
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1S1SjQi6vCDfVU$IYPMgOe> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: westlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-5" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "2.25"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1Tq3U2drv4$ukSl8y_92Et
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1Tq3U2drv4$ukSl8y_92Et> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Foundation ;
+                                                                            rdfs:label "Foundation-3" ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#08JukPzUzE$OJbfpTykPJx> ,
+                                                                                        <https://wisib.de/ontologie/abox/germanroadbridge/d1#1edHQCUQ5BiufFEMWeCLlQ> ,
+                                                                                        <https://wisib.de/ontologie/abox/germanroadbridge/d1#2SR$xd8YX9GuIf3Rv5pJFc> ;
+                                                                            brstr:restsOn <https://wisib.de/ontologie/abox/germanroadbridge/d1#0A6lyF_EzBjx4oY2ZihrTm> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0F8pmB4NXALwnPaSe6zKsy> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0_C_7pkZfBgBdYewqAHzLN> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1hrqCYpGv1VADtTfK_tdgG> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2CsyCp5_r8qg7bQc3fdLK3> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2zVkYLPLv4$O9iRIozSQ9i> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3HL787CJnElwvilypS9bSs> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3MWr8tTz936gAl$Q$Rkc$b> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1dkJutsND4QfR$9mQ3d4hr
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1dkJutsND4QfR$9mQ3d4hr> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Foundation ;
+                                                                            rdfs:label "Foundation-2" ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3deVaFX353G97SGtG36gYs> ;
+                                                                            brstr:restsOn <https://wisib.de/ontologie/abox/germanroadbridge/d1#0U8evudTP8gwzri6J_cSmN> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0l1BBO8rv4QhH1eFpkBc_c> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1F3wRCISj6o9jFd98hOXft> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1ZPHRkLVT36BbjO_fUmNXP> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1d8qmF5zL9SfOTdNgYBvTm> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1rnVLTzRv9hAVVHOdMthiQ> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#13XiSi9on9EAaDXSNfxIL0> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2aHXCxFxX9gupyFf0MErBV> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#27MICrNTDCXAYsrxi714tV> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2fpgLTNmv6xA0qIbJYxYR$> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3fmuu9QMv3f9RuDCjKKDIm> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3kepiMDpr8nwROgmq0fBRu> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2CsyCp5_r8qg7bQc3fdLK3
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2CsyCp5_r8qg7bQc3fdLK3> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2MpnAjSYb2HhwvkxIYDXcd
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2MpnAjSYb2HhwvkxIYDXcd> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2aHXCxFxX9gupyFf0MErBV
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2aHXCxFxX9gupyFf0MErBV> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2hxCrWc6jAKBc2blCCpPje
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2hxCrWc6jAKBc2blCCpPje> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: östlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-8" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "1.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2jozzPD4LCeAKMlm_i2mcV
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2jozzPD4LCeAKMlm_i2mcV> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: westlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-9" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "2.25"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2ohgW5qfrCFvDyPDzTeLJ4
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2ohgW5qfrCFvDyPDzTeLJ4> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2olXq4u8b05eNhBTTmIecB
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2olXq4u8b05eNhBTTmIecB> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2qw4yV6Tr4xhSpru_u3Ebv
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2qw4yV6Tr4xhSpru_u3Ebv> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderSegment ;
+                                                                            rdfs:label "Slab.2" ;
+                                                                            brot:adjacentComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ;
+                                                                            brot:aggregates <https://wisib.de/ontologie/abox/germanroadbridge/d1#04DMsgNOvFye2K3CQlZpOH> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#2hxCrWc6jAKBc2blCCpPje> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#2jozzPD4LCeAKMlm_i2mcV> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#25tTPkRA13NP2XOjngzCvv
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#25tTPkRA13NP2XOjngzCvv> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-6" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd> ;
+                                                                            brstr:supportHeight "4.3"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#27MICrNTDCXAYsrxi714tV
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#27MICrNTDCXAYsrxi714tV> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#28bMuO3bf3NvHhJf9yU2Pi
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#28bMuO3bf3NvHhJf9yU2Pi> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2SR$xd8YX9GuIf3Rv5pJFc
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2SR$xd8YX9GuIf3Rv5pJFc> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Pier ;
+                                                                            rdfs:label "Pier-3" ;
+                                                                            brstr:alignmentWidth "14.0"^^xsd:double ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#36hJ1IIVn66hinabMgyZjH> ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2c$4jTO6r6uBJf7OdPzxwM
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2c$4jTO6r6uBJf7OdPzxwM> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: östlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-7" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "1.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2fpgLTNmv6xA0qIbJYxYR$
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2fpgLTNmv6xA0qIbJYxYR$> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2zVkYLPLv4$O9iRIozSQ9i
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2zVkYLPLv4$O9iRIozSQ9i> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3AblAeVZLAvPjUvEEJ08Ly
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3AblAeVZLAvPjUvEEJ08Ly> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-8" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy> ;
+                                                                            brstr:supportHeight "2.8"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3HL787CJnElwvilypS9bSs
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3HL787CJnElwvilypS9bSs> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3V21Dnqsv6PP1e9TMRfO2p
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3V21Dnqsv6PP1e9TMRfO2p> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: östlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-11" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "1.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3ZDymkAmDCY8FaZdgJd1fa
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3ZDymkAmDCY8FaZdgJd1fa> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: östlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-12" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "1.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3deVaFX353G97SGtG36gYs
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3deVaFX353G97SGtG36gYs> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Abutment ;
+                                                                            rdfs:label "Abutment-1" ;
+                                                                            brstr:alignmentWidth "0.0"^^xsd:double ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#1oDJuZ2V1F8hTdoH5kEY5A> ,
+                                                                                        <https://wisib.de/ontologie/abox/germanroadbridge/d1#25tTPkRA13NP2XOjngzCvv> ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderSegment ;
+                                                                            rdfs:label "Slab.4" ;
+                                                                            brot:adjacentComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#1chnUbgXjAe9egn0i_9uVp> ;
+                                                                            brot:aggregates <https://wisib.de/ontologie/abox/germanroadbridge/d1#0_oQ_1cqr4oxsuU3LFDetK> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#1S1SjQi6vCDfVU$IYPMgOe> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#3mPNFRMfv1o8iSS1xiknue> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3eRhty6cDFcvSLj8ZTOvjd
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3eRhty6cDFcvSLj8ZTOvjd> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Abutment ,
+                                                                                     brstr:AlignmentOrigin ;
+                                                                            rdfs:label "Abutment-2" ;
+                                                                            brstr:alignmentWidth "14.0"^^xsd:double ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#0QwtUP2TDA_Pz9n5QAZ7w5> ,
+                                                                                        <https://wisib.de/ontologie/abox/germanroadbridge/d1#1CBvdP3$X5nBIVPbRw3De7> ,
+                                                                                        <https://wisib.de/ontologie/abox/germanroadbridge/d1#3AblAeVZLAvPjUvEEJ08Ly> ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3fmuu9QMv3f9RuDCjKKDIm
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3fmuu9QMv3f9RuDCjKKDIm> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderSegment ;
+                                                                            rdfs:label "Slab.5" ;
+                                                                            brot:adjacentComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#3j204Ax7v2NAyel57ijdVm> ;
+                                                                            brot:aggregates <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Pehfi_09Bvw4ETCApgaC9> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#1zjNfRDL12Hx0Ld_VEbyoM> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#3ZDymkAmDCY8FaZdgJd1fa> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3hu0cB2IXCVAIOanTTk5Y4
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3hu0cB2IXCVAIOanTTk5Y4> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3j204Ax7v2NAyel57ijdVm
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3j204Ax7v2NAyel57ijdVm> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderSegment ;
+                                                                            rdfs:label "Slab.6" ;
+                                                                            brot:adjacentComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#2qw4yV6Tr4xhSpru_u3Ebv> ;
+                                                                            brot:aggregates <https://wisib.de/ontologie/abox/germanroadbridge/d1#08qj$VV3zBu9sG48wP5$Pu> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#0WlBZPCq54MwS5IzK$4Mnu> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#3V21Dnqsv6PP1e9TMRfO2p> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3kepiMDpr8nwROgmq0fBRu
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3kepiMDpr8nwROgmq0fBRu> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3mPNFRMfv1o8iSS1xiknue
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3mPNFRMfv1o8iSS1xiknue> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: östlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-10" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "1.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3vttNqsab3fh9T503T3bJG
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3vttNqsab3fh9T503T3bJG> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#33bCjVpar2ZP4HeX51HWAX
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#33bCjVpar2ZP4HeX51HWAX> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#350F
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#350F> rdf:type owl:NamedIndividual ,
+                                                                   bmat:ReinforcedConcrete ;
+                                                          bmat:cementContent 330 ;
+                                                          bmat:cementDesignation "350 F" ;
+                                                          bmat:concreteStrengthClass "Bn 450" ;
+                                                          bmat:concreteAdmixture "Rheinkies" ,
+                                                                                  "Rheinsand" ;
+                                                          bmat:concreteAggregate "Bv" ;
+                                                          bmat:materialAge 1978 ;
+                                                          bmat:materialStandard "DIN 1045" .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#36hJ1IIVn66hinabMgyZjH
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#36hJ1IIVn66hinabMgyZjH> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-7" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ;
+                                                                            brstr:supportHeight "3.6"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3EuNgqG_rB5wtX5e$cCL_5
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3EuNgqG_rB5wtX5e$cCL_5> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3MWr8tTz936gAl$Q$Rkc$b
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3MWr8tTz936gAl$Q$Rkc$b> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#RPS_LK_GermanCity_(UI)
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#RPS_LK_GermanCity_(UI)> rdf:type owl:NamedIndividual ,
+                                                                                    bridge:Department .
