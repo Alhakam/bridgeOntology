@@ -2,71 +2,78 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix brot: <http://w3id.org/brot#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix brstr: <http://w3id.org/brstr#> .
-@prefix dcterms: <http://purl.org/dc/terms> .
-@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix brot: <https://wisib.de/ontologie/brot#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix brstr: <https://wisib.de/ontologie/brstr#> .
+@prefix dcterms: <http://purl.org/dc/terms> .
 
-<http://w3id.org/brstr> rdf:type owl:Ontology ;
-                         owl:versionIRI <http://w3id.org/brstr/0.1> ;
+<https://wisib.de/ontologie/brstr> rdf:type owl:Ontology ;
+                         owl:versionIRI <https://wisib.de/ontologie/brstr/0.1> ;
                          dcterms:creator [ rdf:type foaf:Person ;
                                            foaf:name "Al-Hakam Hamdan"
-                                         ] ;
+                                         ] ,
+                                        [ rdf:type foaf:Person ;
+                                          foaf:name "Taras Kozak"
+                                        ] ;
                          dcterms:description "Ontology for describing the bridge structure from a structural analysis perspective"@en ;
                          dcterms:license "https://creativecommons.org/licenses/by/1.0" ;
+                         dcterms:modified "23th May 2019" ;
                          dcterms:title "Bridge Structure"@en ;
                          vann:preferredNamespacePrefix "brstr" ;
-                         vann:preferredNamespaceUri "https://w3id.org/brstr#" .
+                         vann:preferredNamespaceUri "https://wisib.de/ontologie/brstr#" .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-
-###  http://w3id.org/brstr#bears
+###  https://wisib.de/ontologie/brstr#bears
 brstr:bears rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf brot:locatedBelow ,
-                               brstr:getsLoadsFrom ,
-                               brot:adjacentElement ;
+            rdfs:subPropertyOf brot:adjacentComponent ,
+                               brot:locatedBelow ,
+                               brstr:getsLoadsFrom ;
             owl:inverseOf brstr:restsOn ;
-            rdfs:domain brot:BridgeElement ;
-            rdfs:range brot:BridgeElement ;
+            rdfs:domain brot:Component ;
+            rdfs:range brot:Component ;
             rdfs:comment "Bei dieser Relation ist angegeben, dass ein Element ein anderes Element traegt, und als Folge die Last bekommt."@de ,
                          "This relationship points that an element bears an another element, and, as a result, gets some load."@en ;
             rdfs:label "bears"@en ,
                        "traegt"@de .
 
 
-###  http://w3id.org/brstr#getsLoadsFrom
+###  https://wisib.de/ontologie/brstr#getsLoadsFrom
 brstr:getsLoadsFrom rdf:type owl:ObjectProperty ,
                              owl:TransitiveProperty ;
-                    rdfs:domain brot:BridgeElement ;
-                    rdfs:range brot:BridgeElement .
+                    rdfs:domain brot:Component ;
+                    rdfs:range brot:Component .
 
 
-###  http://w3id.org/brstr#hasStructuralAssessment
+###  https://wisib.de/ontologie/brstr#hasStructuralAssessment
 brstr:hasStructuralAssessment rdf:type owl:ObjectProperty ;
-                              rdfs:range brstr:StructuralAssessment .
+                              rdfs:range brstr:StructuralAssessment ;
+                              rdfs:comment "Relationship between a SpatialZone or Component and its corresponding StructuralAssessment."@en ;
+                              rdfs:label "has structural assessment"@en .
 
 
-###  http://w3id.org/brstr#loads
+###  https://wisib.de/ontologie/brstr#loads
 brstr:loads rdf:type owl:ObjectProperty ,
                      owl:TransitiveProperty ;
-            rdfs:domain brot:BridgeElement ;
-            rdfs:range brot:BridgeElement .
+            rdfs:domain brot:Component ;
+            rdfs:range brot:Component ;
+            rdfs:comment "Relation between a component that transfers loads and the component that receives them."@en ;
+            rdfs:label "loads"@en .
 
 
-###  http://w3id.org/brstr#restsOn
+###  https://wisib.de/ontologie/brstr#restsOn
 brstr:restsOn rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf brot:locatedAbove ,
-                                 brstr:loads ,
-                                 brot:adjacentElement  ;
-              rdfs:domain brot:BridgeElement ;
-              rdfs:range brot:BridgeElement ;
+              rdfs:subPropertyOf brot:adjacentComponent ,
+                                 brot:locatedAbove ,
+                                 brstr:loads ;
+              rdfs:domain brot:Component ;
+              rdfs:range brot:Component ;
               rdfs:comment "Bei dieser Relation ist angegegeben, dass ein Element A sich auf ein anderes Element B stuetzt und das Element A leitet die Lasten zu dem unteren Element B weiter"@de ,
-                           "By this relationship is pointed that an element A rest on an other element B and transmit some load to the lower element B."@en ;
+                           "By this relationship is pointed that a component A rest on an other component B and transmit some load to the lower component B."@en ;
               rdfs:label "liegt auf"@de ,
                          "rest on"@en .
 
@@ -75,163 +82,222 @@ brstr:restsOn rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://w3id.org/brstr#alignmentWidth
+###  https://wisib.de/ontologie/brstr#alignmentWidth
 brstr:alignmentWidth rdf:type owl:DatatypeProperty ;
-                     rdfs:comment "Entfernung zum Alignment-Referenzpunkt"@de .
+                     rdfs:comment "Distance to alignment reference point"@en ,
+                                  "Entfernung zum Alignment-Referenzpunkt"@de ;
+                     rdfs:label "alignment width"@en .
 
 
-###  http://w3id.org/brstr#assessmentYear
+###  https://wisib.de/ontologie/brstr#assessmentYear
 brstr:assessmentYear rdf:type owl:DatatypeProperty ;
                      rdfs:domain brstr:StructuralAssessment ;
-                     rdfs:label "Einstufung (Jahr)"@de .
+                     rdfs:comment "The year in which the bridge structure has been assessed regarding the structural capability"@en ;
+                     rdfs:label "Einstufung (Jahr)"@de ,
+                                "assessment year"@en .
 
 
-###  http://w3id.org/brstr#degreeOfFreedom
+###  https://wisib.de/ontologie/brstr#degreeOfFreedom
 brstr:degreeOfFreedom rdf:type owl:DatatypeProperty ;
-                      rdfs:domain brstr:BridgeLoadBearingElement ;
-                      rdfs:label "Freiheitsgrad"@de .
+                      rdfs:domain brstr:LoadBearingComponent ;
+                      rdfs:comment "The degree of freedom at which a LoadBearingComponent can move or rotate."@en ;
+                      rdfs:label "Freiheitsgrad"@de ,
+                                 "degree of freedom"@en .
 
 
-###  http://w3id.org/brstr#effectiveSupportCapacity
+###  https://wisib.de/ontologie/brstr#effectiveSupportCapacity
 brstr:effectiveSupportCapacity rdf:type owl:DatatypeProperty ;
-                               rdfs:domain brstr:BridgeLoadBearingElement ;
+                               rdfs:domain brstr:LoadBearingComponent ;
                                rdfs:comment """Folgende Werte sind möglich:
 
 - Dezimalwert in [m]
 
-- \"reduced\" für reduzierte Stützweite (kennzeichnet zu variierenden Wert)"""@de ;
-                               rdfs:label "Effektive Stützweite"@de .
+- 'reduced' für reduzierte Stützweite (kennzeichnet zu variierenden Wert)"""@de ,
+                                            """The following values are possible:
+
+- Decimal value in [m].
+
+- 'reduced' for reduced span (indicates value to be varied)"""@en ;
+                               rdfs:label "Effektive Stützweite"@de ,
+                                          "effective support capacity"@en .
 
 
-###  http://w3id.org/brstr#movement
+###  https://wisib.de/ontologie/brstr#movement
 brstr:movement rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf brstr:degreeOfFreedom .
+               rdfs:subPropertyOf brstr:degreeOfFreedom ;
+               rdfs:comment "Defines at which extend a LoadBearingComponent can move"@en ;
+               rdfs:label "movement"@en .
 
 
-###  http://w3id.org/brstr#rotation
+###  https://wisib.de/ontologie/brstr#rotation
 brstr:rotation rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf brstr:degreeOfFreedom .
+               rdfs:subPropertyOf brstr:degreeOfFreedom ;
+               rdfs:comment "Defines at which extend a LoadBearingComponent can rotate"@en ;
+               rdfs:label "rotation"@en .
 
 
-###  http://w3id.org/brstr#singleTrackLaneWidth
+###  https://wisib.de/ontologie/brstr#singleTrackLaneWidth
 brstr:singleTrackLaneWidth rdf:type owl:DatatypeProperty ;
                            rdfs:domain brstr:StructuralAssessmentSTANAG2021 ;
-                           rdfs:label "Einbahnverkehr"@de .
+                           rdfs:comment "The width of a single track lane"@en ;
+                           rdfs:label "Einbahnverkehr"@de ,
+                                      "single track lane width"@en .
 
 
-###  http://w3id.org/brstr#spanWidth
+###  https://wisib.de/ontologie/brstr#spanWidth
 brstr:spanWidth rdf:type owl:DatatypeProperty ;
-                rdfs:domain brstr:BridgeSpan ;
-                rdfs:label "Stützweite"@de .
+                rdfs:domain brstr:Span ;
+                rdfs:comment "Width which is spanned by a component (bridge, vault, roof, floor slab) between the elements supporting this component (abutment, pier, column, support, load-bearing wall) without other support."@en ;
+                rdfs:label "Stützweite"@de ,
+                           "span width"@en .
 
 
-###  http://w3id.org/brstr#structuralCapabilityLevel
+###  https://wisib.de/ontologie/brstr#structuralCapabilityLevel
 brstr:structuralCapabilityLevel rdf:type owl:DatatypeProperty ;
                                 rdfs:domain brstr:StructuralAssessment ;
-                                rdfs:label "Tragfähigkeit (nach entsprechender Norm)"@de .
+                                rdfs:comment "Structural capability grade based on German standard"@en ;
+                                rdfs:label "Tragfähigkeit (nach entsprechender Norm)"@de ,
+                                           "structural capability level"@en .
 
 
-###  http://w3id.org/brstr#supportHeight
+###  https://wisib.de/ontologie/brstr#supportHeight
 brstr:supportHeight rdf:type owl:DatatypeProperty ;
-                    rdfs:domain brstr:BridgeLoadBearingElement ;
-                    rdfs:comment "Gibt die Höhe der Stütze bzw. des stützenden Elements im Vergleich zum Nullpunkt an."@de ;
-                    rdfs:label "Stützungshöhe"@de .
+                    rdfs:domain brstr:LoadBearingComponent ;
+                    rdfs:comment "Gibt die Höhe der Stütze bzw. des stützenden Elements im Vergleich zum Nullpunkt an."@de ,
+                                 "Specifies the height of the column or supporting element compared to the zero point."@en ;
+                    rdfs:label "Stützungshöhe"@de ,
+                               "support height"@en .
 
 
-###  http://w3id.org/brstr#twoTrackLaneWidth
+###  https://wisib.de/ontologie/brstr#twoTrackLaneWidth
 brstr:twoTrackLaneWidth rdf:type owl:DatatypeProperty ;
                         rdfs:domain brstr:StructuralAssessmentSTANAG2021 ;
-                        rdfs:label "Zweibahnverkehr"@de .
+                        rdfs:comment "The width of a two track lanes"@en ;
+                        rdfs:label "Zweibahnverkehr"@de ,
+                                   "two track lane width"@en .
 
 
-###  http://w3id.org/brstr#xDegreeOfFreedom
+###  https://wisib.de/ontologie/brstr#xDegreeOfFreedom
 brstr:xDegreeOfFreedom rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf brstr:degreeOfFreedom .
+                       rdfs:subPropertyOf brstr:degreeOfFreedom ;
+                       rdfs:comment "The degree of freedom at which a LoadBearingComponent can move or rotate along to the x-axis."@en ;
+                       rdfs:label "degree of freedom along to X-axis"@en .
 
 
-###  http://w3id.org/brstr#xMovement
+###  https://wisib.de/ontologie/brstr#xMovement
 brstr:xMovement rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf brstr:movement ,
                                    brstr:xDegreeOfFreedom ;
-                rdfs:label "Freiheitsgrad (x-Bewegungsrichtung)"@de .
+                rdfs:comment "Defines at which extend a LoadBearingComponent can move along the x-axis."@en ;
+                rdfs:label "Freiheitsgrad (x-Bewegungsrichtung)"@de ,
+                           "X movement"@en .
 
 
-###  http://w3id.org/brstr#xRotation
+###  https://wisib.de/ontologie/brstr#xRotation
 brstr:xRotation rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf brstr:rotation ,
                                    brstr:xDegreeOfFreedom ;
-                rdfs:label "Freiheitsgrad (x-Rotationsrichtung)"@de .
+                rdfs:comment "Defines at which extend a LoadBearingComponent can rotate along the x-axis."@en ;
+                rdfs:label "Freiheitsgrad (x-Rotationsrichtung)"@de ,
+                           "X rotation"@en .
 
 
-###  http://w3id.org/brstr#yDegreeOfFreedom
+###  https://wisib.de/ontologie/brstr#yDegreeOfFreedom
 brstr:yDegreeOfFreedom rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf brstr:degreeOfFreedom .
 
 
-###  http://w3id.org/brstr#yMovement
+###  https://wisib.de/ontologie/brstr#yMovement
 brstr:yMovement rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf brstr:movement ,
                                    brstr:yDegreeOfFreedom ;
-                rdfs:label "Freiheitsgrad (y-Bewegungsrichtung)"@de .
+                rdfs:comment "Defines at which extend a LoadBearingComponent can move along the y-axis."@en ;
+                rdfs:label "Freiheitsgrad (y-Bewegungsrichtung)"@de ,
+                           "Y movement"@en .
 
 
-###  http://w3id.org/brstr#yRotation
+###  https://wisib.de/ontologie/brstr#yRotation
 brstr:yRotation rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf brstr:rotation ,
                                    brstr:yDegreeOfFreedom ;
-                rdfs:label "Freiheitsgrad (y-Rotationsrichtung)"@de .
+                rdfs:comment "Defines at which extend a LoadBearingComponent can rotate along the y-axis."@en ;
+                rdfs:label "Freiheitsgrad (y-Rotationsrichtung)"@de ,
+                           "Y rotation"@en .
 
 
-###  http://w3id.org/brstr#zDegreeOfFreedom
+###  https://wisib.de/ontologie/brstr#zDegreeOfFreedom
 brstr:zDegreeOfFreedom rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf brstr:degreeOfFreedom .
 
 
-###  http://w3id.org/brstr#zMovement
+###  https://wisib.de/ontologie/brstr#zMovement
 brstr:zMovement rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf brstr:movement ,
                                    brstr:zDegreeOfFreedom ;
-                rdfs:label "Freiheitsgrad (z-Bewegungsrichtung)"@de .
+                rdfs:comment "Defines at which extend a LoadBearingComponent can move along the z-axis."@en ;
+                rdfs:label "Freiheitsgrad (z-Bewegungsrichtung)"@de ,
+                           "Z movement"@en .
 
 
-###  http://w3id.org/brstr#zRotation
+###  https://wisib.de/ontologie/brstr#zRotation
 brstr:zRotation rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf brstr:rotation ,
                                    brstr:zDegreeOfFreedom ;
-                rdfs:label "Freiheitsgrad (z-Rotationsrichtung)"@de .
+                rdfs:comment "Defines at which extend a LoadBearingComponent can rotate along the z-axis."@en ;
+                rdfs:label "Freiheitsgrad (z-Rotationsrichtung)"@de ,
+                           "Z rotation"@en .
 
+###  https://wisib.de/ontologie/brstr#yieldStrength
+brstr:yieldStrength rdf:type owl:DatatypeProperty ;
+                rdfs:comment "Defines the yield strength of a construction component."@en ;
+                rdfs:label "Streckgrenze"@de ,
+                           "yield strength"@en .
+
+###  https://wisib.de/ontologie/brstr#breakingLimit
+brstr:breakingLimit rdf:type owl:DatatypeProperty ;
+                rdfs:comment "Defines the breaking limit of a construction component."@en ;
+                rdfs:label "Bruchgrenze"@de ,
+                           "breaking limit"@en .
 
 #################################################################
 #    Classes
 #################################################################
 
-
-###  http://w3id.org/brstr#AlignmentOrigin
+###  https://wisib.de/ontologie/brstr#AlignmentOrigin
 brstr:AlignmentOrigin rdf:type owl:Class ;
                       rdfs:comment """Defines the origin of the alignment curve.
 
-Recommended instance: brot:BridgeAbutment"""@en .
+Recommended instance: brcomp:Abutment"""@en ;
+                      rdfs:label "Alignment origin"@en .
 
 
-###  http://w3id.org/brstr#BridgeLoadBearingElement
-brstr:BridgeLoadBearingElement rdf:type owl:Class ;
-                               rdfs:subClassOf brot:BridgeElement .
+###  https://wisib.de/ontologie/brstr#LoadBearingComponent
+brstr:LoadBearingComponent rdf:type owl:Class ;
+                               rdfs:subClassOf brot:Component ;
+                               rdfs:comment "Component that takes loads."@en ;
+                               rdfs:label "Load-bearing element"@en .
 
 
-###  http://w3id.org/brstr#BridgeSpan
-brstr:BridgeSpan rdf:type owl:Class ;
-                 rdfs:subClassOf brot:BridgeSpatialZone .
+###  https://wisib.de/ontologie/brstr#Span
+brstr:Span rdf:type owl:Class ;
+                 rdfs:subClassOf brot:SpatialZone ;
+                 rdfs:comment "Distance between two intermediate piers for a bridge."@en ;
+                 rdfs:label "Bridge span"@en .
 
 
-###  http://w3id.org/brstr#StructuralAssessment
+###  https://wisib.de/ontologie/brstr#StructuralAssessment
 brstr:StructuralAssessment rdf:type owl:Class .
 
 
-###  http://w3id.org/brstr#StructuralAssessmentDIN1072
+###  https://wisib.de/ontologie/brstr#StructuralAssessmentDIN1072
 brstr:StructuralAssessmentDIN1072 rdf:type owl:Class ;
-                                  rdfs:subClassOf brstr:StructuralAssessment .
+                                  rdfs:subClassOf brstr:StructuralAssessment ;
+                                  rdfs:comment "Structural assessment according to the German standard DIN1072."@en ;
+                                  rdfs:label "Structural assessment DIN1072"@en .
 
 
-###  http://w3id.org/brstr#StructuralAssessmentSTANAG2021
+###  https://wisib.de/ontologie/brstr#StructuralAssessmentSTANAG2021
 brstr:StructuralAssessmentSTANAG2021 rdf:type owl:Class ;
-                                     rdfs:subClassOf brstr:StructuralAssessment .
+                                     rdfs:subClassOf brstr:StructuralAssessment ;
+                                     rdfs:comment "Structural assessment according to the German standard STANAG2021"@en ;
+                                     rdfs:label "Structural assessment STANAG2021"@en .

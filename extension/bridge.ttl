@@ -3,331 +3,464 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix brot: <http://w3id.org/brot#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix bridge: <http://w3id.org/bridge#> .
-@prefix dcterms: <http://purl.org/dc/terms> .
-@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix brot: <https://wisib.de/ontologie/brot#> .
+@prefix brcomp: <https://wisib.de/ontologie/brcomp#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix bridge: <https://wisib.de/ontologie/bridge#> .
+@prefix dcterms: <http://purl.org/dc/terms> .
 
-<http://w3id.org/bridge> rdf:type owl:Ontology ;
-                          owl:versionIRI <http://w3id.org/bridge/0.1> ;
+<https://wisib.de/ontologie/bridge> rdf:type owl:Ontology ;
+                          owl:versionIRI <https://wisib.de/ontologie/bridge/0.1> ;
                           dcterms:creator [ rdf:type foaf:Person ;
-                                           foaf:name "Al-Hakam Hamdan";
-                                         ] ;
-                         dcterms:description "Ontology for bridge classification and properties"@en ;
-                         dcterms:license "https://creativecommons.org/licenses/by/1.0" ;
-                         dcterms:title "Bridge"@en ;
-                         vann:preferredNamespacePrefix "bridge" ;
-                         vann:preferredNamespaceUri "https://w3id.org/bridge#" .
+                                            foaf:name "Al-Hakam Hamdan"
+                                          ] ;
+                          dcterms:description "Ontology for bridge classification and properties"@en ;
+                          dcterms:license "https://creativecommons.org/licenses/by/1.0" ;
+                          dcterms:modified "21th May 2019" ;
+                          dcterms:title "Bridge Ontology"@en ;
+                          vann:preferredNamespacePrefix "bridge" ;
+                          vann:preferredNamespaceUri "https://wisib.de/ontologie/bridge#" .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://w3id.org/bridge#directionOrigin
+###  https://wisib.de/ontologie/bridge#directionOrigin
 bridge:directionOrigin rdf:type owl:ObjectProperty ;
                        rdfs:domain brot:Bridge ;
                        rdfs:range <http://dbpedia.org/page/Orientation_(geometry)> ;
-                       rdfs:comment "Gibt an, von welcher Himmelsrichtung kommend das Bauwerk errichtet werden soll (BW-Richtung)"@de .
+                       rdfs:comment "Gibt an, von welcher Himmelsrichtung kommend das Bauwerk errichtet werden soll (BW-Richtung)"@de ,
+                                    "Specifies the direction from which the building is to be constructed."@en ;
+                       rdfs:label "Richtungsursprung"@de ,
+                                  "direction origin"@en .
 
 
-###  http://w3id.org/bridge#directionTarget
+###  https://wisib.de/ontologie/bridge#directionTarget
 bridge:directionTarget rdf:type owl:ObjectProperty ;
                        rdfs:domain brot:Bridge ;
                        rdfs:range <http://dbpedia.org/page/Orientation_(geometry)> ;
-                       rdfs:comment "Gibt an, zu welcher Himmelsrichtung zielend das Bauwerk errichtet werden soll (BW-Richtung)"@de .
+                       rdfs:comment "Gibt an, zu welcher Himmelsrichtung zielend das Bauwerk errichtet werden soll (BW-Richtung)"@de ,
+                                    "Indicates the direction in which the building is to be constructed."@en ;
+                       rdfs:label "Richtungsziel"@de ,
+                                  "direction target"@en .
 
 
-###  http://w3id.org/bridge#hasMainResponsible
+###  https://wisib.de/ontologie/bridge#hasMainResponsible
 bridge:hasMainResponsible rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf bridge:hasResponsible ;
                           rdfs:domain brot:Bridge ;
                           rdfs:range dbo:Organisation ;
-                          rdfs:label "Baulast Konstrukt"@de .
+                          rdfs:comment "Relationship between a Bridge and the main responsible dbo:Organisation that administrates the Bridge."@en ;
+                          rdfs:label "Baulast Konstrukt"@de ,
+                                     "has main responsible"@en .
 
 
-###  http://w3id.org/bridge#hasResponsible
+###  https://wisib.de/ontologie/bridge#hasResponsible
 bridge:hasResponsible rdf:type owl:ObjectProperty ;
                       rdfs:domain brot:Bridge ;
-                      rdfs:range dbo:Organisation .
+                      rdfs:range dbo:Organisation ;
+                      rdfs:comment "Relationship between a Bridge and a responsible dbo:Organisation."@en ;
+                      rdfs:label "has Responsible"@en .
 
 
-###  http://w3id.org/bridge#hasResponsibleDepartment
+###  https://wisib.de/ontologie/bridge#hasResponsibleDepartment
 bridge:hasResponsibleDepartment rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf bridge:hasResponsible ;
                                 rdfs:domain brot:Bridge ;
                                 rdfs:range bridge:Department ;
-                                rdfs:comment "Zuständiges Amt für betroffene Brücke"@de ;
-                                rdfs:label "Amt"@de .
+                                rdfs:comment "Relationship between a Bridge and a responsible department that administrates the Bridge."@en ,
+                                             "Zuständiges Amt für betroffene Brücke"@de ;
+                                rdfs:label "Amt"@de ,
+                                           "has responsible department"@en .
 
 
-###  http://w3id.org/bridge#hasResponsibleWorkshop
+###  https://wisib.de/ontologie/bridge#hasResponsibleWorkshop
 bridge:hasResponsibleWorkshop rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf bridge:hasResponsible ;
                               rdfs:domain brot:Bridge ;
-                              rdfs:range bridge:Workshop .
+                              rdfs:range bridge:Workshop ;
+                              rdfs:comment "Relationship between a Bridge and a responsible workshop."@en ;
+                              rdfs:label "has responsible workshop"@en .
 
 
-###  http://w3id.org/bridge#hasUIUAPartner
+###  https://wisib.de/ontologie/bridge#hasUIUAPartner
 bridge:hasUIUAPartner rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf bridge:hasResponsible ;
                       rdfs:domain brot:Bridge ;
                       rdfs:range dbo:Organisation ;
-                      rdfs:label "UI/UA pflichtiger Partner"@de .
+                      rdfs:comment "Relationship between a Bridge and a responsible UI/UA responsible partner."@en ;
+                      rdfs:label "UI/UA pflichtiger Partner"@de ,
+                                 "has UI/UA responsible partner"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://w3id.org/bridge#angle
+###  https://wisib.de/ontologie/bridge#angle
 bridge:angle rdf:type owl:DatatypeProperty ;
-             rdfs:label "Bauwerkswinkel"@de .
+rdfs:domain brot:Bridge ;
+rdfs:comment """Angle of construction related to site.
+Unit in  [°]."""@en;
+             rdfs:label "Bauwerkswinkel"@de ,
+                        "construction angle"@en .
 
 
-###  http://w3id.org/bridge#bridgeArea
+###  https://wisib.de/ontologie/bridge#bridgeArea
 bridge:bridgeArea rdf:type owl:DatatypeProperty ;
+rdfs:domain brot:Bridge ;
                   rdfs:comment "Gibt die Gesamtfläche der Überbauelemente der Brücke an. Einheit in [m²]."@de ,
-                               "TODO: Klären ob Definition korrekt"@de ;
-                  rdfs:label "Brückenfläche"@de .
+                               """Specifies the total area of the superstructure components of the bridge. 
+Unit in [m²]."""@en ;
+                  rdfs:label "Brückenfläche"@de ,
+                             "bridge area"@en .
 
 
-###  http://w3id.org/bridge#bridgeWidth
+###  https://wisib.de/ontologie/bridge#bridgeWidth
 bridge:bridgeWidth rdf:type owl:DatatypeProperty ;
                    rdfs:domain brot:Bridge ;
                    rdfs:comment "Gibt die Breite der Brücke an (ohne Ausbau). Einheit in [m]."@de ,
-                                "TODO: Unterschied zwischen Breite und Gesamtbreite klären."@de ;
-                   rdfs:label "Breite"@de .
+                                """Specifies the width of the bridge (without extension). 
+Unit in [m]."""@en ;
+                   rdfs:label "Breite"@de ,
+                              "bridge width"@en .
 
 
-###  http://w3id.org/bridge#clearHeight
+###  https://wisib.de/ontologie/bridge#clearHeight
 bridge:clearHeight rdf:type owl:DatatypeProperty ;
                    rdfs:domain brot:Bridge ;
-                   rdfs:label "Lichte Höhe"@de .
+                   rdfs:comment """defines the height which needs to fulfil the following criteria:
+
+- free space between the roadway and the lower edge of the superstructure of a bridge or between its piers or columns;
+
+- vertical space in the cross-section of the road to be kept clear of obstacles
+
+Unit in [m]."""@en ;
+                   rdfs:label "Lichte Höhe"@de ,
+                              "clear height"@en .
 
 
-###  http://w3id.org/bridge#clearWidthSingleSpan
+###  https://wisib.de/ontologie/bridge#clearWidthSingleSpan
 bridge:clearWidthSingleSpan rdf:type owl:DatatypeProperty ;
                             rdfs:domain brot:Bridge ;
-                            rdfs:label "Lichte Weite bei Einfeld"@de .
+                            rdfs:comment """defines the width of a single span which needs to fulfil the following criteria:
+
+- free space between the roadway and the lower edge of the superstructure of a bridge or between its piers or columns;
+
+- vertical space in the cross-section of the road to be kept clear of obstacles
+
+Unit in [m]."""@en ;
+                            rdfs:label "Lichte Weite bei Einfeld"@de ,
+                                       "clear width of single span"@en .
 
 
-###  http://w3id.org/bridge#completedDataAcquisition
+###  https://wisib.de/ontologie/bridge#completedDataAcquisition
 bridge:completedDataAcquisition rdf:type owl:DatatypeProperty ;
                                 rdfs:domain brot:Bridge ;
                                 rdfs:range xsd:boolean ;
                                 rdfs:comment """Gibt an, ob die Datenerfassung abgeschlossen worden ist.
 
 true = Datenerf. abgeschlossen
-false = Datenerf. nicht abgeschlossen / unvollständig"""@de ;
-                                rdfs:label "Datenerf. abgeschl."@de .
+false = Datenerf. nicht abgeschlossen / unvollständig"""@de ,
+                                             """Indicates whether data acquisition has been completed.
+
+true = data acquisition completed
+false = data acquisition not completed / incomplete"""@en ;
+                                rdfs:label "Datenerf. abgeschl."@de ,
+                                           "completed data acquisition"@en .
 
 
-###  http://w3id.org/bridge#constructionYear
+###  https://wisib.de/ontologie/bridge#constructionYear
 bridge:constructionYear rdf:type owl:DatatypeProperty ;
                         rdfs:domain brot:Bridge ;
-                        rdfs:label "Baujahr"@de .
+                        rdfs:comment "Year in which the bridge has been constructed."@en ;
+                        rdfs:label "Baujahr"@de ,
+                                   "construction year"@en .
 
 
-###  http://w3id.org/bridge#curvature
+###  https://wisib.de/ontologie/bridge#curvature
 bridge:curvature rdf:type owl:DatatypeProperty ;
                  rdfs:domain brot:Bridge ;
-                 rdfs:comment "Gibt die Krümmung der Brückenplatte an. Krümmung kann entweder mit R in [m] angegeben werden oder als \"false\" bzw. nicht gekrümmt."@de ;
-                 rdfs:label "Krümmung"@de .
+                 rdfs:comment "Gibt die Krümmung der Brückenplatte an. Krümmung kann entweder mit R in [m] angegeben werden oder als \"false\" bzw. nicht gekrümmt."@de ,
+                              "Specifies the curvature of the bridge plate. Curvature can either be specified with radius in [m] or as \"false\" or not curved."@en ;
+                 rdfs:label "Krümmung"@de ,
+                            "curvature"@en .
 
 
-###  http://w3id.org/bridge#fileID
+###  https://wisib.de/ontologie/bridge#fileID
 bridge:fileID rdf:type owl:DatatypeProperty ;
               rdfs:domain brot:Bridge ;
-              rdfs:label "Bauwerksakte-Nr."@de .
+              rdfs:comment "Referes to the file ID of the corresponding construction file."@en ;
+              rdfs:label "Bauwerksakte-Nr."@de ,
+                         "file ID"@en .
 
 
-###  http://w3id.org/bridge#historicPreservation
+###  https://wisib.de/ontologie/bridge#historicPreservation
 bridge:historicPreservation rdf:type owl:DatatypeProperty ;
                             rdfs:domain brot:Bridge ;
                             rdfs:range xsd:boolean ;
                             rdfs:comment """Gibt an, ob das Bauwerk unter Denkmalschutz steht.
 
 true = Bauwerk unter Denkmalschutz
-false = kein Denkmalschutz"""@de ;
-                            rdfs:label "Denkmalschutz"@de .
+false = kein Denkmalschutz"""@de ,
+                                         """Indicates whether the building is under monument protection.
+
+true = building under monument protection
+false = no monument protection"""@en ;
+                            rdfs:label "Denkmalschutz"@de ,
+                                       "historic preservation"@en .
 
 
-###  http://w3id.org/bridge#maxConstructionHeight
+###  https://wisib.de/ontologie/bridge#maxConstructionHeight
 bridge:maxConstructionHeight rdf:type owl:DatatypeProperty ;
                              rdfs:domain brot:Bridge ;
-                             rdfs:comment "Gibt die maximale Konstruktionshöhe an. Einheit in [m]."@de ;
-                             rdfs:label "Konstruktionshöhe max."@de .
+                             rdfs:comment "Gibt die maximale Konstruktionshöhe an. Einheit in [m]."@de ,
+                                          """Specifies the maximum construction height. 
+
+Unit in [m]."""@en ;
+                             rdfs:label "Konstruktionshöhe max."@de ,
+                                        "maximum construction height"@en .
 
 
-###  http://w3id.org/bridge#maxCoveredHeight
+###  https://wisib.de/ontologie/bridge#maxCoveredHeight
 bridge:maxCoveredHeight rdf:type owl:DatatypeProperty ;
                         rdfs:domain brot:Bridge ;
-                        rdfs:label "Max. Überschüttungshöhe"@de .
+                        rdfs:comment """Specifies the maximum covered height. 
+
+Unit in [m]."""@en ;
+                        rdfs:label "Max. Überschüttungshöhe"@de ,
+                                   "maximum covered height"@en .
 
 
-###  http://w3id.org/bridge#maxLongitudinalGradient
+###  https://wisib.de/ontologie/bridge#maxLongitudinalGradient
 bridge:maxLongitudinalGradient rdf:type owl:DatatypeProperty ;
                                rdfs:domain brot:Bridge ;
-                               rdfs:comment "Gibt die maximale Längsneigung der Brückenplatte an. Einheit in [%]."@de ;
-                               rdfs:label "Maximale Längsneigung"@de .
+                               rdfs:comment "Gibt die maximale Längsneigung der Brückenplatte an. Einheit in [%]."@de ,
+                                            """Specifies the maximum longitudinal inclination of the bridge slab. 
+
+Unit in [%]."""@en ;
+                               rdfs:label "Maximale Längsneigung"@de ,
+                                          "maximum longitudinal gradient"@en .
 
 
-###  http://w3id.org/bridge#maxTransverseGradient
+###  https://wisib.de/ontologie/bridge#maxTransverseGradient
 bridge:maxTransverseGradient rdf:type owl:DatatypeProperty ;
                              rdfs:domain brot:Bridge ;
-                             rdfs:comment "Gibt die maximale Querneigung der Brückenplatte an. Einheit in [%]."@de ;
-                             rdfs:label "maximale Querneigung"@de .
+                             rdfs:comment "Gibt die maximale Querneigung der Brückenplatte an. Einheit in [%]."@de ,
+                                          """Specifies the maximum transverse inclination of the bridge slab. 
+
+Unit in [%]."""@en ;
+                             rdfs:label "maximale Querneigung"@de ,
+                                        "maximum transverse gradient"@en .
 
 
-###  http://w3id.org/bridge#minConstructionHeight
+###  https://wisib.de/ontologie/bridge#minConstructionHeight
 bridge:minConstructionHeight rdf:type owl:DatatypeProperty ;
                              rdfs:domain brot:Bridge ;
-                             rdfs:comment "Gibt die minimale Konstruktionshöhe an. Einheit in [m]."@de ;
-                             rdfs:label "Konstruktionshöhe min."@de .
+                             rdfs:comment "Gibt die minimale Konstruktionshöhe an. Einheit in [m]."@de ,
+                                          """Specifies the minimum construction height.
+
+Unit in [m]."""@en ;
+                             rdfs:label "Konstruktionshöhe min."@de ,
+                                        "minimum construction height"@en .
 
 
-###  http://w3id.org/bridge#minCoveredHeight
+###  https://wisib.de/ontologie/bridge#minCoveredHeight
 bridge:minCoveredHeight rdf:type owl:DatatypeProperty ;
                         rdfs:domain brot:Bridge ;
-                        rdfs:label "Min. Überschüttungshöhe"@de .
+                        rdfs:comment """Specifies the minimum covered height.
+
+Unit in [m]."""@en ;
+                        rdfs:label "Min. Überschüttungshöhe"@de ,
+                                   "minimum covered height"@en .
 
 
-###  http://w3id.org/bridge#overalLength
+###  https://wisib.de/ontologie/bridge#overalLength
 bridge:overalLength rdf:type owl:DatatypeProperty ;
                     rdfs:domain brot:Bridge ;
-                    rdfs:comment "Gibt die Gesamtlänge der Brücke an. Einheit in [m]."@de ;
-                    rdfs:label "Gesamtlänge"@de .
+                    rdfs:comment "Gibt die Gesamtlänge der Brücke an. Einheit in [m]."@de ,
+                                 """Specifies the total length of the bridge.
+
+Unit in [m]."""@en ;
+                    rdfs:label "Gesamtlänge"@de ,
+                               "overall length"@en .
 
 
-###  http://w3id.org/bridge#overallWidth
+###  https://wisib.de/ontologie/bridge#overallWidth
 bridge:overallWidth rdf:type owl:DatatypeProperty ;
+rdfs:domain brot:Bridge ;
                     rdfs:comment "Gibt die Gesamtbreite der Brücke an. Einheit in [m]."@de ,
-                                 "TODO: Unterschied zwischen Breite und Gesamtbreite klären."@de ;
-                    rdfs:label "Gesamtbreite"@de .
+                                 """Specifies the total width of the bridge. 
+
+Unit in [m]."""@en ;
+                    rdfs:label "Gesamtbreite"@de ,
+                               "overall width"@en .
 
 
-###  http://w3id.org/bridge#spacingSuperStructure
+###  https://wisib.de/ontologie/bridge#spacingSuperStructure
 bridge:spacingSuperStructure rdf:type owl:DatatypeProperty ;
                              rdfs:domain brot:Bridge ;
-                             rdfs:comment "Gibt den Zwischenraum der Überbauten an. Einheit in [m]."@de ;
-                             rdfs:label "Zwischenraum Überbauten"@de .
+                             rdfs:comment "Gibt den Zwischenraum der Überbauten an. Einheit in [m]."@de ,
+                                          """Specifies the space between the superstructures. 
+
+Unit in [m]."""@en ;
+                             rdfs:label "Zwischenraum Überbauten"@de ,
+                                        "spacing between superstructures"@en .
 
 
-###  http://w3id.org/bridge#underTraffic
+###  https://wisib.de/ontologie/bridge#underTraffic
 bridge:underTraffic rdf:type owl:DatatypeProperty ;
                     rdfs:domain brot:Bridge ;
                     rdfs:range xsd:boolean ;
                     rdfs:comment """Gibt an ob die Brücke einer Verkehrslast ausgesetzt ist bzw. befahren wird.
 
 true = Unter Vekehr / befahren
-false = Nicht unter Verkehr / gesperrt"""@de ;
-                    rdfs:label "Stadium"@de .
+false = Nicht unter Verkehr / gesperrt"""@de ,
+                                 """Indicates whether the bridge is exposed to a traffic load.
+
+true = Under traffic / traffic
+false = Not under traffic / blocked"""@en ;
+                    rdfs:label "Stadium"@de ,
+                               "under traffic"@en .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://w3id.org/bridge#BeamBridge
+###  https://wisib.de/ontologie/bridge#BeamBridge
 bridge:BeamBridge rdf:type owl:Class ;
                   rdfs:subClassOf brot:Bridge ;
-                  rdfs:label "Balkenbrücke"@de .
+                  rdfs:comment "The external characteristic of the beam bridge is usually the visible separation of the superstructure (bridge girder) from the substructure (supports, abutments) by bearings. The bearings transfer the loads from the superstructure to the substructures and give the bridge girder the necessary positional stability and movement capability. The cross-sectional shape in the longitudinal direction corresponds externally to a beam, usually the girder height is constant. Superstructures with variable superstructure heights are possible. As a rule, the bottom chord has a curvature corresponding to the moment load, it is vouched. The beam makes optimum use of the strength of the material and is used as a static system for conventional bridges with small to medium spans (approx. 80 m). Economical spans for beam bridges are up to 100 m, approx. 100-200 m for Extradosed bridges and from 200 m for cable-stayed bridges. The beam bridge is frequently used because of its comparatively simple construction. Many bridges over motorways are designed in this way. Beam bridges can be constructed in transverse direction with different cross-section geometries."@en ;
+                  rdfs:label "Balkenbrücke"@de ,
+                             "Beam bridge"@en .
 
 
-###  http://w3id.org/bridge#BoxGirderBridge
+###  https://wisib.de/ontologie/bridge#BoxGirderBridge
 bridge:BoxGirderBridge rdf:type owl:Class ;
                        rdfs:subClassOf bridge:GirderBridge ;
-                       rdfs:label "Hohlkastenbrücke"@de .
+                       rdfs:comment "Bridge in which the main beams comprise girders in the shape of a hollow box. The box girder normally comprises either prestressed concrete, structural steel, or a composite of steel and reinforced concrete. The box is typically rectangular or trapezoidal in cross-section."@en ;
+                       rdfs:label "Box girder bridge"@en ,
+                                  "Hohlkastenbrücke"@de .
 
 
-###  http://w3id.org/bridge#CompositeBridge
+###  https://wisib.de/ontologie/bridge#CompositeBridge
 bridge:CompositeBridge rdf:type owl:Class ;
-                       rdfs:subClassOf brot:Bridge .
+                       rdfs:subClassOf brot:Bridge ;
+                       rdfs:comment "Composite steel bridges are structures consisting of steel main girders and a concrete deck slab above them."@en ;
+                       rdfs:label "Composite bridge"@en .
 
 
-###  http://w3id.org/bridge#Department
+###  https://wisib.de/ontologie/bridge#Department
 bridge:Department rdf:type owl:Class ;
-                  rdfs:subClassOf dbo:Organisation .
+                  rdfs:subClassOf dbo:Organisation ;
+                  rdfs:comment "Responsible department that administrates the bridge and its maintenance."@en ;
+                  rdfs:label "Department"@en .
 
 
-###  http://w3id.org/bridge#GirderBridge
+###  https://wisib.de/ontologie/bridge#GirderBridge
 bridge:GirderBridge rdf:type owl:Class ;
                     rdfs:subClassOf brot:Bridge ;
-                    rdfs:label "Plattenbalken- / Trägerrost- Brücke"@de .
+                    rdfs:comment "Bridge that uses girders as the means of supporting its deck."@en ;
+                    rdfs:label "Girder bridge"@en ,
+                               "Plattenbalken- / Trägerrost- Brücke"@de .
 
 
-###  http://w3id.org/bridge#PedestrianBridge
+###  https://wisib.de/ontologie/bridge#PedestrianBridge
 bridge:PedestrianBridge rdf:type owl:Class ;
-                        rdfs:subClassOf brot:Bridge .
+                        rdfs:subClassOf brot:Bridge ;
+                        rdfs:comment "Bridge designed solely for pedestrians"@en ;
+                        rdfs:label "Pedestrian Bridge"@en .
 
 
-###  http://w3id.org/bridge#PrestressedConcreteBridge
+###  https://wisib.de/ontologie/bridge#PrestressedConcreteBridge
 bridge:PrestressedConcreteBridge rdf:type owl:Class ;
-                                 rdfs:subClassOf brot:Bridge .
+                                 rdfs:subClassOf brot:Bridge ;
+                                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                       owl:onProperty brot:containsComponent ;
+                                                       owl:someValuesFrom brcomp:Tendon
+                                                     ] ;
+                                 rdfs:comment "Bridge that uses prestressed concrete as building material."@en ;
+                                 rdfs:label "Prestressed concrete bridge"@en .
 
 
-###  http://w3id.org/bridge#RailwayBridge
+###  https://wisib.de/ontologie/bridge#RailwayBridge
 bridge:RailwayBridge rdf:type owl:Class ;
-                     rdfs:subClassOf brot:Bridge .
+                     rdfs:subClassOf brot:Bridge ;
+                     rdfs:comment "Bridge specially designed to guide a railway line and the railways running on it over obstacles."@en ;
+                     rdfs:label "Railway bridge"@en .
 
 
-###  http://w3id.org/bridge#ReinforcedConcreteBridge
+###  https://wisib.de/ontologie/bridge#ReinforcedConcreteBridge
 bridge:ReinforcedConcreteBridge rdf:type owl:Class ;
-                                rdfs:subClassOf brot:Bridge .
+                                rdfs:subClassOf brot:Bridge ;
+                                rdfs:comment "Bridge that uses reinforced concrete as building material."@en ;
+                                rdfs:label "Reinforced concrete bridge"@en .
 
 
-###  http://w3id.org/bridge#RoadBridge
+###  https://wisib.de/ontologie/bridge#RoadBridge
 bridge:RoadBridge rdf:type owl:Class ;
-                  rdfs:subClassOf brot:Bridge .
+                  rdfs:subClassOf brot:Bridge ;
+                  rdfs:comment "Bridge that can be used by motor vehicles and motor vehicles and usually also by pedestrians, bicycles and other vehicles."@en ;
+                  rdfs:label "Road bridge"@en .
 
 
-###  http://w3id.org/bridge#SlabBridge
+###  https://wisib.de/ontologie/bridge#SlabBridge
 bridge:SlabBridge rdf:type owl:Class ;
-                  rdfs:subClassOf brot:Bridge .
+                  rdfs:subClassOf brot:Bridge ;
+                  rdfs:comment "Short-span bridge consisting of a reinforced-concrete slab resting on abutments"@en ;
+                  rdfs:label "Slab bridge"@en .
 
 
-###  http://w3id.org/bridge#Steelbridge
+###  https://wisib.de/ontologie/bridge#Steelbridge
 bridge:Steelbridge rdf:type owl:Class ;
-                   rdfs:subClassOf brot:Bridge .
+                   rdfs:subClassOf brot:Bridge ;
+                   rdfs:comment "Bridge that uses mainly steel as building material."@en ;
+                   rdfs:label "Steel bridge"@en .
 
 
-###  http://w3id.org/bridge#StoneBridge
+###  https://wisib.de/ontologie/bridge#StoneBridge
 bridge:StoneBridge rdf:type owl:Class ;
-                   rdfs:subClassOf brot:Bridge .
+                   rdfs:subClassOf brot:Bridge ;
+                   rdfs:comment "Bridge that uses mainly (natural) stone as building material."@en ;
+                   rdfs:label "Stone bridge"@en .
 
 
-###  http://w3id.org/bridge#TransportBridge
+###  https://wisib.de/ontologie/bridge#TransportBridge
 bridge:TransportBridge rdf:type owl:Class ;
-                       rdfs:subClassOf brot:Bridge .
+                       rdfs:subClassOf brot:Bridge ;
+                       rdfs:comment "Movable bridge that carries a segment of roadway across a river."@en ;
+                       rdfs:label "Transport bridge"@en .
 
 
-###  http://w3id.org/bridge#WoodBridge
+###  https://wisib.de/ontologie/bridge#WoodBridge
 bridge:WoodBridge rdf:type owl:Class ;
-                  rdfs:subClassOf brot:Bridge .
+                  rdfs:subClassOf brot:Bridge ;
+                  rdfs:comment "Bridge that uses mainly wood as building material."@en ;
+                  rdfs:label "Wood bridge"@en .
 
 
-###  http://w3id.org/bridge#Workshop
+###  https://wisib.de/ontologie/bridge#Workshop
 bridge:Workshop rdf:type owl:Class ;
                 rdfs:subClassOf dbo:Organisation ;
-                rdfs:comment "Zuständiger Betrieb / Meisterei für Brückenbauwerk"@de ;
-                rdfs:label "Meisterei"@de .
-
+                rdfs:comment "Responsible company / workshop for constructing the bridge."@en ,
+                             "Zuständiger Betrieb / Meisterei für Brückenbauwerk"@de ;
+                rdfs:label "Meisterei"@de ,
+                           "Workshop"@en .
 
 #################################################################
 #    General axioms
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( bridge:CompositeBridge
-                bridge:PrestressedConcreteBridge
-                bridge:ReinforcedConcreteBridge
-                bridge:Steelbridge
-                bridge:StoneBridge
-                bridge:WoodBridge
-              )
-] .
+   owl:members ( bridge:CompositeBridge
+                 bridge:Steelbridge
+                 bridge:StoneBridge
+                 bridge:WoodBridge
+               )
+ ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
