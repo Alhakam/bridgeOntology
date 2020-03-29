@@ -1,17 +1,16 @@
-@prefix : <http://w3id.org/brot#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix brot: <https://w3id.org/brot#> .
+@prefix brot: <https://wisib.de/ontologie/brot#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <http://schema.org/#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://w3id.org/brot> .
 
-<http://w3id.org/brot> rdf:type owl:Ontology ;
-                        owl:versionIRI <http://w3id.org/brot/0.1> ;
+<https://wisib.de/ontologie/brot> rdf:type owl:Ontology ;
+                        owl:versionIRI <https://wisib.de/ontologie/brot/0.2> ;
                         dcterms:creator [ rdf:type foaf:Person ;
                                           foaf:name "Al-Hakam Hamdan"
                                         ] ,
@@ -20,193 +19,211 @@
                                         ] ;
                         dcterms:description "Ontology that defines the topology of zones and components of bridge constructions"@en ;
                         dcterms:title "Bridge Topology Ontology"@en ;
+                        dcterms:license "https://creativecommons.org/licenses/by/1.0" ;
+                        dcterms:modified "23th May 2019" ;
                         vann:preferredNamespacePrefix "brot" ;
-                        vann:preferredNamespaceUri "https://w3id.org/brot#" .
+                        vann:preferredNamespaceUri "https://wisib.de/ontologie/brot#" .
+
 
 #################################################################
 #    Object Properties
 #################################################################
 
+###  https://wisib.de/ontologie/brot#adjacentElement
+brot:adjacentElement rdf:type owl:ObjectProperty ,
+                              owl:SymmetricProperty ;
+                     schema:domainIncludes brot:BridgeElement ,
+                                 brot:BridgeSpatialZone ;
+                     rdfs:range brot:BridgeElement ;
+                     rdfs:comment "Relation zwischen Elementen und Zonen, die durch eine Berührungsfläche einen physikalischen Kontakt miteinander haben."@de ,
+                                  "Relationship between elements and zones which have physical contact to each other."@en ;
+                     rdfs:label "adjacent element"@en ,
+                                "benachbartes Element"@de .
 
-###  http://w3id.org/brot#hasCoating
+
+###  https://wisib.de/ontologie/brot#adjacentZone
+brot:adjacentZone rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty ;
+                  schema:domainIncludes brot:BridgeElement ,
+                                 brot:BridgeSpatialZone ;
+                  rdfs:range brot:BridgeSpatialZone ;
+                  rdfs:comment "Relationship between two adjacent Zones."@en ;
+                  rdfs:label "adjacent zone"@en ,
+                             "benachbarte Zone"@de .
+
+
+###  https://wisib.de/ontologie/brot#aggregates
+brot:aggregates rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:domain brot:BridgeElement ;
+                rdfs:range brot:BridgeElement ;
+                rdfs:comment "Relationship between a BridgeElement and an aggregated BridgeElement as subcomponent."@en ;
+                rdfs:label "aggregates"@en ,
+                           "beinhaltet"@de .
+
+
+###  https://wisib.de/ontologie/brot#containsElement
+brot:containsElement rdf:type owl:ObjectProperty ;
+                     rdfs:domain brot:BridgeSpatialZone ;
+                     rdfs:range brot:BridgeElement ;
+                     owl:propertyChainAxiom ( brot:containsElement
+                                              brot:aggregates
+                                            ) ,
+                                            ( brot:containsZone
+                                              brot:containsElement
+                                            ) ;
+                     rdfs:comment "Relationship between a BridgeSpatialZone and its contained BridgeElement"@en ;
+                     rdfs:label "contains element"@en ,
+                                "enthält Element"@de .
+
+
+###  https://wisib.de/ontologie/brot#containsZone
+brot:containsZone rdf:type owl:ObjectProperty ,
+                           owl:TransitiveProperty ;
+                  rdfs:domain brot:BridgeSpatialZone ;
+                  rdfs:range brot:BridgeSpatialZone ;
+                  rdfs:comment "Relationship between a BridgeSpatialZone and another contained BridgeSpatialZone (subzone)"@en ;
+                  rdfs:label "contains zone"@en ,
+                             "enthält Zone"@de .
+
+
+###  https://wisib.de/ontologie/brot#hasCoating
 brot:hasCoating rdf:type owl:ObjectProperty ;
                 rdfs:domain brot:BridgeElement ;
-                rdfs:range brot:Coating .
+                rdfs:range brot:Coating ;
+                rdfs:comment "Relationship between a BridgeElement and its applied Coating."@en ;
+                rdfs:label "has coating"@en ,
+                           "hat Beschichtung"@de .
 
 
-###  http://w3id.org/brot#hasJoint
+###  https://wisib.de/ontologie/brot#hasJoint
 brot:hasJoint rdf:type owl:ObjectProperty ;
               rdfs:domain brot:BridgeElement ;
-              rdfs:range brot:BridgeJoint .
+              rdfs:range brot:BridgeJoint ;
+              rdfs:comment "Relationship between a BridgeElement and an aggregated BridgeJoint."@en ;
+              rdfs:label "has joint"@en ,
+                         "hat Fuge"@de .
 
 
-###  http://w3id.org/brot#locatedAbove
+###  https://wisib.de/ontologie/brot#locatedAbove
 brot:locatedAbove rdf:type owl:ObjectProperty ;
                   owl:inverseOf brot:locatedBelow ;
                   rdf:type owl:TransitiveProperty ;
+                  schema:domainIncludes brot:BridgeElement ,
+                                 brot:BridgeSpatialZone ;
+                  schema:rangeIncludes brot:BridgeElement ,
+                                  brot:BridgeSpatialZone ;
                   rdfs:comment "Diese Relation stellt dar, dass ein Element sich über einem anderen befindet. Die Elemente sind nicht gezwungen einen physicalischen bzw. logischen Kontakt zu haben. Die Relation zeigt bloß das räumliche Verhalten."@de ,
                                "This relationship points that in a modell an element located above an another element. The elements are not obliged to have a physical or logical connection. The relationship shows only space atittude."@en ,
                                "locate above"@en ;
                   rdfs:label "befindet sich über"@de .
 
 
-###  http://w3id.org/brot#locatedBelow
+###  https://wisib.de/ontologie/brot#locatedBelow
 brot:locatedBelow rdf:type owl:ObjectProperty ,
                            owl:TransitiveProperty ;
+                  schema:domainIncludes brot:BridgeElement ,
+                                 brot:BridgeSpatialZone ;
+                  schema:rangeIncludes brot:BridgeElement ,
+                                  brot:BridgeSpatialZone ;
                   rdfs:comment "Diese Relation stellt dar, dass ein Element sich unter einem anderen befindet. Die Elemente sind nicht gezwungen einen physicalischen bzw. logischen Kontakt zu haben. Die Relation zeigt bloß das räumliche Verhalten."@de ,
                                "This relationship points that in a modell an element located below an another element. The elements are not obliged to have a physical or logical connection. The relationship shows only space atittude."@en ;
                   rdfs:label "befindet sich unter"@de ,
                              "located below"@en .
 
 
-###  https://w3id.org/brot#adjacentElement
-<https://w3id.org/brot#adjacentElement> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf owl:topObjectProperty ;
-                                        rdf:type owl:SymmetricProperty ;
-                                        rdfs:range brot:BridgeElement ;
-                                        rdfs:comment "Das ist eine Relation zwischen Elementen und Zonen, die durch eine Beruerungsflaeche einen physikalischen Kontakt miteinander haben."@de ,
-                                                     "This is a relationship between elements and zones which have physical contact to each other."@en ;
-                                        rdfs:label "adjacent Element"@en ,
-                                                   "benachbartes Element"@de .
-
-
-###  https://w3id.org/brot#adjacentZone
-brot:adjacentZone                    rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf owl:topObjectProperty ;
-                                     rdf:type owl:SymmetricProperty ;
-                                     rdfs:range brot:BridgeSpatialZone .
-
-
-###  https://w3id.org/brot#aggregates
-brot:aggregates                    rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                   rdf:type owl:TransitiveProperty ;
-                                   rdfs:domain brot:BridgeElement ;
-                                   rdfs:range brot:BridgeElement .
-
-
-###  https://w3id.org/brot#containsElement
-brot:containsElement                    rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf owl:topObjectProperty ;
-                                        rdfs:domain brot:BridgeSpatialZone ;
-                                        rdfs:range brot:BridgeElement ;
-                                        owl:propertyChainAxiom ( brot:containsElement
-                                                                 brot:aggregates
-                                                               ) ,
-                                                               ( brot:containsZone
-                                                                 brot:containsElement
-                                                               ) .
-
-
-###  https://w3id.org/brot#containsZone
-brot:containsZone                    rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf owl:topObjectProperty ;
-                                     rdf:type owl:TransitiveProperty ;
-                                     rdfs:domain brot:BridgeSpatialZone ;
-                                     rdfs:range brot:BridgeSpatialZone .
-
-
 #################################################################
 #    Classes
 #################################################################
 
-###  http://w3id.org/brot#Bridge
+###  https://wisib.de/ontologie/brot#Bridge
 brot:Bridge rdf:type owl:Class ;
             rdfs:subClassOf brot:BridgeSpatialZone ;
+            rdfs:comment "An engineering structure which guides traffic routes (such as roads, railway lines, footpaths and cycle paths, waterways, taxiways for aircraft) or supply facilities (such as pipelines, cable routes, conveyor belts) on an elevated, suspended or free-floating structure over obstacles or over the surface of the terrain in such a way that there is a distance between the route and the surface of the terrain and thus often a possibility of undercrossing by another traffic or supply route is made possible. Bridges can be cantilevered between two abutments (single span bridge) or rest between them on several supports (multi span bridge). However, they can also be suspended from pylons by using ropes."@en ;
             rdfs:label "Bridge"@en ,
-                       "Bruecke"@de .
+                       "Brücke"@de .
 
 
-###  http://w3id.org/brot#BridgeElement
+###  https://wisib.de/ontologie/brot#BridgeElement
 brot:BridgeElement rdf:type owl:Class ;
-                   rdfs:label "Brueckenelement"@de .
+                   rdfs:comment "Component that is contained in a bridge construction and has a characteristic technical function, form or position."@en ;
+                   rdfs:label "Bridge Element"@en ,
+                              "Brueckenelement"@de .
 
 
-###  http://w3id.org/brot#BridgeFinishingElement
+###  https://wisib.de/ontologie/brot#BridgeFinishingElement
 brot:BridgeFinishingElement rdf:type owl:Class ;
                             rdfs:subClassOf brot:BridgeElement ;
+                            rdfs:comment "Component that is installed during the finishing phase of the bridge construction after the shell construction phase (e.g. railing, bridge cap, etc.). Has no load-bearing capacity."@en ;
                             rdfs:label "Ausbauelement einer Bruecke"@de ,
-                                       "Bridge finishing element of a bridge"@en .
+                                       "Bridge Finishing Element"@en .
 
 
-###  http://w3id.org/brot#BridgeJoint
+###  https://wisib.de/ontologie/brot#BridgeJoint
 brot:BridgeJoint rdf:type owl:Class ;
-                 rdfs:label "Dehnungsfuge (Bewegungsfuge)"@de ,
-                            "Expansion joint (movement joint)"@en .
+                 rdfs:comment "A desired or tolerance-related gap or interspace between two partial areas or components."@en ;
+                 rdfs:label "Bridge Joint"@en ,
+                            "Brückenfuge"@de .
 
 
-###  http://w3id.org/brot#BridgeReinforcingElement
+###  https://wisib.de/ontologie/brot#BridgeReinforcingElement
 brot:BridgeReinforcingElement rdf:type owl:Class ;
                               rdfs:subClassOf brot:BridgeElement ;
+                              rdfs:comment "Composite element that is aggregated in concrete components to increase their load-bearing capacity."@en ;
                               rdfs:label "Bewehrungselement einer Bruecke"@de ,
-                                         "Reinforcing element of a bridge"@en .
+                                         "Reinforcing Element"@en .
 
 
-###  http://w3id.org/brot#BridgeSpatialZone
+###  https://wisib.de/ontologie/brot#BridgeSpatialZone
 brot:BridgeSpatialZone rdf:type owl:Class ;
-                       rdfs:label "Raeumliche Zone in einem Brueckenbauwerk"@de ,
-                                  "Spatial zone in a bridge construction"@en .
+                       rdfs:comment "A spatial 3D division of a bridge or a site consisting of bridge related constructions."@en ;
+                       rdfs:label "Bridge Spatial Zone"@en ,
+                                  "Räumliche Zone in Brücke"@de .
 
 
-###  http://w3id.org/brot#BridgeSubstructure
+###  https://wisib.de/ontologie/brot#BridgeSubstructure
 brot:BridgeSubstructure rdf:type owl:Class ;
-                        rdfs:subClassOf brot:BridgeSpatialZone .
+                        rdfs:subClassOf brot:BridgeSpatialZone ;
+                        rdfs:comment """Zone that consists of BridgeElements, which serve to transfer the loads of the superstructure into the ground.
+Located below the bridge deck."""@en ;
+                        rdfs:label "Bridge Substructure"@en ,
+                                   "Brückenunterbau"@de .
 
 
-###  http://w3id.org/brot#BridgeSubstructureElement
+###  https://wisib.de/ontologie/brot#BridgeSubstructureElement
 brot:BridgeSubstructureElement rdf:type owl:Class ;
                                rdfs:subClassOf brot:BridgeElement ;
-                               rdfs:label "Substructure element of a bridge"@en ,
+                               rdfs:comment "Component that is contained in the BridgeSubStructure zone."@en ;
+                               rdfs:label "Substructure Element"@en ,
                                           "Unterbauelement einer Bruecke"@de .
 
 
-###  http://w3id.org/brot#BridgeSuperstructure
+###  https://wisib.de/ontologie/brot#BridgeSuperstructure
 brot:BridgeSuperstructure rdf:type owl:Class ;
-                          rdfs:subClassOf brot:BridgeSpatialZone .
+                          rdfs:subClassOf brot:BridgeSpatialZone ;
+                          rdfs:comment "Zone that consists of BridgeElements that transfer loads to the BridgeSubstructure"@en ;
+                          rdfs:label "Bridge Superstructure"@en ,
+                                     "Brückenüberbau"@de .
 
 
-###  http://w3id.org/brot#BridgeSuperstructureElement
+###  https://wisib.de/ontologie/brot#BridgeSuperstructureElement
 brot:BridgeSuperstructureElement rdf:type owl:Class ;
                                  rdfs:subClassOf brot:BridgeElement ;
+                                 rdfs:comment "Component that is contained in the BridgeSuperStructure zone."@en ;
                                  rdfs:label "Bridge superstructure element"@en ,
                                             "Ueberbauelement"@de .
 
 
-###  http://w3id.org/brot#BridgeTower
-brot:BridgeTower rdf:type owl:Class ;
-                 rdfs:subClassOf brot:BridgeSpatialZone .
-
-
-###  http://w3id.org/brot#BridgeTowerSegment
-brot:BridgeTowerSegment rdf:type owl:Class ;
-                        rdfs:subClassOf brot:BridgeSpatialZone ;
-                        rdfs:label "Bridge tower segment"@en ,
-                                   "Pylonsegment"@de .
-
-
-###  http://w3id.org/brot#Coating
+###  https://wisib.de/ontologie/brot#Coating
 brot:Coating rdf:type owl:Class ;
+             rdfs:comment "Covering that is applied to the surface of a BridgeElement. The purpose of applying Coating may be decorative, functional, or both."@en ;
              rdfs:label "Abdichtung"@de ,
                         "Coating"@en .
 
 
-###  http://w3id.org/brot#Site
+###  https://wisib.de/ontologie/brot#Site
 brot:Site rdf:type owl:Class ;
           rdfs:subClassOf brot:BridgeSpatialZone ;
+          rdfs:comment "Area containing one or more bridges"@en ;
           rdfs:label "Gelaende"@de ,
                      "Site"@en .
-
-
-###  http://xmlns.com/foaf/0.1/Person
-foaf:Person rdf:type owl:Class .
-
-
-[ rdf:type foaf:Person ;
-  foaf:name "Al-Hakam Hamdan"
-] .
-
-[ rdf:type foaf:Person ;
-   foaf:name "Taras Kozak"
- ] .
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
