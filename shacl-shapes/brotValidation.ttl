@@ -1,0 +1,89 @@
+@prefix zsh: <https://wisib.de/ontologie/shapes/zoneshape#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix brcomp: <https://wisib.de/ontologie/brcomp#> .
+@prefix brot: <https://wisib.de/ontologie/brot#> .
+
+brot:Site
+	a rdfs:Class , sh:NodeShape ;
+  	sh:property [
+    	rdf:type sh:PropertyShape ;
+      	sh:path brot:containsZone ;
+      	sh:class brot:Bridge ;
+      	sh:minCount 1 ;
+      	sh:nodeKind sh:IRI ;
+    ] ;
+.
+brot:Bridge
+	a rdfs:Class , sh:NodeShape ;
+	sh:property [
+		rdf:type sh:PropertyShape ;
+		sh:path brot:containsZone ;
+		sh:class brot:SubStructure ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:nodeKind sh:IRI ;
+	] ;
+	sh:property [
+		rdf:type sh:PropertyShape ;
+		sh:path brot:containsZone ;
+		sh:class brot:SuperStructure ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:nodeKind sh:IRI ;
+	] ;
+	sh:not [
+		sh:property [
+			rdf:type sh:PropertyShape ;
+      		sh:path brot:containsZone ;
+      		sh:class brot:Bridge ;
+      		sh:minCount 1 ;
+		]
+	] ;
+.
+brcomp:SubStructureComponent
+	a rdfs:Class , sh:NodeShape ;
+	sh:property [
+		rdf:type sh:PropertyShape ;
+		sh:inversePath brot:containsComponent ;
+		sh:class brot:SubStructure ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:nodeKind sh:IRI ;
+	] ;
+.
+brcomp:SuperStructureComponent
+	a rdfs:Class , sh:NodeShape ;
+	sh:property [
+		rdf:type sh:PropertyShape ;
+		sh:inversePath brot:containsComponent ;
+		sh:class brot:SuperStructure ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:nodeKind sh:IRI ;
+	] ;
+.
+brot:SuperStructure
+	a rdfs:Class , sh:NodeShape ;
+	sh:property [
+		rdf:type sh:PropertyShape ;
+		sh:path brot:adjacentZone ;
+		sh:class brot:SubStructure ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:nodeKind sh:IRI ;
+	]
+	sh:not [
+		sh:property [
+			rdf:type sh:PropertyShape ;
+      		sh:path brot:containsZone ;
+      		sh:or (
+      			[sh:class brot:Site ;]
+      			[sh:class brot:Bridge ;]
+      			[sh:class brot:SubStructure ;]
+      		) ;
+      		sh:minCount 1 ;
+		]
+	] ;
+.
