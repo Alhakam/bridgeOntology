@@ -1,0 +1,1177 @@
+@prefix : <https://wisib.de/ontologie/abox/germanroadbridge/d1#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bmat: <https://wisib.de/ontologie/bmat#> .
+@prefix brot: <https://wisib.de/ontologie/brot#> .
+@prefix inst: <https://wisib.de/ontologie/abox/germanroadbridge/d1#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix brstr: <https://wisib.de/ontologie/brstr#> .
+@prefix brcomp: <https://wisib.de/ontologie/brcomp#> .
+@prefix bridge: <https://wisib.de/ontologie/bridge#> .
+@base <https://wisib.de/ontologie/abox/germanroadbridge/d1> .
+
+<https://wisib.de/ontologie/abox/germanroadbridge/d1> rdf:type owl:Ontology ;
+                                                      owl:versionIRI <https://wisib.de/ontologie/abox/germanroadbridge/d1/0.1> ;
+                                                      owl:imports <https://wisib.de/ontologie/bmat/0.2> ,
+                                                                  <https://wisib.de/ontologie/brcomp/0.1> ,
+                                                                  <https://wisib.de/ontologie/bridge/0.1> ,
+                                                                  <https://wisib.de/ontologie/brot/0.2> ,
+                                                                  <https://wisib.de/ontologie/brstr/0.1> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://sv.dbpedia.org/page/GermanCity
+<http://sv.dbpedia.org/page/GermanCity> rdf:type owl:NamedIndividual ,
+                                                dbo:AdministrativeRegion ,
+                                                dbo:City ,
+                                                dbo:Organisation ;
+                                       rdfs:label "GermanCity - Stadtmitte"@de .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#AIB
+inst:AIB rdf:type owl:NamedIndividual ,
+                  brot:Coating ;
+         dbo:manufacturer inst:GermanCompany ;
+         rdfs:comment """Inerol Spritzisolierung"""@de ;
+         rdfs:label "Dichtungsaufstrich"@de ;
+         brcomp:installationYear 1973 .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#GermanCompany
+inst:GermanCompany rdf:type owl:NamedIndividual ,
+                             dbo:Organisation ;
+                    rdfs:comment """GermanCompany"""@de ;
+                    rdfs:label "GermanCompany"@de .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#CompanyNaturalStone
+inst:CompanyNaturalStone rdf:type owl:NamedIndividual ,
+                                    dbo:Organisation ;
+                           rdfs:label "Arbeitsgemeinschaft Natursteingewerke" .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#Aluminium1
+inst:Aluminium1 rdf:type owl:NamedIndividual ,
+                         bmat:Aluminium ;
+                dbo:manufacturer inst:GermanCompany2 .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#BSt420S
+inst:BSt420S rdf:type owl:NamedIndividual ,
+                      bmat:ReinforecementSteel ;
+             rdfs:label "BSt 420 S (III S) nach DIN 488 Ausgabe 1984"@de ;
+             brcomp:installationYear 1984 ;
+             bmat:reinforcementGrade "BSt 420 S (III S)" ;
+             bmat:materialStandard "DIN 488" .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#D1
+inst:D1 rdf:type owl:NamedIndividual ,
+                 bridge:BoxGirderBridge ,
+                 bridge:PrestressedConcreteBridge ,
+                 bridge:RoadBridge ,
+                 bridge:SlabBridge ;
+        rdfs:comment "Bemerkung Baugrund: generell in Höhe der Gründungssohle der Pfahlgründungen: Mergel bunt"@de ,
+                     """das Teilbauwerk beginnt am Widerlager Süd in Achse 13 und endet am
+Widerlager Nord in Achse 15"""@de ;
+        rdfs:label "Rampe Stadtmitte, westlicher Überbau"@de ;
+        bridge:bridgeArea "268.0"^^xsd:double ;
+        bridge:bridgeWidth "10.0"^^xsd:double ;
+        bridge:completedDataAcquisition "true"^^xsd:boolean ;
+        bridge:constructionYear 1973 ;
+        bridge:curvature "false"^^xsd:boolean ;
+        bridge:directionOrigin inst:South ;
+        bridge:directionTarget inst:North ;
+        bridge:fileID "673/3" ;
+        bridge:hasMainResponsible <http://sv.dbpedia.org/page/GermanCity> ;
+        bridge:hasResponsibleDepartment inst:RPS_LK_GermanCity ;
+        bridge:hasUIUAPartner <http://sv.dbpedia.org/page/GermanCity> ;
+        bridge:historicPreservation "false"^^xsd:boolean ;
+        bridge:maxConstructionHeight "0.6"^^xsd:double ;
+        bridge:maxLongitudinalGradient "5.5"^^xsd:double ;
+        bridge:maxTransverseGradient "2.0"^^xsd:double ;
+        bridge:minConstructionHeight "0.6"^^xsd:double ;
+        bridge:overalLength "26.8"^^xsd:double ;
+        bridge:overallWidth "10.25"^^xsd:double ;
+        bridge:spacingSuperStructure "0.02"^^xsd:double ;
+        bridge:underTraffic "true"^^xsd:boolean ;
+        brot:containsZone inst:D1-SubStructure ,
+                          inst:D1SuperStructure ;
+        brstr:hasStructuralAssessment inst:DIN1072Assessment ,
+                                      inst:STANAGAssessment .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#D1-SubStructure
+inst:D1-SubStructure rdf:type owl:NamedIndividual ,
+                              brot:SubStructure ;
+                     brot:containsComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#0QwtUP2TDA_Pz9n5QAZ7w5> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#08JukPzUzE$OJbfpTykPJx> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0GGyOhV4P81v$QMMai2$r$> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Jsruwj6v82xuNR9o70ozy> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1KO5lzBZj8jQGcpZVjVytA> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1edHQCUQ5BiufFEMWeCLlQ> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1oDJuZ2V1F8hTdoH5kEY5A> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1CBvdP3$X5nBIVPbRw3De7> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Tq3U2drv4$ukSl8y_92Et> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1dkJutsND4QfR$9mQ3d4hr> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#25tTPkRA13NP2XOjngzCvv> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2SR$xd8YX9GuIf3Rv5pJFc> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3AblAeVZLAvPjUvEEJ08Ly> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3deVaFX353G97SGtG36gYs> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3eRhty6cDFcvSLj8ZTOvjd> ,
+                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#36hJ1IIVn66hinabMgyZjH> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#D1GirderWest
+inst:D1GirderWest rdf:type owl:NamedIndividual ,
+                           brcomp:Girder ;
+                  brot:aggregates inst:SafetyKerb1 ,
+                                  <https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd> ,
+                                  <https://wisib.de/ontologie/abox/germanroadbridge/d1#1chnUbgXjAe9egn0i_9uVp> ,
+                                  <https://wisib.de/ontologie/abox/germanroadbridge/d1#2qw4yV6Tr4xhSpru_u3Ebv> ,
+                                  <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ,
+                                  <https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy> ,
+                                  <https://wisib.de/ontologie/abox/germanroadbridge/d1#3j204Ax7v2NAyel57ijdVm> ;
+                  bmat:hasBuildingMaterial inst:BSt420S ,
+                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#350F> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#D1SuperStructure
+inst:D1SuperStructure rdf:type owl:NamedIndividual ,
+                               brot:SuperStructure ;
+                      brot:containsComponent inst:D1GirderWest .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#DIN1072Assessment
+inst:DIN1072Assessment rdf:type owl:NamedIndividual ,
+                                brstr:StructuralAssessmentDIN1072 ;
+                       brstr:assessmentYear 1973 ;
+                       brstr:structuralCapabilityLevel 60 .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#GermanCompany3
+inst:GermanCompany3 rdf:type owl:NamedIndividual ,
+                           dbo:Organisation ;
+                  dbo:locationCity inst:GermanCity2 ;
+                  rdfs:label "GHS" .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#HOZ350L
+inst:HOZ350L rdf:type owl:NamedIndividual ,
+                      bmat:ReinforcedConcrete ;
+             bmat:cementContent 350 ;
+             bmat:cementDesignation "HOZ 350 L" ;
+             bmat:cementType "HOZ" ;
+             bmat:concreteStrengthClass "B 300" ;
+             bmat:concreteAdmixture "Rheinkies" ,
+                                     "Rheinsand" ;
+             bmat:materialAge 1972 ;
+             bmat:materialStandard "DIN 1045" .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#I01S103
+inst:I01S103 rdf:type owl:NamedIndividual ,
+                      brot:Site ;
+             dbo:nearestCity <http://sv.dbpedia.org/page/GermanCity> ;
+             rdfs:label "GermanRoadBridge"@de ;
+             brot:containsZone inst:D1 .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#GermanCompany2
+inst:GermanCompany2 rdf:type owl:NamedIndividual ,
+                     dbo:Organisation ;
+            rdfs:label "GermanCompany2" .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#MastixARGEGirder
+inst:MastixARGEGirder rdf:type owl:NamedIndividual ,
+                               brcomp:MasticAsphalt ;
+                      dbo:manufacturer inst:GermanCompany ;
+                      rdfs:comment "Mastix mit hohem Bindemittelgehalt auf Glasfasergittergewebe"@de ;
+                      brcomp:coatingArea 188.0 ;
+                      brcomp:coatingThickness "7.0"^^xsd:double ;
+                      brcomp:installationYear 1973 .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#MastixARGEPavement
+inst:MastixARGEPavement rdf:type owl:NamedIndividual ,
+                                 brcomp:MasticAsphalt ;
+                        dbo:manufacturer inst:GermanCompany ;
+                        rdfs:comment "Mastix mit hohem Bindemittelgehalt auf Glasfasergittergewebe"@de ;
+                        brcomp:coatingArea 68 ;
+                        brcomp:coatingThickness "4.0"^^xsd:double ;
+                        brcomp:installationYear 1973 .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#NaturalStone1
+inst:NaturalStone1 rdf:type owl:NamedIndividual ,
+                            bmat:NaturalStone ;
+                   dbo:manufacturer inst:CompanyNaturalStone .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#North
+inst:North rdf:type owl:NamedIndividual ,
+                    <http://dbpedia.org/page/Orientation_(geometry)> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#GermanCity2
+inst:GermanCity2 rdf:type owl:NamedIndividual ,
+                         dbo:City .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#Pavement1
+inst:Pavement1 rdf:type owl:NamedIndividual ,
+                        brcomp:Pavement ;
+               brot:aggregates inst:Railing1 ;
+               brot:hasCoating inst:MastixARGEPavement ;
+               brstr:restsOn <https://wisib.de/ontologie/abox/germanroadbridge/d1#0GAfevVUb2Exh2Mvkcq1sj> ,
+                             <https://wisib.de/ontologie/abox/germanroadbridge/d1#08qj$VV3zBu9sG48wP5$Pu> ,
+                             <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Pehfi_09Bvw4ETCApgaC9> ,
+                             <https://wisib.de/ontologie/abox/germanroadbridge/d1#1mrbK37wvBGRarBmoBKdrZ> ,
+                             <https://wisib.de/ontologie/abox/germanroadbridge/d1#1S1SjQi6vCDfVU$IYPMgOe> ,
+                             <https://wisib.de/ontologie/abox/germanroadbridge/d1#2jozzPD4LCeAKMlm_i2mcV> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#Railing1
+inst:Railing1 rdf:type owl:NamedIndividual ,
+                       brcomp:Railing ;
+              rdfs:comment "Füllstabgeländer mit Seil" ;
+              brcomp:height "1.0"^^xsd:double ;
+              brcomp:installationYear 1973 ;
+              bmat:hasBuildingMaterial inst:Aluminium1 .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#STANAGAssessment
+inst:STANAGAssessment rdf:type owl:NamedIndividual ,
+                               brstr:StructuralAssessmentSTANAG2021 ;
+                      brstr:assessmentYear 1973 ;
+                      brstr:singleTrackLaneWidth 100 ;
+                      brstr:structuralCapabilityLevel "MLC Rad" ;
+                      brstr:twoTrackLaneWidth 50 .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#SafetyKerb1
+inst:SafetyKerb1 rdf:type owl:NamedIndividual ,
+                          brcomp:SafetyKerb ;
+                 rdfs:comment """Granitstein gestockt
+
+Abmessungen 20 / 23 / 17 cm""" ;
+                 brcomp:height "0.15"^^xsd:double ;
+                 brcomp:installationYear 1973 ;
+                 bmat:hasBuildingMaterial inst:NaturalStone1 .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#South
+inst:South rdf:type owl:NamedIndividual ,
+                    <http://dbpedia.org/page/Orientation_(geometry)> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#Span1
+inst:Span1 rdf:type owl:NamedIndividual ,
+                    brstr:Span ;
+           brot:containsComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#08JukPzUzE$OJbfpTykPJx> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#1chnUbgXjAe9egn0i_9uVp> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#1edHQCUQ5BiufFEMWeCLlQ> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#2SR$xd8YX9GuIf3Rv5pJFc> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#3deVaFX353G97SGtG36gYs> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ;
+           brstr:spanWidth "12.8"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#Span2
+inst:Span2 rdf:type owl:NamedIndividual ,
+                    brstr:Span ;
+           brot:containsComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#08JukPzUzE$OJbfpTykPJx> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#1edHQCUQ5BiufFEMWeCLlQ> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#2qw4yV6Tr4xhSpru_u3Ebv> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#2SR$xd8YX9GuIf3Rv5pJFc> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#3eRhty6cDFcvSLj8ZTOvjd> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy> ,
+                                <https://wisib.de/ontologie/abox/germanroadbridge/d1#3j204Ax7v2NAyel57ijdVm> ;
+           brstr:spanWidth "14.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0A6lyF_EzBjx4oY2ZihrTm
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0A6lyF_EzBjx4oY2ZihrTm> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0F8pmB4NXALwnPaSe6zKsy
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0F8pmB4NXALwnPaSe6zKsy> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0GAfevVUb2Exh2Mvkcq1sj
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0GAfevVUb2Exh2Mvkcq1sj> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: westlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-2" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "2.25"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0JpqNfSU17L8J9cyx2leLo
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0JpqNfSU17L8J9cyx2leLo> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderSegment ;
+                                                                            rdfs:label "Slab-3" ;
+                                                                            brot:aggregates <https://wisib.de/ontologie/abox/germanroadbridge/d1#1aRlzwelnFnwUk_mju8v3S> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#1mrbK37wvBGRarBmoBKdrZ> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#2c$4jTO6r6uBJf7OdPzxwM> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0QwtUP2TDA_Pz9n5QAZ7w5
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0QwtUP2TDA_Pz9n5QAZ7w5> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-1" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy> ;
+                                                                            brstr:supportHeight "2.8"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0U8evudTP8gwzri6J_cSmN
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0U8evudTP8gwzri6J_cSmN> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0_C_7pkZfBgBdYewqAHzLN
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0_C_7pkZfBgBdYewqAHzLN> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0_oQ_1cqr4oxsuU3LFDetK
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0_oQ_1cqr4oxsuU3LFDetK> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderDeck ;
+                                                                            rdfs:label "Deck-2" ;
+                                                                            brot:hasCoating inst:MastixARGEGirder .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0aMicdC558jf9BhHzofPqm
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0aMicdC558jf9BhHzofPqm> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0l1BBO8rv4QhH1eFpkBc_c
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0l1BBO8rv4QhH1eFpkBc_c> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0tvoAjYHP5a8XFd70MXp5O
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0tvoAjYHP5a8XFd70MXp5O> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0vnxmH7AT6IfbHlS2iwWgl
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0vnxmH7AT6IfbHlS2iwWgl> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#04DMsgNOvFye2K3CQlZpOH
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#04DMsgNOvFye2K3CQlZpOH> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderDeck ;
+                                                                            rdfs:label "Deck-1" ;
+                                                                            brot:hasCoating inst:MastixARGEGirder .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#08JukPzUzE$OJbfpTykPJx
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#08JukPzUzE$OJbfpTykPJx> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Pier ;
+                                                                            rdfs:label "Pier-1" ;
+                                                                            brstr:alignmentWidth "14.0"^^xsd:double ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#1KO5lzBZj8jQGcpZVjVytA> ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#08qj$VV3zBu9sG48wP5$Pu
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#08qj$VV3zBu9sG48wP5$Pu> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: westlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-1" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "2.25"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0Fmmok4THAOxdYY$T0xRqr
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0Fmmok4THAOxdYY$T0xRqr> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0GGyOhV4P81v$QMMai2$r$
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0GGyOhV4P81v$QMMai2$r$> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Foundation ;
+                                                                            rdfs:label "Foundation-1" ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3eRhty6cDFcvSLj8ZTOvjd> ;
+                                                                            brstr:restsOn <https://wisib.de/ontologie/abox/germanroadbridge/d1#0JpqNfSU17L8J9cyx2leLo> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0aMicdC558jf9BhHzofPqm> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0tvoAjYHP5a8XFd70MXp5O> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0vnxmH7AT6IfbHlS2iwWgl> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0Fmmok4THAOxdYY$T0xRqr> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0jlP6ykgv0CwpBc$AhNKvA> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1DPvP8SMP7XBYQRNu_dLk9> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Qcf4lexz4LO4x1UOtLGFw> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Lhm$G58LAkBDQqJdnJuMJ> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2MpnAjSYb2HhwvkxIYDXcd> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2ohgW5qfrCFvDyPDzTeLJ4> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2olXq4u8b05eNhBTTmIecB> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#28bMuO3bf3NvHhJf9yU2Pi> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3hu0cB2IXCVAIOanTTk5Y4> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3vttNqsab3fh9T503T3bJG> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#33bCjVpar2ZP4HeX51HWAX> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3EuNgqG_rB5wtX5e$cCL_5> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0WlBZPCq54MwS5IzK$4Mnu
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0WlBZPCq54MwS5IzK$4Mnu> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderDeck ;
+                                                                            rdfs:label "Deck-3" ;
+                                                                            brot:hasCoating inst:MastixARGEGirder .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#0jlP6ykgv0CwpBc$AhNKvA
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#0jlP6ykgv0CwpBc$AhNKvA> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1DPvP8SMP7XBYQRNu_dLk9
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1DPvP8SMP7XBYQRNu_dLk9> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1F3wRCISj6o9jFd98hOXft
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1F3wRCISj6o9jFd98hOXft> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1HI5gUP214NuM19arKfzyC
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1HI5gUP214NuM19arKfzyC> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderDeck ;
+                                                                            rdfs:label "Deck-5" ;
+                                                                            brot:hasCoating inst:MastixARGEGirder .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1Jsruwj6v82xuNR9o70ozy
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1Jsruwj6v82xuNR9o70ozy> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-3" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ;
+                                                                            brstr:supportHeight "3.6"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1KO5lzBZj8jQGcpZVjVytA
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1KO5lzBZj8jQGcpZVjVytA> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-4" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ;
+                                                                            brstr:supportHeight "3.6"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1Pehfi_09Bvw4ETCApgaC9
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1Pehfi_09Bvw4ETCApgaC9> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: westlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-4" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "2.25"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1Qcf4lexz4LO4x1UOtLGFw
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1Qcf4lexz4LO4x1UOtLGFw> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1XtQpURGz3xBiFQHbfk_Zx
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1XtQpURGz3xBiFQHbfk_Zx> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: östlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-6" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "1.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1ZPHRkLVT36BbjO_fUmNXP
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1ZPHRkLVT36BbjO_fUmNXP> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1aRlzwelnFnwUk_mju8v3S
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1aRlzwelnFnwUk_mju8v3S> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderDeck ;
+                                                                            rdfs:label "Deck-4" ;
+                                                                            brot:hasCoating inst:MastixARGEGirder .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1chnUbgXjAe9egn0i_9uVp
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1chnUbgXjAe9egn0i_9uVp> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderSegment ;
+                                                                            rdfs:label "Slab.1" ;
+                                                                            brot:adjacentComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd> ;
+                                                                            brot:aggregates <https://wisib.de/ontologie/abox/germanroadbridge/d1#0GAfevVUb2Exh2Mvkcq1sj> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#1HI5gUP214NuM19arKfzyC> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#1XtQpURGz3xBiFQHbfk_Zx> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1d8qmF5zL9SfOTdNgYBvTm
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1d8qmF5zL9SfOTdNgYBvTm> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1edHQCUQ5BiufFEMWeCLlQ
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1edHQCUQ5BiufFEMWeCLlQ> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Pier ;
+                                                                            rdfs:label "Pier-2" ;
+                                                                            brstr:alignmentWidth "14.0"^^xsd:double ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Jsruwj6v82xuNR9o70ozy> ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1hrqCYpGv1VADtTfK_tdgG
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1hrqCYpGv1VADtTfK_tdgG> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1mrbK37wvBGRarBmoBKdrZ
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1mrbK37wvBGRarBmoBKdrZ> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: westlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-3" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "2.25"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1oDJuZ2V1F8hTdoH5kEY5A
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1oDJuZ2V1F8hTdoH5kEY5A> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-5" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd> ;
+                                                                            brstr:supportHeight "4.3"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1rnVLTzRv9hAVVHOdMthiQ
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1rnVLTzRv9hAVVHOdMthiQ> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1zjNfRDL12Hx0Ld_VEbyoM
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1zjNfRDL12Hx0Ld_VEbyoM> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderDeck ;
+                                                                            rdfs:label "Deck-6" ;
+                                                                            brot:hasCoating inst:MastixARGEGirder .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#13XiSi9on9EAaDXSNfxIL0
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#13XiSi9on9EAaDXSNfxIL0> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1CBvdP3$X5nBIVPbRw3De7
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1CBvdP3$X5nBIVPbRw3De7> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-2" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy> ;
+                                                                            brstr:supportHeight "2.8"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1Lhm$G58LAkBDQqJdnJuMJ
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1Lhm$G58LAkBDQqJdnJuMJ> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1S1SjQi6vCDfVU$IYPMgOe
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1S1SjQi6vCDfVU$IYPMgOe> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: westlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-5" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "2.25"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1Tq3U2drv4$ukSl8y_92Et
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1Tq3U2drv4$ukSl8y_92Et> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Foundation ;
+                                                                            rdfs:label "Foundation-3" ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#08JukPzUzE$OJbfpTykPJx> ,
+                                                                                        <https://wisib.de/ontologie/abox/germanroadbridge/d1#1edHQCUQ5BiufFEMWeCLlQ> ,
+                                                                                        <https://wisib.de/ontologie/abox/germanroadbridge/d1#2SR$xd8YX9GuIf3Rv5pJFc> ;
+                                                                            brstr:restsOn <https://wisib.de/ontologie/abox/germanroadbridge/d1#0A6lyF_EzBjx4oY2ZihrTm> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0F8pmB4NXALwnPaSe6zKsy> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0_C_7pkZfBgBdYewqAHzLN> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1hrqCYpGv1VADtTfK_tdgG> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2CsyCp5_r8qg7bQc3fdLK3> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2zVkYLPLv4$O9iRIozSQ9i> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3HL787CJnElwvilypS9bSs> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3MWr8tTz936gAl$Q$Rkc$b> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#1dkJutsND4QfR$9mQ3d4hr
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#1dkJutsND4QfR$9mQ3d4hr> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Foundation ;
+                                                                            rdfs:label "Foundation-2" ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3deVaFX353G97SGtG36gYs> ;
+                                                                            brstr:restsOn <https://wisib.de/ontologie/abox/germanroadbridge/d1#0U8evudTP8gwzri6J_cSmN> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#0l1BBO8rv4QhH1eFpkBc_c> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1F3wRCISj6o9jFd98hOXft> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1ZPHRkLVT36BbjO_fUmNXP> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1d8qmF5zL9SfOTdNgYBvTm> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#1rnVLTzRv9hAVVHOdMthiQ> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#13XiSi9on9EAaDXSNfxIL0> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2aHXCxFxX9gupyFf0MErBV> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#27MICrNTDCXAYsrxi714tV> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#2fpgLTNmv6xA0qIbJYxYR$> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3fmuu9QMv3f9RuDCjKKDIm> ,
+                                                                                          <https://wisib.de/ontologie/abox/germanroadbridge/d1#3kepiMDpr8nwROgmq0fBRu> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2CsyCp5_r8qg7bQc3fdLK3
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2CsyCp5_r8qg7bQc3fdLK3> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2MpnAjSYb2HhwvkxIYDXcd
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2MpnAjSYb2HhwvkxIYDXcd> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2aHXCxFxX9gupyFf0MErBV
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2aHXCxFxX9gupyFf0MErBV> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2hxCrWc6jAKBc2blCCpPje
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2hxCrWc6jAKBc2blCCpPje> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: östlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-8" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "1.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2jozzPD4LCeAKMlm_i2mcV
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2jozzPD4LCeAKMlm_i2mcV> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: westlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-9" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "2.25"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2ohgW5qfrCFvDyPDzTeLJ4
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2ohgW5qfrCFvDyPDzTeLJ4> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2olXq4u8b05eNhBTTmIecB
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2olXq4u8b05eNhBTTmIecB> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2qw4yV6Tr4xhSpru_u3Ebv
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2qw4yV6Tr4xhSpru_u3Ebv> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderSegment ;
+                                                                            rdfs:label "Slab.2" ;
+                                                                            brot:adjacentComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ;
+                                                                            brot:aggregates <https://wisib.de/ontologie/abox/germanroadbridge/d1#04DMsgNOvFye2K3CQlZpOH> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#2hxCrWc6jAKBc2blCCpPje> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#2jozzPD4LCeAKMlm_i2mcV> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#25tTPkRA13NP2XOjngzCvv
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#25tTPkRA13NP2XOjngzCvv> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-6" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#0NIDY__lr5G9QARL0eKdFd> ;
+                                                                            brstr:supportHeight "4.3"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#27MICrNTDCXAYsrxi714tV
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#27MICrNTDCXAYsrxi714tV> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#28bMuO3bf3NvHhJf9yU2Pi
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#28bMuO3bf3NvHhJf9yU2Pi> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2SR$xd8YX9GuIf3Rv5pJFc
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2SR$xd8YX9GuIf3Rv5pJFc> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Pier ;
+                                                                            rdfs:label "Pier-3" ;
+                                                                            brstr:alignmentWidth "14.0"^^xsd:double ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#36hJ1IIVn66hinabMgyZjH> ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2c$4jTO6r6uBJf7OdPzxwM
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2c$4jTO6r6uBJf7OdPzxwM> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: östlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-7" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "1.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2fpgLTNmv6xA0qIbJYxYR$
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2fpgLTNmv6xA0qIbJYxYR$> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#2zVkYLPLv4$O9iRIozSQ9i
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#2zVkYLPLv4$O9iRIozSQ9i> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3AblAeVZLAvPjUvEEJ08Ly
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3AblAeVZLAvPjUvEEJ08Ly> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-8" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy> ;
+                                                                            brstr:supportHeight "2.8"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3HL787CJnElwvilypS9bSs
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3HL787CJnElwvilypS9bSs> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3V21Dnqsv6PP1e9TMRfO2p
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3V21Dnqsv6PP1e9TMRfO2p> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: östlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-11" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "1.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3ZDymkAmDCY8FaZdgJd1fa
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3ZDymkAmDCY8FaZdgJd1fa> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: östlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-12" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "1.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3deVaFX353G97SGtG36gYs
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3deVaFX353G97SGtG36gYs> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Abutment ;
+                                                                            rdfs:label "Abutment-1" ;
+                                                                            brstr:alignmentWidth "0.0"^^xsd:double ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#1oDJuZ2V1F8hTdoH5kEY5A> ,
+                                                                                        <https://wisib.de/ontologie/abox/germanroadbridge/d1#25tTPkRA13NP2XOjngzCvv> ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderSegment ;
+                                                                            rdfs:label "Slab.4" ;
+                                                                            brot:adjacentComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#1chnUbgXjAe9egn0i_9uVp> ;
+                                                                            brot:aggregates <https://wisib.de/ontologie/abox/germanroadbridge/d1#0_oQ_1cqr4oxsuU3LFDetK> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#1S1SjQi6vCDfVU$IYPMgOe> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#3mPNFRMfv1o8iSS1xiknue> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3eRhty6cDFcvSLj8ZTOvjd
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3eRhty6cDFcvSLj8ZTOvjd> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Abutment ,
+                                                                                     brstr:AlignmentOrigin ;
+                                                                            rdfs:label "Abutment-2" ;
+                                                                            brstr:alignmentWidth "14.0"^^xsd:double ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#0QwtUP2TDA_Pz9n5QAZ7w5> ,
+                                                                                        <https://wisib.de/ontologie/abox/germanroadbridge/d1#1CBvdP3$X5nBIVPbRw3De7> ,
+                                                                                        <https://wisib.de/ontologie/abox/germanroadbridge/d1#3AblAeVZLAvPjUvEEJ08Ly> ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3fmuu9QMv3f9RuDCjKKDIm
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3fmuu9QMv3f9RuDCjKKDIm> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3hA0greQb9XPkzMlDXjwqy> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderSegment ;
+                                                                            rdfs:label "Slab.5" ;
+                                                                            brot:adjacentComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#3j204Ax7v2NAyel57ijdVm> ;
+                                                                            brot:aggregates <https://wisib.de/ontologie/abox/germanroadbridge/d1#1Pehfi_09Bvw4ETCApgaC9> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#1zjNfRDL12Hx0Ld_VEbyoM> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#3ZDymkAmDCY8FaZdgJd1fa> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3hu0cB2IXCVAIOanTTk5Y4
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3hu0cB2IXCVAIOanTTk5Y4> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3j204Ax7v2NAyel57ijdVm
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3j204Ax7v2NAyel57ijdVm> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:GirderSegment ;
+                                                                            rdfs:label "Slab.6" ;
+                                                                            brot:adjacentComponent <https://wisib.de/ontologie/abox/germanroadbridge/d1#2qw4yV6Tr4xhSpru_u3Ebv> ;
+                                                                            brot:aggregates <https://wisib.de/ontologie/abox/germanroadbridge/d1#08qj$VV3zBu9sG48wP5$Pu> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#0WlBZPCq54MwS5IzK$4Mnu> ,
+                                                                                            <https://wisib.de/ontologie/abox/germanroadbridge/d1#3V21Dnqsv6PP1e9TMRfO2p> .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3kepiMDpr8nwROgmq0fBRu
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3kepiMDpr8nwROgmq0fBRu> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3mPNFRMfv1o8iSS1xiknue
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3mPNFRMfv1o8iSS1xiknue> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:Cap ;
+                                                                            rdfs:comment """Konstruktion: Auf der Abdichtung aufliegendes zusammenhängendes Betonteil
+
+Einbauort: östlicher Kragarm der Vollplatte""" ;
+                                                                            rdfs:label "Cap-10" ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:width "1.0"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3vttNqsab3fh9T503T3bJG
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3vttNqsab3fh9T503T3bJG> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#33bCjVpar2ZP4HeX51HWAX
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#33bCjVpar2ZP4HeX51HWAX> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#350F
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#350F> rdf:type owl:NamedIndividual ,
+                                                                   bmat:ReinforcedConcrete ;
+                                                          bmat:cementContent 330 ;
+                                                          bmat:cementDesignation "350 F" ;
+                                                          bmat:concreteStrengthClass "Bn 450" ;
+                                                          bmat:concreteAdmixture "Rheinkies" ,
+                                                                                  "Rheinsand" ;
+                                                          bmat:concreteAggregate "Bv" ;
+                                                          bmat:materialAge 1978 ;
+                                                          bmat:materialStandard "DIN 1045" .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#36hJ1IIVn66hinabMgyZjH
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#36hJ1IIVn66hinabMgyZjH> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:PotBearings ;
+                                                                            dbo:manufacturer inst:GermanCompany3 ;
+                                                                            rdfs:label "Bearing-7" ;
+                                                                            brcomp:criticalTempSummer "0.0"^^xsd:double ;
+                                                                            brcomp:criticalTempWinter "0.0"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brcomp:type "NGa 100" ;
+                                                                            brstr:bears <https://wisib.de/ontologie/abox/germanroadbridge/d1#3dhMUsYdH6IOaRNuYMYYru> ;
+                                                                            brstr:supportHeight "3.6"^^xsd:double .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3EuNgqG_rB5wtX5e$cCL_5
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3EuNgqG_rB5wtX5e$cCL_5> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#3MWr8tTz936gAl$Q$Rkc$b
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#3MWr8tTz936gAl$Q$Rkc$b> rdf:type owl:NamedIndividual ,
+                                                                                     brcomp:DrilledPile ;
+                                                                            rdfs:comment "Bohrpfahl über 50 cm Durchmesser"@de ;
+                                                                            brcomp:diameter "0.53"^^xsd:double ;
+                                                                            brcomp:installationYear 1973 ;
+                                                                            brot:hasCoating inst:AIB ;
+                                                                            bmat:hasBuildingMaterial inst:BSt420S ,
+                                                                                                      inst:HOZ350L .
+
+
+###  https://wisib.de/ontologie/abox/germanroadbridge/d1#RPS_LK_GermanCity_(UI)
+<https://wisib.de/ontologie/abox/germanroadbridge/d1#RPS_LK_GermanCity_(UI)> rdf:type owl:NamedIndividual ,
+                                                                                    bridge:Department .

@@ -1,0 +1,41 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ct="https://wisib.de/ontologie/icddDraft/Container.rdf#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <ct:ContainerDescription rdf:about="https://wisib.de/bridgeICDD#index.rdf">
+    <ct:containsLinkset>
+      <ct:Linkset rdf:about="https://wisib.de/bridgeICDD#f975c2ab-5fd7-499d-a2b2-75750afc7e56">
+        <ct:filename>Ifc-BridgeOntology</ct:filename>
+      </ct:Linkset>
+    </ct:containsLinkset>
+    <ct:containsDocument>
+      <ct:InternalDocument rdf:about="https://wisib.de/bridgeICDD#906ecaf4-3615-420a-9470-1bb6a8ca7620">
+        <ct:belongsToContainer rdf:resource="https://wisib.de/bridgeICDD#index.rdf"/>
+        <ct:filetype>.ttl</ct:filetype>
+        <ct:filename>generatedBridgeOntology.ttl</ct:filename>
+        <ct:name>Construction Ontology</ct:name>
+        <rdf:type rdf:resource="https://wisib.de/ontologie/icddDraft/Container.rdf#Document"/>
+      </ct:InternalDocument>
+    </ct:containsDocument>
+    <ct:containsDocument>
+      <ct:InternalDocument rdf:about="https://wisib.de/bridgeICDD#091a828c-99f3-4332-bcc8-71f8c071f2a1">
+        <ct:belongsToContainer rdf:resource="https://wisib.de/bridgeICDD#index.rdf"/>
+        <ct:filetype>.ifc</ct:filetype>
+        <ct:filename>AnonymBridge.ifc</ct:filename>
+        <ct:name>IFC</ct:name>
+        <rdf:type rdf:resource="https://wisib.de/ontologie/icddDraft/Container.rdf#Document"/>
+      </ct:InternalDocument>
+    </ct:containsDocument>
+    <ct:publisher>
+      <ct:Person rdf:about="https://wisib.de/bridgeICDD#e129533b-8c8a-4c1e-8c2c-08961fe265f9">
+        <ct:name>unknown</ct:name>
+        <rdf:type rdf:resource="https://wisib.de/ontologie/icddDraft/Container.rdf#Party"/>
+      </ct:Person>
+    </ct:publisher>
+    <ct:conformanceIndicator>part1</ct:conformanceIndicator>
+    <owl:imports rdf:resource="https://wisib.de/ontologie/icddDraft/Container.rdf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </ct:ContainerDescription>
+</rdf:RDF>
