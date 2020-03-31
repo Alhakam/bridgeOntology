@@ -7,4 +7,4 @@ The ontology is then extended using ontologies e.g. for defining specific compon
 
 Furthermore, an ABox has been created, which describes an existing box-girder bridge made of concrete. Additionally, an IFC Model is provided. In this regard, the construction components of the bridge are related to the IfcBuildingElements. To define these links explicitly, an Information Container for Data Drop (ICDD) (https://www.iso.org/standard/74389.html) has been serialized which contains a linkset for both models.
 
-Note: The IFC-to-BROT java library will be added in the next days to the Github.
+In addition, a tool for generating a bridge ontology from a given IFC file has been developed (IFCtoBROTConverter). Currently no source code can be provided, due to some uncertainties regarding distribution. However the jar and javadoc are provided. The main class therefore is OntoICDDBuilder.java where via the method createICDD or createICDDWithAnnotations an ICDD that contains the IFC, Bridge ontology and linkset is generated. At the current state only a library without GUI is available. However, a simple GUI is in development to provide a desktop version of the tool.
