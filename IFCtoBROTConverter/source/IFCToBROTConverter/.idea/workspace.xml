@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b04cf2f9-8ee1-4419-bae8-819d181553c8" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZrEB3t11AXNUC4T9VbCLwSSlCL" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BIM-SIS-Interface/bimsis-damage-input-interface" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Q:\Arbeit\WorkspaceCIB\IFCToBROTConverter\src\test\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="de.tud.cib.IFCToBROTConverter" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Q:\Arbeit\WorkspaceCIB\IFCToBROTConverter\src\test\java\TestResources" />
+      <recent name="Q:\Arbeit\WorkspaceCIB\IFCToBROTConverter\src\test\TestResources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.OntoICDDBuilderTest.testExportICDDWithAnnotation">
+    <configuration name="IfcBrotOntologyBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IFCToBROTConverter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tud.cib.IFCToBROTConverter.ontologyConfiguration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tud.cib.IFCToBROTConverter.ontologyConfiguration" />
+      <option name="MAIN_CLASS_NAME" value="de.tud.cib.IFCToBROTConverter.ontologyConfiguration.IfcBrotOntologyBuilderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OntoICDDBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IFCToBROTConverter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tud.cib.IFCToBROTConverter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tud.cib.IFCToBROTConverter" />
+      <option name="MAIN_CLASS_NAME" value="de.tud.cib.IFCToBROTConverter.OntoICDDBuilderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OntoICDDBuilderTest.testCreateICDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IFCToBROTConverter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tud.cib.IFCToBROTConverter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tud.cib.IFCToBROTConverter" />
+      <option name="MAIN_CLASS_NAME" value="de.tud.cib.IFCToBROTConverter.OntoICDDBuilderTest" />
+      <option name="METHOD_NAME" value="testCreateICDD" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OntoICDDBuilderTest.testExportICDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IFCToBROTConverter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tud.cib.IFCToBROTConverter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tud.cib.IFCToBROTConverter" />
+      <option name="MAIN_CLASS_NAME" value="de.tud.cib.IFCToBROTConverter.OntoICDDBuilderTest" />
+      <option name="METHOD_NAME" value="testExportICDD" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OntoICDDBuilderTest.testExportICDDWithAnnotation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IFCToBROTConverter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tud.cib.IFCToBROTConverter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tud.cib.IFCToBROTConverter" />
+      <option name="MAIN_CLASS_NAME" value="de.tud.cib.IFCToBROTConverter.OntoICDDBuilderTest" />
+      <option name="METHOD_NAME" value="testExportICDDWithAnnotation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OntoICDDBuilderTest.testExportICDDWithAnnotation" />
+        <item itemvalue="JUnit.OntoICDDBuilderTest.testExportICDD" />
+        <item itemvalue="JUnit.OntoICDDBuilderTest.testCreateICDD" />
+        <item itemvalue="JUnit.OntoICDDBuilderTest" />
+        <item itemvalue="JUnit.IfcBrotOntologyBuilderTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\alhak\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b04cf2f9-8ee1-4419-bae8-819d181553c8" name="Default Changelist" comment="" />
+      <created>1585588673807</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585588673807</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,1020 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix inst:  <https://wisib.de/ontologie/Abox/bridgeOntology#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix brot:  <https://wisib.de/ontologie/brot/#> .
+@prefix brcomp: <https://wisib.de/ontologie/brcomp#> .
+
+inst:2MRwo0lyT5BBiywzmluI46
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1ZwsXO_lb1wxfdB$d$AuOg>
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0qg$gWq8P4zwujieaJM4WR>
+        a       brcomp:ReinforcingBar .
+
+inst:0CnTZs1_j9nBPYQWuv9JbA
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1rAPqH$Vb67eVXTFpW66kq>
+        a       brcomp:ReinforcingBar .
+
+inst:3NH9sm7av1qPw1rsJ3fe8C
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1dkJutsND4QfR$9mQ3d4hr>
+        a       brcomp:Foundation .
+
+inst:0bu0snrNH1PBzWQrueyDeu
+        a       brcomp:ReinforcingBar .
+
+inst:1d8qmF5zL9SfOTdNgYBvTm
+        a       brcomp:DrilledPile .
+
+inst:1JNbdYEQD7jPmyPgD4cENW
+        a       brcomp:ReinforcingBar .
+
+inst:2fJIH4xcrB1AaxQMFscZ35
+        a       brcomp:ReinforcingBar .
+
+inst:00kvD6Hab3MfOJKe8Wq3zv
+        a       brcomp:ReinforcingBar .
+
+brcomp:Pier  a  owl:Class .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2$06SeZeX74OJOt2RcXAbU>
+        a       brcomp:ReinforcingBar .
+
+inst:0gMgOWk7XE1webDyyrd81i
+        a       brcomp:ReinforcingBar .
+
+inst:3xcc36HQL55gJYe_uylT8c
+        a       brcomp:ReinforcingBar .
+
+inst:24jTaJrWLBxwiXy5EdSXXy
+        a       brcomp:ReinforcingBar .
+
+inst:1HI5gUP214NuM19arKfzyC
+        a       brcomp:GirderDeck .
+
+inst:1DLE9tibn8BhfNmg0TltGW
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0i$6ZkDdv2mwGjuIGDD$RA>
+        a       brcomp:ReinforcingBar .
+
+inst:   a       owl:Ontology .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1P8BPBTs91M9$gqaxkaeLB>
+        a       brcomp:ReinforcingBar .
+
+inst:2GOg54CuH3SgD9gxvKiTm9
+        a       brcomp:ReinforcingBar .
+
+inst:39zGe7JRbCBA_hBRKEMrx3
+        a       brcomp:ReinforcingBar .
+
+inst:1oDJuZ2V1F8hTdoH5kEY5A
+        a       brcomp:PotBearings .
+
+inst:13XiSi9on9EAaDXSNfxIL0
+        a       brcomp:DrilledPile .
+
+inst:21sUG6FgTDcxSBg6DKQhkl
+        a       brcomp:ReinforcingBar .
+
+inst:0whXR7Le52oxuNtSFpjxrW
+        a       brcomp:ReinforcingBar .
+
+inst:0UCdanv_L9kunOuhkhDGoH
+        a       brcomp:ReinforcingBar .
+
+inst:3dhMUsYdH6IOaRNuYMYYru
+        a       brcomp:GirderSegment .
+
+inst:3pVn9q2kjFTONhNFhMGtY7
+        a       brcomp:ReinforcingBar .
+
+inst:3T0WiwqnfFHvhL8u_In7Rw
+        a       brcomp:ReinforcingBar .
+
+inst:2bNpRp0ZL7YwDWc0j1y0MA
+        a       brcomp:ReinforcingBar .
+
+inst:1oiGarry96bBkX9niM34Dc
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3t_CPc$Gf0BR8fEiJDD1h_>
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2n9Cn1zYL1pup5X$TN0iA_>
+        a       brcomp:ReinforcingBar .
+
+inst:349kF91un1yunE2LjzUh1a
+        a       brcomp:ReinforcingBar .
+
+inst:1LkS4XzS17PgRdbaCHXEc0
+        a       brcomp:ReinforcingBar .
+
+inst:2zY6w9subCEB4RaOQ_OLkO
+        a       brcomp:ReinforcingBar .
+
+inst:1edHQCUQ5BiufFEMWeCLlQ
+        a       brcomp:Pier .
+
+inst:3deVaFX353G97SGtG36gYs
+        a       brcomp:Abutment .
+
+inst:0KW2RFGPP7CxGlUweLaDeA
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#32i$0v3IzFR9KGih01tNtd>
+        a       brcomp:ReinforcingBar .
+
+inst:1DPvP8SMP7XBYQRNu_dLk9
+        a       brcomp:DrilledPile .
+
+inst:2VepJKWmT8POTa7HC7z3oW
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2SR$xd8YX9GuIf3Rv5pJFc>
+        a       brcomp:Pier .
+
+inst:1Gw36zf7PA0ecPBSrTFkkt
+        a       brcomp:ReinforcingBar .
+
+inst:0_oQ_1cqr4oxsuU3LFDetK
+        a       brcomp:GirderDeck .
+
+inst:3fmuu9QMv3f9RuDCjKKDIm
+        a       brcomp:DrilledPile .
+
+inst:0_C_7pkZfBgBdYewqAHzLN
+        a       brcomp:DrilledPile .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1NDVvuzzf5Bwv4EVqM5HJ$>
+        a       brcomp:ReinforcingBar .
+
+brot:Bridge  a  owl:Class .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1Tq3U2drv4$ukSl8y_92Et>
+        a       brcomp:Foundation .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0H82wSi9X9phd7fGal$E68>
+        a       brcomp:ReinforcingBar .
+
+inst:1322dgrfT6FApDFseIks6S
+        a       brcomp:ReinforcingBar .
+
+inst:0JpqNfSU17L8J9cyx2leLo
+        a       brcomp:DrilledPile .
+
+inst:0X7NIRdd56dBDK54hwRuBJ
+        a       brcomp:ReinforcingBar .
+
+inst:3giEFrxJnEhBQMTPtA88at
+        a       brcomp:ReinforcingBar .
+
+inst:28VWI9YKL2OhXNYOfj9zbE
+        a       brcomp:ReinforcingBar .
+
+inst:1i1VKdOPvCzRJikW72fRbV
+        a       brcomp:ReinforcingBar .
+
+inst:1hh8Em62X27vn30FzcNurg
+        a       brcomp:ReinforcingBar .
+
+inst:0cQj46ttzCRwfOfbb7Juzy
+        a       brcomp:ReinforcingBar .
+
+inst:34dif7Nxv72htfkbSy6yzK
+        a       brcomp:ReinforcingBar .
+
+inst:3kepiMDpr8nwROgmq0fBRu
+        a       brcomp:DrilledPile .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3SC8HNHFn0SgSPbEd2_$ss>
+        a       brcomp:BuildingElementProxy .
+
+inst:2XVP7fktn7ifCrHyXbYvAR
+        a       brcomp:ReinforcingBar .
+
+brot:Superstructure  a  owl:Class .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#18fx$3ccj1Z9fT_Phxjt4a>
+        a       brcomp:ReinforcingBar .
+
+inst:0U8evudTP8gwzri6J_cSmN
+        a       brcomp:DrilledPile .
+
+inst:1gFhHGGBP3xgXLXnRJr33j
+        a       brcomp:ReinforcingBar .
+
+inst:22fjM5jUT2OBQJT5oZdGfF
+        a       brcomp:ReinforcingBar .
+
+inst:0fzW1vYAPA4OFcY7GQTWRH
+        a       brcomp:ReinforcingBar .
+
+brcomp:ReinforcingBar
+        a       owl:Class .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#24ago4yWbEhfvFU$kX$9WT>
+        a       brcomp:ReinforcingBar .
+
+brcomp:Abutment  a  owl:Class .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0$LextJQ98wwNmjy6oIQDc>
+        a       brcomp:ReinforcingBar .
+
+inst:2CsyCp5_r8qg7bQc3fdLK3
+        a       brcomp:DrilledPile .
+
+inst:3AblAeVZLAvPjUvEEJ08Ly
+        a       brcomp:PotBearings .
+
+inst:0wUo9UDZj0V9AgxRD3st0j
+        a       brcomp:ReinforcingBar .
+
+inst:1yAqum9Nb4Hg8j5Li2_ISj
+        a       brcomp:ReinforcingBar .
+
+inst:0fSuRyaIfCtuwsI_cQ9N4R
+        a       brcomp:ReinforcingBar .
+
+inst:2Tr3485vjFbhp48PLKOIVK
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3D$4QnLvbCK8xdExuzB6LC>
+        a       brcomp:ReinforcingBar .
+
+inst:3vttNqsab3fh9T503T3bJG
+        a       brcomp:DrilledPile .
+
+inst:1SZNhQf9jChvJf9XUQYi89
+        a       brcomp:ReinforcingBar .
+
+inst:1hrqCYpGv1VADtTfK_tdgG
+        a       brcomp:DrilledPile .
+
+inst:01fSALN_95TQyCfFxJTFQi
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3Ybl7gbXvAyOy$SHx$zQYD>
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0$bD_3Lbr4Re2bR7IUmm3N>
+        a       brcomp:ReinforcingBar .
+
+inst:1OF76OQyvC7PIx6sljL3wG
+        a       brcomp:ReinforcingBar .
+
+inst:2vAsKzyg53lBvMDPzlB4Uy
+        a       brcomp:ReinforcingBar .
+
+inst:2PZPNcPwD2Uf9KatLXE3iS
+        a       brcomp:ReinforcingBar .
+
+inst:1ZPHRkLVT36BbjO_fUmNXP
+        a       brcomp:DrilledPile .
+
+brot:containsZone  a  owl:ObjectProperty .
+
+inst:25tTPkRA13NP2XOjngzCvv
+        a       brcomp:PotBearings .
+
+inst:2jozzPD4LCeAKMlm_i2mcV
+        a       brcomp:Cap .
+
+inst:0F8pmB4NXALwnPaSe6zKsy
+        a       brcomp:DrilledPile .
+
+inst:2Hso94RUv5KQXjhP0OyYDm
+        a       brcomp:ReinforcingBar .
+
+inst:1w7bIVeNPE7xm8Ki8507xb
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0xwMhlJgT7VPWVPO$2DVB2>
+        a       brcomp:ReinforcingBar .
+
+inst:1bKlKbhw59AutRVejcWcE_
+        a       brcomp:ReinforcingBar .
+
+inst:2SbVrPUCTE3hkS88Oj4lQb
+        a       brcomp:ReinforcingBar .
+
+inst:BridgeSuperstructure
+        a                     brot:Superstructure ;
+        brot:containsElement  inst:3mPNFRMfv1o8iSS1xiknue , <https://wisib.de/ontologie/Abox/bridgeOntology#1S1SjQi6vCDfVU$IYPMgOe> , inst:1mrbK37wvBGRarBmoBKdrZ , inst:2jozzPD4LCeAKMlm_i2mcV , inst:1XtQpURGz3xBiFQHbfk_Zx , inst:2hxCrWc6jAKBc2blCCpPje , inst:Bridge-Girder , <https://wisib.de/ontologie/Abox/bridgeOntology#08qj$VV3zBu9sG48wP5$Pu> , inst:3ZDymkAmDCY8FaZdgJd1fa , inst:1Pehfi_09Bvw4ETCApgaC9 , inst:0GAfevVUb2Exh2Mvkcq1sj , <https://wisib.de/ontologie/Abox/bridgeOntology#2c$4jTO6r6uBJf7OdPzxwM> , inst:3V21Dnqsv6PP1e9TMRfO2p .
+
+inst:26SGpbMnvDIQM4Y5wm6vvi
+        a       brcomp:ReinforcingBar .
+
+inst:3rIRfdHgXC2gI7Ulicc_Cp
+        a       brcomp:ReinforcingBar .
+
+inst:3hvJn83c91_PPHWn71NdnV
+        a       brcomp:ReinforcingBar .
+
+inst:2JkOUq4kT4egDfBVwRjx4v
+        a       brcomp:ReinforcingBar .
+
+inst:2qptUad_v2mhVkjDy0jDdu
+        a       brcomp:ReinforcingBar .
+
+inst:2PTXCJzTH1DBtOG94JdiZT
+        a       brcomp:ReinforcingBar .
+
+inst:2Js5mRb9v0guS6fzykHcA_
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1CwjPT0EP18hDcO$Co6sc$>
+        a       brcomp:ReinforcingBar .
+
+inst:1_UnaRpxLASxxNdWBjFDI7
+        a       brcomp:ReinforcingBar .
+
+inst:0dQj1I73D9RwrGyctNFYKg
+        a       brcomp:ReinforcingBar .
+
+inst:0CPdrhgd59j8EF0KkbFPrc
+        a       brcomp:ReinforcingBar .
+
+inst:1HIpXpSsrDkefb4qPJ3epN
+        a       brcomp:ReinforcingBar .
+
+inst:1jfrxn9JHFEglUjaUshtkr
+        a       brcomp:ReinforcingBar .
+
+inst:1Qcf4lexz4LO4x1UOtLGFw
+        a       brcomp:DrilledPile .
+
+brot:containsElement  a  owl:ObjectProperty .
+
+inst:25fDQCIiL6q8Iiwampm9sb
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3VKk2KDr10$v3hAoZ8H8hq>
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3MKnsUfM18POXN0W6n1n$f>
+        a       brcomp:ReinforcingBar .
+
+inst:1qTPcIf7D0wPxAYWaXG4r8
+        a       brcomp:ReinforcingBar .
+
+inst:2wKFHPmrjFzRlhQZetFABx
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2au1HaUAv7VhVAPC$S7PFN>
+        a       brcomp:ReinforcingBar .
+
+inst:3ZDymkAmDCY8FaZdgJd1fa
+        a       brcomp:Cap .
+
+inst:0wvB7qbvX0PvnpPxjWBKpT
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3lJjZCX$j3RxB29GTNYBJQ>
+        a       brcomp:ReinforcingBar .
+
+inst:367eccRDj6w8fB5KCoJjbm
+        a       brcomp:ReinforcingBar .
+
+inst:0WPkHP96T3h86xy02khfW7
+        a       brcomp:ReinforcingBar .
+
+inst:2ohgW5qfrCFvDyPDzTeLJ4
+        a       brcomp:DrilledPile .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2050viypD2$A3WDOGf8$UO>
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1$mGYUuf95$9u_x9kxIFRs>
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2ZDjw$CAb0rOMQufd51XFl>
+        a       brcomp:ReinforcingBar .
+
+inst:33bCjVpar2ZP4HeX51HWAX
+        a       brcomp:DrilledPile .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0O8QF$zDD6me8sLOhZs5K0>
+        a       brcomp:ReinforcingBar .
+
+inst:0g886eETHAtwNt9wThzASu
+        a       brcomp:ReinforcingBar .
+
+inst:3HtQW4C1DDiQrt75UJFDT6
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2c8CiVxbL849$VUX9Fbk1h>
+        a       brcomp:ReinforcingBar .
+
+inst:04DMsgNOvFye2K3CQlZpOH
+        a       brcomp:GirderDeck .
+
+inst:2qw4yV6Tr4xhSpru_u3Ebv
+        a       brcomp:GirderSegment .
+
+inst:1eAV_LdwP45BQ1QfNGtivQ
+        a       brcomp:ReinforcingBar .
+
+inst:3D2Qu01cz0meUYxGvi3HSo
+        a       brcomp:ReinforcingBar .
+
+inst:1Jsruwj6v82xuNR9o70ozy
+        a       brcomp:PotBearings .
+
+inst:0csORJKs1CHxFAcPRKchKc
+        a       brcomp:ReinforcingBar .
+
+inst:3ZOK41FzD7XhLlaeqFWCUk
+        a       brcomp:ReinforcingBar .
+
+inst:2fjN_9dTD4QPa19rnCRMTy
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1BVm21ugT2wgJ$jrCVMb2p>
+        a       brcomp:ReinforcingBar .
+
+inst:1yD7DGATbE9hYbbRxXLc_G
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1QG8h4zFjDU9mOBIeTsw$x>
+        a       brcomp:ReinforcingBar .
+
+inst:3r6NQZu6X9VOHHxfuy_drO
+        a       brcomp:ReinforcingBar .
+
+brcomp:Foundation  a  owl:Class .
+
+inst:2MpnAjSYb2HhwvkxIYDXcd
+        a       brcomp:DrilledPile .
+
+brot:Substructure  a  owl:Class .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2cs2wEOen47evDcoy6Yw4$>
+        a       brcomp:ReinforcingBar .
+
+inst:0NIDY__lr5G9QARL0eKdFd
+        a       brcomp:GirderSegment .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0FLsHm2w13LhlG8$GQpQfF>
+        a       brcomp:ReinforcingBar .
+
+inst:2ELUvcwlP5ceaZSA843eg7
+        a       brcomp:ReinforcingBar .
+
+inst:23MlcQyYH4nvZx0pcVgfAm
+        a       brcomp:ReinforcingBar .
+
+inst:1JDjDLEo16NBbJGH66sYhE
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2Q$J5ve_9A1PLk75$7UNBJ>
+        a       brcomp:ReinforcingBar .
+
+inst:1aRlzwelnFnwUk_mju8v3S
+        a       brcomp:GirderDeck .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1S1SjQi6vCDfVU$IYPMgOe>
+        a       brcomp:Cap .
+
+inst:1F3wRCISj6o9jFd98hOXft
+        a       brcomp:DrilledPile .
+
+inst:1XtQpURGz3xBiFQHbfk_Zx
+        a       brcomp:Cap .
+
+inst:3a2vMLC5P3beBOUEfVrqkL
+        a       brcomp:ReinforcingBar .
+
+brcomp:PotBearings  a  owl:Class .
+
+inst:3E6eQTM1TCtQgAb1DrQ6hg
+        a       brcomp:ReinforcingBar .
+
+inst:0QwtUP2TDA_Pz9n5QAZ7w5
+        a       brcomp:PotBearings .
+
+inst:3LtlUqsvj8Vf_6330SzatF
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0Fmmok4THAOxdYY$T0xRqr>
+        a       brcomp:DrilledPile .
+
+inst:0tvoAjYHP5a8XFd70MXp5O
+        a       brcomp:DrilledPile .
+
+inst:2cbe0qMyb1iQ5SiVLBVLWR
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2fpgLTNmv6xA0qIbJYxYR$>
+        a       brcomp:DrilledPile .
+
+inst:2mBojREwrAqguiSBCHzf1f
+        a       brcomp:ReinforcingBar .
+
+inst:3BL4m0e7X1UQBca8U46Ho9
+        a       brcomp:ReinforcingBar .
+
+inst:2Bln3TWLL7gOOP9Hn_jUS3
+        a       brcomp:ReinforcingBar .
+
+inst:1mD8QlK3r62v6mrt4fosg2
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1tTEV5D6n9jgtC8bDwS$2L>
+        a       brcomp:ReinforcingBar .
+
+inst:Bridge-Girder  a    brcomp:Girder ;
+        brot:aggregates  inst:1zjNfRDL12Hx0Ld_VEbyoM , inst:2qw4yV6Tr4xhSpru_u3Ebv , inst:3dhMUsYdH6IOaRNuYMYYru , inst:3hA0greQb9XPkzMlDXjwqy , <https://wisib.de/ontologie/Abox/bridgeOntology#0WlBZPCq54MwS5IzK$4Mnu> , inst:1chnUbgXjAe9egn0i_9uVp , inst:0NIDY__lr5G9QARL0eKdFd , inst:3j204Ax7v2NAyel57ijdVm , inst:04DMsgNOvFye2K3CQlZpOH , inst:0_oQ_1cqr4oxsuU3LFDetK , inst:1aRlzwelnFnwUk_mju8v3S , inst:1HI5gUP214NuM19arKfzyC .
+
+inst:3HL787CJnElwvilypS9bSs
+        a       brcomp:DrilledPile .
+
+inst:0ODxXEXX9AkBPvMEiu9yw3
+        a       brcomp:ReinforcingBar .
+
+inst:20qjxcC1z5qe97z0V4uYwx
+        a       brcomp:ReinforcingBar .
+
+inst:37VZN7Rx94tOL_EWnACj4x
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0GGyOhV4P81v$QMMai2$r$>
+        a       brcomp:Foundation .
+
+inst:28aeDjDo10YOtGjMAGPAqS
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2rrs9wUv96xBE1iw_rZ8U$>
+        a       brcomp:ReinforcingBar .
+
+inst:3pb9ySYiL23xeetfwZbNdW
+        a       brcomp:ReinforcingBar .
+
+inst:1KO5lzBZj8jQGcpZVjVytA
+        a       brcomp:PotBearings .
+
+inst:1boiqHfMrDQOy4KwRc1K2u
+        a       brcomp:ReinforcingBar .
+
+inst:2WtTZoLK53XuU5uQMQmCK0
+        a       brcomp:ReinforcingBar .
+
+inst:0l1BBO8rv4QhH1eFpkBc_c
+        a       brcomp:DrilledPile .
+
+inst:2olXq4u8b05eNhBTTmIecB
+        a       brcomp:DrilledPile .
+
+inst:0xbXTaN750CufR_iyVTZ1p
+        a       brcomp:ReinforcingBar .
+
+inst:3V21Dnqsv6PP1e9TMRfO2p
+        a       brcomp:Cap .
+
+inst:1VsT9WY7fFQebfQJE8RZza
+        a       brcomp:ReinforcingBar .
+
+inst:0XzXvaNWP6AxKfhKcoY2H6
+        a       brcomp:ReinforcingBar .
+
+inst:0EmIaDYu99Dv5yQ4xoJ5p7
+        a       brcomp:ReinforcingBar .
+
+inst:3bADwPBZ18E9ASXF5Y3X_o
+        a       brcomp:ReinforcingBar .
+
+inst:0hteVcJd5BFulm715gNNgY
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1tRkyq7wT4veWWeskh$C9Z>
+        a       brcomp:ReinforcingBar .
+
+inst:2EztEdNtDCVhChQT0LVI3E
+        a       brcomp:ReinforcingBar .
+
+inst:00tQmfFJbCfv6B6Ob0THAl
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3EuNgqG_rB5wtX5e$cCL_5>
+        a       brcomp:DrilledPile .
+
+inst:2RxJvZkT98ROTTA9JWe1t9
+        a       brcomp:ReinforcingBar .
+
+inst:0rksLD49H3yRXODsaUWFUX
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2gBT1K_Av6aQ0MV$0qEqWh>
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#14fYRcrEjBgg$_mqCKIbqa>
+        a       brcomp:ReinforcingBar .
+
+inst:14mqlAIvr1xxfMvAPzE2pe
+        a       brcomp:ReinforcingBar .
+
+inst:1VIHL2SU99gQb_GiukOFB6
+        a       brcomp:ReinforcingBar .
+
+brcomp:GirderSegment  a  owl:Class .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1$GA9v675F2vRo53VChCAC>
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2f$B8J0dj8PxjXITrg$Iyi>
+        a       brcomp:ReinforcingBar .
+
+inst:1bzauTZEbFNO_N4IZV9f6z
+        a       brcomp:ReinforcingBar .
+
+inst:09bVbruLf1TfwFtgicQ8vn
+        a       brcomp:ReinforcingBar .
+
+inst:3huGArAsPCXv8uKw8cwYWt
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3MWr8tTz936gAl$Q$Rkc$b>
+        a       brcomp:DrilledPile .
+
+inst:2DrRAtdOj0XvDFTSNhRvUQ
+        a       brcomp:ReinforcingBar .
+
+inst:3nAwPeC91AxAgzi8DmP3bU
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1_5s8$mdv2CBGLJjBtDw9e>
+        a       brcomp:ReinforcingBar .
+
+inst:2NzIStjZL7rvvJn_i5893a
+        a       brcomp:ReinforcingBar .
+
+inst:2BvG1AZDb7YwjBrOe3USyK
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0WlBZPCq54MwS5IzK$4Mnu>
+        a       brcomp:GirderDeck , brcomp:BuildingElementProxy .
+
+inst:18UeIF6aLBUf_4td48WMM6
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1dnig$SufAtQ7qmy0E27Rf>
+        a       brcomp:ReinforcingBar .
+
+inst:21zy0Cniv1gAYpx_cQaJVW
+        a       brcomp:ReinforcingBar .
+
+inst:33wKqHdnzAKBPmvS0BbR5K
+        a       brcomp:ReinforcingBar .
+
+brcomp:BuildingElementProxy
+        a       owl:Class .
+
+inst:0J1HaEIOL37hfIf0utTe1V
+        a       brcomp:ReinforcingBar .
+
+inst:048Mt4Yh51PPzZvFsAwW9L
+        a       brcomp:ReinforcingBar .
+
+inst:1Fpz8DMuT2EQSGIkKn4wxj
+        a       brcomp:ReinforcingBar .
+
+inst:1jCDRfDlPF8wejdK9fO2CO
+        a       brcomp:ReinforcingBar .
+
+brcomp:Girder  a  owl:Class .
+
+inst:0q1D3Z9v1ASggjAuXhyGBI
+        a       brcomp:ReinforcingBar .
+
+inst:2hxCrWc6jAKBc2blCCpPje
+        a       brcomp:Cap .
+
+inst:2uZNHotd1BXQvVu05oqaVQ
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0HgbsTtzjF_Qvss$GzClft>
+        a       brcomp:ReinforcingBar .
+
+inst:08smLwDp55seOTuPfxfCV9
+        a       brcomp:ReinforcingBar .
+
+inst:1Tnpr4QbD6w85ZoMFT0wzl
+        a       brcomp:ReinforcingBar .
+
+inst:1LcOkVuTf3UBaQhQ0U2EdJ
+        a       brcomp:ReinforcingBar .
+
+brot:aggregates  a  owl:ObjectProperty .
+
+inst:3zN0bBhgX7txGWM48QU0p2
+        a       brcomp:ReinforcingBar .
+
+inst:3ddujobdvCQ8rXWVYxnOzj
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0SRHJ7P2H9z893$XF1C_Qp>
+        a       brcomp:ReinforcingBar .
+
+inst:28bMuO3bf3NvHhJf9yU2Pi
+        a       brcomp:DrilledPile .
+
+inst:3hA0greQb9XPkzMlDXjwqy
+        a       brcomp:GirderSegment .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1ZLuWLU$DECxI8SjOaQfVP>
+        a       brcomp:ReinforcingBar .
+
+inst:3YmcKhKk5FGPM2Jjgx_CY6
+        a       brcomp:ReinforcingBar .
+
+inst:2eAyhpWGnC79KlZ2oGUp0z
+        a       brcomp:ReinforcingBar .
+
+inst:2bZlawuUT6DBXAwQTHKXvV
+        a       brcomp:ReinforcingBar .
+
+inst:2_ViaQiTT7fAuSMIPN5ogn
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2PB7jL$t175u4Hti20otqy>
+        a       brcomp:ReinforcingBar .
+
+inst:1IZjukAY10I8hEVOdHkJXG
+        a       brcomp:ReinforcingBar .
+
+inst:3j204Ax7v2NAyel57ijdVm
+        a       brcomp:GirderSegment .
+
+inst:1zjNfRDL12Hx0Ld_VEbyoM
+        a       brcomp:GirderDeck .
+
+inst:3eRhty6cDFcvSLj8ZTOvjd
+        a       brcomp:Abutment .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2c$4jTO6r6uBJf7OdPzxwM>
+        a       brcomp:Cap .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0uFpMJDdDC$8wrSeKMkBNb>
+        a       brcomp:ReinforcingBar .
+
+inst:36XaXKicr4sf4NZy6usRp_
+        a       brcomp:ReinforcingBar .
+
+inst:0OIz5svdT0Ru9p6Jadb04K
+        a       brcomp:ReinforcingBar .
+
+inst:1UfoBVp350te60SlLvABtg
+        a       brcomp:ReinforcingBar .
+
+inst:0Pa47wfwH5COOYGnMCaCOP
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1hj$KsAxLBhvmaYeA4PNZg>
+        a       brcomp:ReinforcingBar .
+
+inst:1ibXNPdwr5Tgytvh3vclKK
+        a       brcomp:ReinforcingBar .
+
+inst:Bridge  a                brot:Bridge ;
+        brot:containsElement  inst:1h0i_b5c9Bqg9QMT93HnvO , inst:0J1HaEIOL37hfIf0utTe1V , inst:2_ViaQiTT7fAuSMIPN5ogn , <https://wisib.de/ontologie/Abox/bridgeOntology#0i$6ZkDdv2mwGjuIGDD$RA> , inst:1hh8Em62X27vn30FzcNurg , inst:0csORJKs1CHxFAcPRKchKc , inst:1LcOkVuTf3UBaQhQ0U2EdJ , inst:3xcc36HQL55gJYe_uylT8c , <https://wisib.de/ontologie/Abox/bridgeOntology#0jlP6ykgv0CwpBc$AhNKvA> , inst:0mzf9GV8XFdBEhRZ7HVzvI , inst:1JDjDLEo16NBbJGH66sYhE , inst:0EmIaDYu99Dv5yQ4xoJ5p7 , <https://wisib.de/ontologie/Abox/bridgeOntology#2rrs9wUv96xBE1iw_rZ8U$> , inst:0KW2RFGPP7CxGlUweLaDeA , inst:1JNbdYEQD7jPmyPgD4cENW , inst:1_UnaRpxLASxxNdWBjFDI7 , inst:1qOoX8sjr8mQTiS_5rGXXy , <https://wisib.de/ontologie/Abox/bridgeOntology#0qg$gWq8P4zwujieaJM4WR> , <https://wisib.de/ontologie/Abox/bridgeOntology#1P8BPBTs91M9$gqaxkaeLB> , inst:29qKGNSyvBJQ3EMQidScoa , inst:0g886eETHAtwNt9wThzASu , inst:1d8qmF5zL9SfOTdNgYBvTm , inst:14mqlAIvr1xxfMvAPzE2pe , inst:1eVd3zsw93SumynY8whOtq , inst:0wt33sdvX18B0oBUStR098 , inst:0o3PT9skH9ggn_FagE3Rk2 , inst:3YmcKhKk5FGPM2Jjgx_CY6 , inst:2Tr3485vjFbhp48PLKOIVK , <https://wisib.de/ontologie/Abox/bridgeOntology#0$LextJQ98wwNmjy6oIQDc> , inst:2qptUad_v2mhVkjDy0jDdu , inst:2NzIStjZL7rvvJn_i5893a , <https://wisib.de/ontologie/Abox/bridgeOntology#3VKk2KDr10$v3hAoZ8H8hq> , inst:1iuyZHtrL4O8WNWZhhUTiP , <https://wisib.de/ontologie/Abox/bridgeOntology#0O8QF$zDD6me8sLOhZs5K0> , inst:2loF4rKYvEyvSjL9_KbYnR , inst:3pb9ySYiL23xeetfwZbNdW , inst:0m1eUotCTAgu4DMr7h4TNk , inst:0gMgOWk7XE1webDyyrd81i , <https://wisib.de/ontologie/Abox/bridgeOntology#0$bD_3Lbr4Re2bR7IUmm3N> , inst:2PZPNcPwD2Uf9KatLXE3iS , inst:3fmuu9QMv3f9RuDCjKKDIm , inst:2cbe0qMyb1iQ5SiVLBVLWR , inst:1F3wRCISj6o9jFd98hOXft , <https://wisib.de/ontologie/Abox/bridgeOntology#2$8qNBHxn4aO$maZh_PO6t> , <https://wisib.de/ontologie/Abox/bridgeOntology#3MwC$mSs52Jxms4ztsxMIS> , inst:01fSALN_95TQyCfFxJTFQi , inst:2GOg54CuH3SgD9gxvKiTm9 , inst:21sUG6FgTDcxSBg6DKQhkl , inst:0Ab7Qmvef4ggGjJxf6xpWC , <https://wisib.de/ontologie/Abox/bridgeOntology#3MWr8tTz936gAl$Q$Rkc$b> , inst:1Tnpr4QbD6w85ZoMFT0wzl , <https://wisib.de/ontologie/Abox/bridgeOntology#14fYRcrEjBgg$_mqCKIbqa> , inst:2Y4yci3qHFEPCu0IxM6Or8 , <https://wisib.de/ontologie/Abox/bridgeOntology#0FLsHm2w13LhlG8$GQpQfF> , inst:0xbXTaN750CufR_iyVTZ1p , inst:34dif7Nxv72htfkbSy6yzK , inst:3pVn9q2kjFTONhNFhMGtY7 , <https://wisib.de/ontologie/Abox/bridgeOntology#1dnig$SufAtQ7qmy0E27Rf> , inst:08smLwDp55seOTuPfxfCV9 , inst:2UvKroVDr0PgKGtji7n3Mi , inst:13XiSi9on9EAaDXSNfxIL0 , inst:0F8pmB4NXALwnPaSe6zKsy , inst:0tvoAjYHP5a8XFd70MXp5O , inst:00tQmfFJbCfv6B6Ob0THAl , <https://wisib.de/ontologie/Abox/bridgeOntology#1tRkyq7wT4veWWeskh$C9Z> , inst:2SbVrPUCTE3hkS88Oj4lQb , inst:2wkX7FTfv2Ue6KM8h_rsz4 , inst:3e87KAcN5CivZIPbF3k_wE , inst:2eAyhpWGnC79KlZ2oGUp0z , inst:1Gw36zf7PA0ecPBSrTFkkt , inst:00kvD6Hab3MfOJKe8Wq3zv , inst:1UfoBVp350te60SlLvABtg , inst:2Pu7eZgLn4L9QQuNUNC32p , inst:2CsyCp5_r8qg7bQc3fdLK3 , inst:2kWUc5TDHEGPMgvTJb9w3Z , inst:1ibXNPdwr5Tgytvh3vclKK , inst:2mBojREwrAqguiSBCHzf1f , inst:1rnVLTzRv9hAVVHOdMthiQ , <https://wisib.de/ontologie/Abox/bridgeOntology#2au1HaUAv7VhVAPC$S7PFN> , inst:1HIpXpSsrDkefb4qPJ3epN , inst:2XVP7fktn7ifCrHyXbYvAR , inst:1yVlhiAI989RwzeCgehTOY , inst:0d_fow0ND0EAiEQCgXXea1 , inst:25PGGjDC99nfnTWZ52SH0F , inst:2n3aUXs1PAUgeQ_38Fr_ZP , inst:0X7NIRdd56dBDK54hwRuBJ , inst:20qjxcC1z5qe97z0V4uYwx , inst:3Ac5gq95f3XOKY8cLOPv71 , inst:1DLE9tibn8BhfNmg0TltGW , inst:2uZNHotd1BXQvVu05oqaVQ , inst:0XzXvaNWP6AxKfhKcoY2H6 , inst:26SGpbMnvDIQM4Y5wm6vvi , inst:1OF76OQyvC7PIx6sljL3wG , <https://wisib.de/ontologie/Abox/bridgeOntology#2c8CiVxbL849$VUX9Fbk1h> , inst:0l1BBO8rv4QhH1eFpkBc_c , inst:3D2Qu01cz0meUYxGvi3HSo , inst:349kF91un1yunE2LjzUh1a , inst:2Js5mRb9v0guS6fzykHcA_ , inst:27MICrNTDCXAYsrxi714tV , <https://wisib.de/ontologie/Abox/bridgeOntology#2wjOGrZhr3dxt3AQR$pwMJ> , inst:0cQj46ttzCRwfOfbb7Juzy , inst:0bpUmRyov0_gSyo41ODi5y , inst:2fjN_9dTD4QPa19rnCRMTy , inst:1hrqCYpGv1VADtTfK_tdgG , inst:2zY6w9subCEB4RaOQ_OLkO , inst:0whXR7Le52oxuNtSFpjxrW , <https://wisib.de/ontologie/Abox/bridgeOntology#0134UFP9T5588yITAiB0$h> , <https://wisib.de/ontologie/Abox/bridgeOntology#3lJjZCX$j3RxB29GTNYBJQ> , inst:2BfCPaY996wODjfyDduKv8 , inst:2VepJKWmT8POTa7HC7z3oW , inst:3hvJn83c91_PPHWn71NdnV , <https://wisib.de/ontologie/Abox/bridgeOntology#1ZLuWLU$DECxI8SjOaQfVP> , inst:1boiqHfMrDQOy4KwRc1K2u , <https://wisib.de/ontologie/Abox/bridgeOntology#0Fmmok4THAOxdYY$T0xRqr> , inst:0CPdrhgd59j8EF0KkbFPrc , <https://wisib.de/ontologie/Abox/bridgeOntology#2Q$J5ve_9A1PLk75$7UNBJ> , inst:3sW4UW2Xz80BmbJJP62z18 , <https://wisib.de/ontologie/Abox/bridgeOntology#1tTEV5D6n9jgtC8bDwS$2L> , <https://wisib.de/ontologie/Abox/bridgeOntology#1$GA9v675F2vRo53VChCAC> , inst:3huGArAsPCXv8uKw8cwYWt , inst:0bu0snrNH1PBzWQrueyDeu , inst:1gFhHGGBP3xgXLXnRJr33j , inst:3giEFrxJnEhBQMTPtA88at , inst:1yAqum9Nb4Hg8j5Li2_ISj , <https://wisib.de/ontologie/Abox/bridgeOntology#3D$4QnLvbCK8xdExuzB6LC> , inst:1jfrxn9JHFEglUjaUshtkr , inst:3HL787CJnElwvilypS9bSs , inst:0_C_7pkZfBgBdYewqAHzLN , inst:2FWWGKHvv0qAsYu20LbeKj , inst:0aMicdC558jf9BhHzofPqm , <https://wisib.de/ontologie/Abox/bridgeOntology#0HgbsTtzjF_Qvss$GzClft> , inst:39zGe7JRbCBA_hBRKEMrx3 , <https://wisib.de/ontologie/Abox/bridgeOntology#3dUQySdh53_gPv7$Uoh$KW> , inst:0LvkaksPH1Lh7jX3dV6pTG , <https://wisib.de/ontologie/Abox/bridgeOntology#3t_CPc$Gf0BR8fEiJDD1h_> , inst:1WPWU4BHr1395VONGe7pMM , inst:0mRPgzxWrCpfsY9BET3bXW , inst:2JkOUq4kT4egDfBVwRjx4v , <https://wisib.de/ontologie/Abox/bridgeOntology#1ZwsXO_lb1wxfdB$d$AuOg> , inst:0q1D3Z9v1ASggjAuXhyGBI , inst:33bCjVpar2ZP4HeX51HWAX , <https://wisib.de/ontologie/Abox/bridgeOntology#2050viypD2$A3WDOGf8$UO> , <https://wisib.de/ontologie/Abox/bridgeOntology#1rAPqH$Vb67eVXTFpW66kq> , inst:1bKlKbhw59AutRVejcWcE_ , <https://wisib.de/ontologie/Abox/bridgeOntology#2$06SeZeX74OJOt2RcXAbU> , inst:2fJIH4xcrB1AaxQMFscZ35 , inst:1oiGarry96bBkX9niM34Dc , inst:3ZOK41FzD7XhLlaeqFWCUk , <https://wisib.de/ontologie/Abox/bridgeOntology#0O2s1GjAv1mAd$EaJyPWXI> , inst:1qTPcIf7D0wPxAYWaXG4r8 , inst:2PTXCJzTH1DBtOG94JdiZT , <https://wisib.de/ontologie/Abox/bridgeOntology#3SC8HNHFn0SgSPbEd2_$ss> , inst:18UeIF6aLBUf_4td48WMM6 , inst:2ohgW5qfrCFvDyPDzTeLJ4 , inst:3HtQW4C1DDiQrt75UJFDT6 , <https://wisib.de/ontologie/Abox/bridgeOntology#1$mGYUuf95$9u_x9kxIFRs> , inst:3MSlbwjQr7_uWmrW1heWPi , <https://wisib.de/ontologie/Abox/bridgeOntology#2zVkYLPLv4$O9iRIozSQ9i> , inst:2aHXCxFxX9gupyFf0MErBV , inst:3hu0cB2IXCVAIOanTTk5Y4 , inst:3T0WiwqnfFHvhL8u_In7Rw , inst:1Fpz8DMuT2EQSGIkKn4wxj , inst:21Geo7WqbB18u4PiMiMqp4 , <https://wisib.de/ontologie/Abox/bridgeOntology#0SRHJ7P2H9z893$XF1C_Qp> , inst:1edHQCUQ5BiufFEMWeCLlQ , inst:1Qcf4lexz4LO4x1UOtLGFw , <https://wisib.de/ontologie/Abox/bridgeOntology#1wQR$vy850yvr1NP$YPjSs> , inst:22fjM5jUT2OBQJT5oZdGfF , inst:1ZPHRkLVT36BbjO_fUmNXP , inst:2vAsKzyg53lBvMDPzlB4Uy , <https://wisib.de/ontologie/Abox/bridgeOntology#24ago4yWbEhfvFU$kX$9WT> , inst:2MRwo0lyT5BBiywzmluI46 , inst:3VSoUNTUn3svYMe_WLNOdc , inst:1yD7DGATbE9hYbbRxXLc_G , <https://wisib.de/ontologie/Abox/bridgeOntology#1_5s8$mdv2CBGLJjBtDw9e> , inst:1oSFrtkrzD7gkTMrNG4j_K , <https://wisib.de/ontologie/Abox/bridgeOntology#27fT$LX3rAr8HN5eewOf9W> , <https://wisib.de/ontologie/Abox/bridgeOntology#0uFpMJDdDC$8wrSeKMkBNb> , <https://wisib.de/ontologie/Abox/bridgeOntology#2PB7jL$t175u4Hti20otqy> , inst:1i1VKdOPvCzRJikW72fRbV , inst:1mD8QlK3r62v6mrt4fosg2 , inst:3xXJlipp51RBdMZgqEm92L , inst:0G8FrcVkTEVwxrM9rvgFYk , inst:0fzW1vYAPA4OFcY7GQTWRH , <https://wisib.de/ontologie/Abox/bridgeOntology#32i$0v3IzFR9KGih01tNtd> , inst:2wKFHPmrjFzRlhQZetFABx , inst:1jCDRfDlPF8wejdK9fO2CO , <https://wisib.de/ontologie/Abox/bridgeOntology#1J_pG12$DDv8yYCTBe$gq8> , inst:0ODxXEXX9AkBPvMEiu9yw3 , <https://wisib.de/ontologie/Abox/bridgeOntology#2SR$xd8YX9GuIf3Rv5pJFc> , inst:36XaXKicr4sf4NZy6usRp_ , <https://wisib.de/ontologie/Abox/bridgeOntology#1NDVvuzzf5Bwv4EVqM5HJ$> , <https://wisib.de/ontologie/Abox/bridgeOntology#3MKnsUfM18POXN0W6n1n$f> , inst:3LtlUqsvj8Vf_6330SzatF , <https://wisib.de/ontologie/Abox/bridgeOntology#18fx$3ccj1Z9fT_Phxjt4a> , inst:1bzauTZEbFNO_N4IZV9f6z , inst:2DrRAtdOj0XvDFTSNhRvUQ , <https://wisib.de/ontologie/Abox/bridgeOntology#3Hi_ymQvv02Adt3$ucyaaB> , inst:0wvB7qbvX0PvnpPxjWBKpT , inst:1eAV_LdwP45BQ1QfNGtivQ , inst:3r6NQZu6X9VOHHxfuy_drO , inst:3zN0bBhgX7txGWM48QU0p2 , inst:0WPkHP96T3h86xy02khfW7 , inst:09bVbruLf1TfwFtgicQ8vn , inst:048Mt4Yh51PPzZvFsAwW9L , inst:2MpnAjSYb2HhwvkxIYDXcd , inst:2WtTZoLK53XuU5uQMQmCK0 , inst:3BL4m0e7X1UQBca8U46Ho9 , inst:0OIz5svdT0Ru9p6Jadb04K , inst:2bZlawuUT6DBXAwQTHKXvV , inst:0dQj1I73D9RwrGyctNFYKg , inst:3ZLwIrF1bE4RdjJKQ87_I6 , <https://wisib.de/ontologie/Abox/bridgeOntology#2cs2wEOen47evDcoy6Yw4$> , inst:2Hso94RUv5KQXjhP0OyYDm , inst:367eccRDj6w8fB5KCoJjbm , <https://wisib.de/ontologie/Abox/bridgeOntology#2gBT1K_Av6aQ0MV$0qEqWh> , inst:3nAwPeC91AxAgzi8DmP3bU , inst:0CnTZs1_j9nBPYQWuv9JbA , inst:02Rfr8Fhb2ZugMFwxEvDq_ , inst:28bMuO3bf3NvHhJf9yU2Pi , <https://wisib.de/ontologie/Abox/bridgeOntology#2ZDjw$CAb0rOMQufd51XFl> , <https://wisib.de/ontologie/Abox/bridgeOntology#1oSFpEf$v1$BeMnmQ1nGqV> , inst:2RxJvZkT98ROTTA9JWe1t9 , inst:0rksLD49H3yRXODsaUWFUX , inst:1DPvP8SMP7XBYQRNu_dLk9 , <https://wisib.de/ontologie/Abox/bridgeOntology#1Lhm$G58LAkBDQqJdnJuMJ> , <https://wisib.de/ontologie/Abox/bridgeOntology#3L3KSX$nrAwBxkeOylRhSk> , inst:21zy0Cniv1gAYpx_cQaJVW , inst:0A6lyF_EzBjx4oY2ZihrTm , inst:0hteVcJd5BFulm715gNNgY , inst:27D8XVGm1DmvMEQg18OSNy , inst:0U8evudTP8gwzri6J_cSmN , <https://wisib.de/ontologie/Abox/bridgeOntology#08JukPzUzE$OJbfpTykPJx> , inst:24jTaJrWLBxwiXy5EdSXXy , inst:2olXq4u8b05eNhBTTmIecB , <https://wisib.de/ontologie/Abox/bridgeOntology#2fpgLTNmv6xA0qIbJYxYR$> , inst:3E6eQTM1TCtQgAb1DrQ6hg , <https://wisib.de/ontologie/Abox/bridgeOntology#1CwjPT0EP18hDcO$Co6sc$> , <https://wisib.de/ontologie/Abox/bridgeOntology#1hj$KsAxLBhvmaYeA4PNZg> , inst:28VWI9YKL2OhXNYOfj9zbE , inst:1w7bIVeNPE7xm8Ki8507xb , <https://wisib.de/ontologie/Abox/bridgeOntology#0xwMhlJgT7VPWVPO$2DVB2> , inst:0wUo9UDZj0V9AgxRD3st0j , inst:3vttNqsab3fh9T503T3bJG , <https://wisib.de/ontologie/Abox/bridgeOntology#0H82wSi9X9phd7fGal$E68> , inst:2Bln3TWLL7gOOP9Hn_jUS3 , <https://wisib.de/ontologie/Abox/bridgeOntology#3EuNgqG_rB5wtX5e$cCL_5> , inst:2bNpRp0ZL7YwDWc0j1y0MA , inst:37VZN7Rx94tOL_EWnACj4x , <https://wisib.de/ontologie/Abox/bridgeOntology#1oNE5vv$P2m9_9OQobYRAV> , inst:2ELUvcwlP5ceaZSA843eg7 , <https://wisib.de/ontologie/Abox/bridgeOntology#3Ybl7gbXvAyOy$SHx$zQYD> , inst:0JpqNfSU17L8J9cyx2leLo , inst:3bADwPBZ18E9ASXF5Y3X_o , <https://wisib.de/ontologie/Abox/bridgeOntology#2f$B8J0dj8PxjXITrg$Iyi> , inst:3a2vMLC5P3beBOUEfVrqkL , inst:2BvG1AZDb7YwjBrOe3USyK , inst:33wKqHdnzAKBPmvS0BbR5K , inst:1LkS4XzS17PgRdbaCHXEc0 , inst:25fDQCIiL6q8Iiwampm9sb , inst:0vnxmH7AT6IfbHlS2iwWgl , inst:2EztEdNtDCVhChQT0LVI3E , inst:1VIHL2SU99gQb_GiukOFB6 , inst:1IZjukAY10I8hEVOdHkJXG , inst:3rIRfdHgXC2gI7Ulicc_Cp , <https://wisib.de/ontologie/Abox/bridgeOntology#0WlBZPCq54MwS5IzK$4Mnu> , inst:28aeDjDo10YOtGjMAGPAqS , inst:3kepiMDpr8nwROgmq0fBRu , inst:3NH9sm7av1qPw1rsJ3fe8C , inst:3YAiCNb4D8Yh8Hn_qLbpqi , inst:1322dgrfT6FApDFseIks6S , <https://wisib.de/ontologie/Abox/bridgeOntology#1QG8h4zFjDU9mOBIeTsw$x> , inst:3ddujobdvCQ8rXWVYxnOzj , inst:0jlfPi5LTEnve9p7hh4ll9 , inst:0UCdanv_L9kunOuhkhDGoH , <https://wisib.de/ontologie/Abox/bridgeOntology#1BVm21ugT2wgJ$jrCVMb2p> , inst:1SZNhQf9jChvJf9XUQYi89 , inst:0fSuRyaIfCtuwsI_cQ9N4R , inst:0Pa47wfwH5COOYGnMCaCOP , inst:1VsT9WY7fFQebfQJE8RZza , <https://wisib.de/ontologie/Abox/bridgeOntology#2n9Cn1zYL1pup5X$TN0iA_> , inst:23MlcQyYH4nvZx0pcVgfAm , <https://wisib.de/ontologie/Abox/bridgeOntology#3A68$loQH4RAHO7BVZfIAe> , inst:3aVTT8WA12N8vo4Sp1p0lC ;
+        brot:containsZone     inst:Bridge-Substructure , inst:BridgeSuperstructure .
+
+inst:1mrbK37wvBGRarBmoBKdrZ
+        a       brcomp:Cap .
+
+inst:2Pu7eZgLn4L9QQuNUNC32p
+        a       brcomp:ReinforcingBar .
+
+inst:3sW4UW2Xz80BmbJJP62z18
+        a       brcomp:ReinforcingBar .
+
+inst:0jlfPi5LTEnve9p7hh4ll9
+        a       brcomp:ReinforcingBar .
+
+inst:2wkX7FTfv2Ue6KM8h_rsz4
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3dUQySdh53_gPv7$Uoh$KW>
+        a       brcomp:ReinforcingBar .
+
+inst:1qOoX8sjr8mQTiS_5rGXXy
+        a       brcomp:ReinforcingBar .
+
+inst:2kWUc5TDHEGPMgvTJb9w3Z
+        a       brcomp:ReinforcingBar .
+
+inst:3MSlbwjQr7_uWmrW1heWPi
+        a       brcomp:ReinforcingBar .
+
+inst:3xXJlipp51RBdMZgqEm92L
+        a       brcomp:ReinforcingBar .
+
+inst:3ZLwIrF1bE4RdjJKQ87_I6
+        a       brcomp:ReinforcingBar .
+
+inst:1rnVLTzRv9hAVVHOdMthiQ
+        a       brcomp:DrilledPile .
+
+inst:36hJ1IIVn66hinabMgyZjH
+        a       brcomp:PotBearings .
+
+inst:29qKGNSyvBJQ3EMQidScoa
+        a       brcomp:ReinforcingBar .
+
+inst:3hu0cB2IXCVAIOanTTk5Y4
+        a       brcomp:DrilledPile .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1oSFpEf$v1$BeMnmQ1nGqV>
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1Lhm$G58LAkBDQqJdnJuMJ>
+        a       brcomp:DrilledPile .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1CBvdP3$X5nBIVPbRw3De7>
+        a       brcomp:PotBearings .
+
+inst:2BfCPaY996wODjfyDduKv8
+        a       brcomp:ReinforcingBar .
+
+inst:0d_fow0ND0EAiEQCgXXea1
+        a       brcomp:ReinforcingBar .
+
+inst:0wt33sdvX18B0oBUStR098
+        a       brcomp:ReinforcingBar .
+
+inst:1oSFrtkrzD7gkTMrNG4j_K
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3A68$loQH4RAHO7BVZfIAe>
+        a       brcomp:ReinforcingBar .
+
+inst:1iuyZHtrL4O8WNWZhhUTiP
+        a       brcomp:ReinforcingBar .
+
+inst:1yVlhiAI989RwzeCgehTOY
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2zVkYLPLv4$O9iRIozSQ9i>
+        a       brcomp:DrilledPile .
+
+inst:3mPNFRMfv1o8iSS1xiknue
+        a       brcomp:Cap .
+
+inst:1eVd3zsw93SumynY8whOtq
+        a       brcomp:ReinforcingBar .
+
+inst:0LvkaksPH1Lh7jX3dV6pTG
+        a       brcomp:ReinforcingBar .
+
+inst:2Y4yci3qHFEPCu0IxM6Or8
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0jlP6ykgv0CwpBc$AhNKvA>
+        a       brcomp:DrilledPile .
+
+inst:0m1eUotCTAgu4DMr7h4TNk
+        a       brcomp:ReinforcingBar .
+
+inst:0mzf9GV8XFdBEhRZ7HVzvI
+        a       brcomp:ReinforcingBar .
+
+inst:0mRPgzxWrCpfsY9BET3bXW
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0O2s1GjAv1mAd$EaJyPWXI>
+        a       brcomp:ReinforcingBar .
+
+inst:3VSoUNTUn3svYMe_WLNOdc
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#08JukPzUzE$OJbfpTykPJx>
+        a       brcomp:Pier .
+
+inst:25PGGjDC99nfnTWZ52SH0F
+        a       brcomp:ReinforcingBar .
+
+inst:2n3aUXs1PAUgeQ_38Fr_ZP
+        a       brcomp:ReinforcingBar .
+
+inst:0bpUmRyov0_gSyo41ODi5y
+        a       brcomp:ReinforcingBar .
+
+inst:1Pehfi_09Bvw4ETCApgaC9
+        a       brcomp:Cap .
+
+inst:3e87KAcN5CivZIPbF3k_wE
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1J_pG12$DDv8yYCTBe$gq8>
+        a       brcomp:ReinforcingBar .
+
+inst:0o3PT9skH9ggn_FagE3Rk2
+        a       brcomp:ReinforcingBar .
+
+inst:1chnUbgXjAe9egn0i_9uVp
+        a       brcomp:GirderSegment .
+
+inst:0A6lyF_EzBjx4oY2ZihrTm
+        a       brcomp:DrilledPile .
+
+inst:27MICrNTDCXAYsrxi714tV
+        a       brcomp:DrilledPile .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3L3KSX$nrAwBxkeOylRhSk>
+        a       brcomp:ReinforcingBar .
+
+inst:Bridge-Substructure
+        a                     brot:Substructure ;
+        brot:containsElement  inst:25tTPkRA13NP2XOjngzCvv , <https://wisib.de/ontologie/Abox/bridgeOntology#1CBvdP3$X5nBIVPbRw3De7> , inst:3deVaFX353G97SGtG36gYs , inst:1KO5lzBZj8jQGcpZVjVytA , inst:3AblAeVZLAvPjUvEEJ08Ly , inst:1oDJuZ2V1F8hTdoH5kEY5A , <https://wisib.de/ontologie/Abox/bridgeOntology#1dkJutsND4QfR$9mQ3d4hr> , <https://wisib.de/ontologie/Abox/bridgeOntology#1Tq3U2drv4$ukSl8y_92Et> , inst:1Jsruwj6v82xuNR9o70ozy , inst:3eRhty6cDFcvSLj8ZTOvjd , <https://wisib.de/ontologie/Abox/bridgeOntology#0GGyOhV4P81v$QMMai2$r$> , inst:36hJ1IIVn66hinabMgyZjH , inst:0QwtUP2TDA_Pz9n5QAZ7w5 .
+
+inst:0vnxmH7AT6IfbHlS2iwWgl
+        a       brcomp:DrilledPile .
+
+brcomp:Cap  a   owl:Class .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2$8qNBHxn4aO$maZh_PO6t>
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#2wjOGrZhr3dxt3AQR$pwMJ>
+        a       brcomp:ReinforcingBar .
+
+inst:2loF4rKYvEyvSjL9_KbYnR
+        a       brcomp:ReinforcingBar .
+
+inst:3Ac5gq95f3XOKY8cLOPv71
+        a       brcomp:ReinforcingBar .
+
+inst:3aVTT8WA12N8vo4Sp1p0lC
+        a       brcomp:ReinforcingBar .
+
+inst:1h0i_b5c9Bqg9QMT93HnvO
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3MwC$mSs52Jxms4ztsxMIS>
+        a       brcomp:ReinforcingBar .
+
+inst:2aHXCxFxX9gupyFf0MErBV
+        a       brcomp:DrilledPile .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#27fT$LX3rAr8HN5eewOf9W>
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#3Hi_ymQvv02Adt3$ucyaaB>
+        a       brcomp:ReinforcingBar .
+
+brcomp:DrilledPile  a  owl:Class .
+
+inst:02Rfr8Fhb2ZugMFwxEvDq_
+        a       brcomp:ReinforcingBar .
+
+inst:27D8XVGm1DmvMEQg18OSNy
+        a       brcomp:ReinforcingBar .
+
+inst:2FWWGKHvv0qAsYu20LbeKj
+        a       brcomp:ReinforcingBar .
+
+inst:2UvKroVDr0PgKGtji7n3Mi
+        a       brcomp:ReinforcingBar .
+
+inst:0Ab7Qmvef4ggGjJxf6xpWC
+        a       brcomp:ReinforcingBar .
+
+inst:1WPWU4BHr1395VONGe7pMM
+        a       brcomp:ReinforcingBar .
+
+inst:0GAfevVUb2Exh2Mvkcq1sj
+        a       brcomp:Cap .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#0134UFP9T5588yITAiB0$h>
+        a       brcomp:ReinforcingBar .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1oNE5vv$P2m9_9OQobYRAV>
+        a       brcomp:ReinforcingBar .
+
+inst:0G8FrcVkTEVwxrM9rvgFYk
+        a       brcomp:ReinforcingBar .
+
+brcomp:GirderDeck  a  owl:Class .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#08qj$VV3zBu9sG48wP5$Pu>
+        a       brcomp:Cap .
+
+inst:0aMicdC558jf9BhHzofPqm
+        a       brcomp:DrilledPile .
+
+<https://wisib.de/ontologie/Abox/bridgeOntology#1wQR$vy850yvr1NP$YPjSs>
+        a       brcomp:ReinforcingBar .
+
+inst:3YAiCNb4D8Yh8Hn_qLbpqi
+        a       brcomp:ReinforcingBar .
+
+inst:21Geo7WqbB18u4PiMiMqp4
+        a       brcomp:ReinforcingBar .

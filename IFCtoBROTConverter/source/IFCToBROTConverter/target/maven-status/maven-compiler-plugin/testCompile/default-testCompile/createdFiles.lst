@@ -1,0 +1,5 @@
+de\tud\cib\IFCToBROTConverter\annotation\AnnotationParserTest.class
+de\tud\cib\IFCToBROTConverter\ICDDConfiguration\ICDDBuilderTest.class
+de\tud\cib\IFCToBROTConverter\ontologyConfiguration\IfcBrotOntologyBuilderTest.class
+de\tud\cib\IFCToBROTConverter\OntoICDDBuilderTest.class
+de\tud\cib\IFCToBROTConverter\TestSuite.class

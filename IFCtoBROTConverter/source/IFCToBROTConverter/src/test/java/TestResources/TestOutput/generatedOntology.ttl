@@ -1,0 +1,43 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix inst:  <testuri#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix brot:  <https://wisib.de/ontologie/brot/#> .
+@prefix brcomp: <https://wisib.de/ontologie/brcomp#> .
+
+inst:Bridge-Substructure
+        a       brot:Substructure .
+
+inst:Bridge  a             brot:Bridge ;
+        brot:containsZone  inst:BridgeSuperstructure , inst:Bridge-Substructure .
+
+brot:Superstructure  a  owl:Class .
+
+inst:BridgeSuperstructure
+        a       brot:Superstructure .
+
+brot:Bridge  a  owl:Class .
+
+brot:Site  a    owl:Class .
+
+inst:Site  a               brot:Site ;
+        brot:containsZone  inst:Bridge .
+
+brot:Substructure  a  owl:Class .
+
+brot:containsZone  a  owl:ObjectProperty .
+
+brot:aggregates  a  owl:ObjectProperty .
+
+brot:containsElement  a  owl:ObjectProperty .
+
+inst:testcomponent  a  brot:Component .
+
+brot:Component  a  owl:Class .
+
+inst:3eRhty6cDFcvSLj8ZTOvjd
+        a                     brot:Component ;
+        brot:containsElement  inst:testcomponent .
+
+inst:   a       owl:Ontology .
