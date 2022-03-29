@@ -7,17 +7,17 @@ The ontology is then extended using ontologies e.g. for defining specific compon
 
 Recommended namespace for BROT: https://w3id.org/brot#
 
-BROT extensions:
+**BROT extensions:**
 
 
-Bridge Components Ontology (BRCOMP): https://w3id.org/brcomp#
+- Bridge Components Ontology (BRCOMP): https://w3id.org/brcomp#
 
-Bridge Ontology (BRIDGE): https://w3id.org/bridge# (used for overall bridge classification and defines bridge properties)
+- Bridge Ontology (BRIDGE): https://w3id.org/bridge# (used for overall bridge classification and defines bridge properties)
 
-Bridge Structure (BRSTR): https://w3id.org/brstr#
+- Bridge Structure (BRSTR): https://w3id.org/brstr#
 
 
-Auxiliary Ontology (mainly used for this testcase):
+**Auxiliary Ontology (mainly used for this testcase):**
 
 Building material definitions (BMAT): https://w3id.org/bmat#
 
