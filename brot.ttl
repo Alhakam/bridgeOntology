@@ -2,15 +2,15 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix brot: <https://wisib.de/ontologie/brot#> .
+@prefix brot: <https://w3id.org/brot#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix schema: <http://schema.org/#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-<https://wisib.de/ontologie/brot> rdf:type owl:Ontology ;
-                        owl:versionIRI <https://wisib.de/ontologie/brot/0.2> ;
+<https://w3id.org/brot#> rdf:type owl:Ontology ;
+                        owl:versionIRI <https://w3id.org/brot/0.21> ;
                         dcterms:creator [ rdf:type foaf:Person ;
                                           foaf:name "Al-Hakam Hamdan"
                                         ] ,
@@ -20,9 +20,9 @@
                         dcterms:description "Ontology that defines the topology of zones and components of bridge constructions"@en ;
                         dcterms:title "Bridge Topology Ontology"@en ;
                         dcterms:license "https://creativecommons.org/licenses/by/1.0" ;
-                        dcterms:modified "23th May 2019" ;
+                        dcterms:modified "29th March 2022" ;
                         vann:preferredNamespacePrefix "brot" ;
-                        vann:preferredNamespaceUri "https://wisib.de/ontologie/brot#" .
+                        vann:preferredNamespaceUri "https://w3id.org/brot#" .
 
 
 #################################################################
@@ -114,9 +114,9 @@ brot:locatedAbove rdf:type owl:ObjectProperty ;
                   schema:rangeIncludes brot:Component ,
                                   brot:SpatialZone ;
                   rdfs:comment "Diese Relation stellt dar, dass ein Component sich über einem anderen befindet. Die Componente sind nicht gezwungen einen physicalischen bzw. logischen Kontakt zu haben. Die Relation zeigt bloß das räumliche Verhalten."@de ,
-                               "This relationship points that in a modell an Component located above an another Component. The Components are not obliged to have a physical or logical connection. The relationship shows only space atittude."@en ,
-                               "locate above"@en ;
-                  rdfs:label "befindet sich über"@de .
+                               "This relationship points that in a modell an Component located above an another Component. The Components are not obliged to have a physical or logical connection. The relationship shows only space atittude."@en ;
+                  rdfs:label    "located above"@en ,
+                                "befindet sich über"@de .
 
 
 ###  https://wisib.de/ontologie/brot#locatedBelow
