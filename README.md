@@ -9,11 +9,13 @@ Recommended namespace for BROT: https://w3id.org/brot#
 
 BROT extensions:
 
+
 Bridge Components Ontology (BRCOMP): https://w3id.org/brcomp#
 
 Bridge Ontology (BRIDGE): https://w3id.org/bridge# (used for overall bridge classification and defines bridge properties)
 
 Bridge Structure (BRSTR): https://w3id.org/brstr#
+
 
 Auxiliary Ontology (mainly used for this testcase):
 
