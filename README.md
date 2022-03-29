@@ -19,7 +19,7 @@ Recommended namespace for BROT: https://w3id.org/brot#
 
 **Auxiliary Ontology (mainly used for this testcase):**
 
-Building material definitions (BMAT): https://w3id.org/bmat#
+- Building material definitions (BMAT): https://w3id.org/bmat#
 
 Furthermore, an ABox has been created, which describes an existing box-girder bridge made of concrete. Additionally, an IFC Model is provided. In this regard, the construction components of the bridge are related to the IfcBuildingElements. To define these links explicitly, an Information Container for Data Drop (ICDD) (https://www.iso.org/standard/74389.html) has been serialized which contains a linkset for both models.
 
