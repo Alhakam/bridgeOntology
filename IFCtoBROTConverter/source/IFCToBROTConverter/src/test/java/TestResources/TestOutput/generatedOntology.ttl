@@ -1,43 +1,43 @@
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix inst:  <testuri#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix brot:  <https://wisib.de/ontologie/brot/#> .
 @prefix brcomp: <https://wisib.de/ontologie/brcomp#> .
+@prefix brot:   <https://wisib.de/ontologie/brot/#> .
+@prefix inst:   <testuri#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 
 inst:Bridge-Substructure
-        a       brot:Substructure .
+        rdf:type  brot:Substructure .
 
-inst:Bridge  a             brot:Bridge ;
+inst:Bridge  rdf:type      brot:Bridge ;
         brot:containsZone  inst:BridgeSuperstructure , inst:Bridge-Substructure .
 
-brot:Superstructure  a  owl:Class .
+brot:Superstructure  rdf:type  owl:Class .
 
 inst:BridgeSuperstructure
-        a       brot:Superstructure .
+        rdf:type  brot:Superstructure .
 
-brot:Bridge  a  owl:Class .
+brot:Bridge  rdf:type  owl:Class .
 
-brot:Site  a    owl:Class .
+brot:Site  rdf:type  owl:Class .
 
-inst:Site  a               brot:Site ;
+inst:Site  rdf:type        brot:Site ;
         brot:containsZone  inst:Bridge .
 
-brot:Substructure  a  owl:Class .
+brot:Substructure  rdf:type  owl:Class .
 
-brot:containsZone  a  owl:ObjectProperty .
+brot:containsZone  rdf:type  owl:ObjectProperty .
 
-brot:aggregates  a  owl:ObjectProperty .
+brot:aggregates  rdf:type  owl:ObjectProperty .
 
-brot:containsElement  a  owl:ObjectProperty .
+brot:containsElement  rdf:type  owl:ObjectProperty .
 
-inst:testcomponent  a  brot:Component .
+inst:testcomponent  rdf:type  brot:Component .
 
-brot:Component  a  owl:Class .
+brot:Component  rdf:type  owl:Class .
 
 inst:3eRhty6cDFcvSLj8ZTOvjd
-        a                     brot:Component ;
+        rdf:type              brot:Component ;
         brot:containsElement  inst:testcomponent .
 
-inst:   a       owl:Ontology .
+inst:   rdf:type  owl:Ontology .

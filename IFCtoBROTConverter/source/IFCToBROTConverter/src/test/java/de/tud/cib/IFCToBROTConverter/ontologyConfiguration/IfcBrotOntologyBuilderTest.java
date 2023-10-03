@@ -37,7 +37,6 @@ public class IfcBrotOntologyBuilderTest {
         LinkedOntology linkedOntology = ifcBrotOntologyBuilder.createBrotOntologyWithAnnotations(annotatedEntities, uri);
         OntologyModelWriter.writeOntology(linkedOntology.getOntology(), "src/test/java/TestResources/TestOutput/generatedOntology.ttl");
         assertNotNull(linkedOntology.getOntology().getIndividual(uri + "3eRhty6cDFcvSLj8ZTOvjd"));
-        assertNotNull(linkedOntology.getLinkInformation().containsValue("3eRhty6cDFcvSLj8ZTOvjd"));
     }
 
     @Test
@@ -45,7 +44,6 @@ public class IfcBrotOntologyBuilderTest {
         LinkedOntology linkedOntology = ifcBrotOntologyBuilder.createBrotOntology(ifcEntities, uri);
         OntologyModelWriter.writeOntology(linkedOntology.getOntology(), "src/test/java/TestResources/TestOutput/generatedOntology.ttl");
         assertNotNull(linkedOntology.getOntology().getIndividual(uri + "3eRhty6cDFcvSLj8ZTOvjd"));
-        assertNotNull(linkedOntology.getLinkInformation().containsValue("3eRhty6cDFcvSLj8ZTOvjd"));
     }
 
 }

@@ -32,6 +32,7 @@ public class AnnotationParserTest {
                 assertionEntity = annotatedIfcEntity;
             }
         }
+        assert assertionEntity != null;
         assertEquals("2320", assertionEntity.getStepID());
         assertEquals("IfcAbutment", assertionEntity.getAnnotation());
         assertEquals("3eRhty6cDFcvSLj8ZTOvjd", assertionEntity.getIfcID());

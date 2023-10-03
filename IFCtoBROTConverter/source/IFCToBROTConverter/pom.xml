@@ -95,11 +95,5 @@
             <type>pom</type>
             <version>3.14.0</version>
         </dependency>
-        <!-- ICDD - in local repository -->
-        <dependency>
-            <groupId>tud.cib</groupId>
-            <artifactId>icdd</artifactId>
-            <version>1</version>
-        </dependency>
     </dependencies>
 </project>
