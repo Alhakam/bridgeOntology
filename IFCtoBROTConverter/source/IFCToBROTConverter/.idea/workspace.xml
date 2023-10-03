@@ -7,7 +7,38 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b04cf2f9-8ee1-4419-bae8-819d181553c8" name="Default Changelist" comment="" />
+    <list default="true" id="b04cf2f9-8ee1-4419-bae8-819d181553c8" name="Default Changelist" comment="Removed ICDD algorithms and added main-method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IFCToBROTConverter-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IFCToBROTConverter-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/tud/cib/IFCToBROTConverter/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/tud/cib/IFCToBROTConverter/annotation/AnnotatedIfcEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/tud/cib/IFCToBROTConverter/annotation/AnnotationParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/tud/cib/IFCToBROTConverter/ifcFilter/IfcEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/tud/cib/IFCToBROTConverter/ifcFilter/IfcFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/tud/cib/IFCToBROTConverter/ontologyConfiguration/IfcBrotOntologyBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/tud/cib/IFCToBROTConverter/ontologyConfiguration/LinkedOntology.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/tud/cib/IFCToBROTConverter/ontologyFileTransformation/OntologyModelFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/tud/cib/IFCToBROTConverter/ontologyFileTransformation/OntologyModelWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.tud.cib.IFCToBROTConverter.ICDDConfiguration.ICDDBuilderTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.tud.cib.IFCToBROTConverter.OntoICDDBuilderTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.tud.cib.IFCToBROTConverter.TestSuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.tud.cib.IFCToBROTConverter.annotation.AnnotationParserTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.tud.cib.IFCToBROTConverter.ontologyConfiguration.IfcBrotOntologyBuilderTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.tud.cib.IFCToBROTConverter.ICDDConfiguration.ICDDBuilderTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.tud.cib.IFCToBROTConverter.OntoICDDBuilderTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.tud.cib.IFCToBROTConverter.TestSuite.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.tud.cib.IFCToBROTConverter.annotation.AnnotationParserTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.tud.cib.IFCToBROTConverter.ontologyConfiguration.IfcBrotOntologyBuilderTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/tud/cib/IFCToBROTConverter/TestSuite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/tud/cib/IFCToBROTConverter/annotation/AnnotationParserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/tud/cib/IFCToBROTConverter/ontologyConfiguration/IfcBrotOntologyBuilderTest.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,16 +69,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Arbeit/bridgeOntology/bridgeOntology/IFCtoBROTConverter/source/IFCToBROTConverter&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Arbeit/bridgeOntology/bridgeOntology/IFCtoBROTConverter/source/IFCToBROTConverter",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="Q:\Arbeit\WorkspaceCIB\IFCToBROTConverter\src\test\java" />
