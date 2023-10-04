@@ -1,5 +1,7 @@
 # Bridge Ontology
 
+*Important note: Due to current issues with the used ICDD-framework, the ICDD functionality of the BROT-Converter has been removed*
+
 An onotology for representing a bridge construction. Thereby, the focus lies on providing all necessary classes and properties for describing an existing bridge during maintenance or inspection processes.
 
 For the core ontology, BROT (Bridge Topology Ontology) is used (see older version: https://github.com/kozak-taras/bridge_ontology), which defines the topology between bridge components and spatial zones (e.g. superstructure or substructure).
